@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Obispado de San Nicolas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/estilosClass.css">
+    <link rel="stylesheet" href="css/estilosTag.css">
+    <link rel="stylesheet" href="css/estiloMedia.css">
+  </head>
+  <body>
+    <header style="background: url('img/portada.jpg') no-repeat center top; background-size: cover;">
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Obispo</a>
+        <a href="#">Catedral</a>
+        <a href="#">Virgen del Rosario</a>
+        <a href="#">Crecencia</a>
+        <a href="#">Curia</a>
+        <a href="#">Colegios Religioso</a>
+      </nav>
+    </header>
+    <div class="contendorData">
+      <section id="sliderPrincipal" class="slider">
+        <div class="sliderPrincipal" style="display:block; background:url(img/iglesias-en-venecia.jpg) center no-repeat;">
+          <div class="picText">
+            <h1>Imagen Uno</h1>
+          </div>
+        </div>
+        <div class="sliderPrincipal" style="display:block; background:url(img/portada.jpg) center no-repeat;">
+          <div class="picText">
+            <h1>Imagen Dos</h1>
+          </div>
+        </div>
+        <div class="sliderPrincipal" style="display:block; background:url(img/iglesias-en-venecia.jpg) center no-repeat;">
+          <div class="picText">
+            <h1>Imagen Tres</h1>
+          </div>
+        </div>
+        <div class="sliderPrincipal" style="display:block; background:url(img/iglesias-en-venecia.jpg) center no-repeat;">
+          <div class="picText">
+            <h1>Imagen Cuatro</h1>
+          </div>
+        </div>
+
+        <div class="botonSliderIzquirda" style="cursor:pointer" onclick="plusDivs(-1)">&#10094;&#10094;</div>
+        <div class="botonSliderDerecha" style="cursor:pointer" onclick="plusDivs(1)">&#10095;&#10095;</div>
+      </section>
+      <section id="obispoActual" class="obispoActual">
+        Obispo Actual
+      </section>
+      <section id="noticias" class="noticias">
+        <article class="noticiasPrincipales">
+          <div class="noticiasDiv">
+            <img src="img/igleNoticias.jpg" alt="" style="border-radius: 85px;">
+            Peregrinaciones
+          </div>
+          <div class="noticiasDiv">
+            <img src="img/igleNoticias.jpg" alt="" style="border-radius: 85px;">
+            Nombramientos
+          </div>
+          <div class="noticiasDiv">
+            <img src="img/igleNoticias.jpg" alt="" style="border-radius: 85px;">
+            Retiros
+          </div>
+        </article>
+        <article class="noticiasSlider">
+          <h1>Proyectos</h1>
+        </article>
+        <article class="noticiasMultimedia">
+          <div class="noticiasDiv">
+            <a href="#">
+              <img src="img/camaraIcono.jpg" alt="">
+            </a>
+            Fotos
+          </div>
+          <div class="noticiasDiv">
+            <img src="img/audioIcono.jpg" alt="">
+            Audios
+          </div>
+          <div class="noticiasDiv">
+            <img src="img/videoIcono.jpg" alt="">
+            Videos
+          </div>
+        </article>
+      <footer id="ubicacion">
+        <h1>Obispado de San Nicolas</h1>
+        <iframe style="float: right; margin-bottom: 15px; margin-right:15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </footer>
+    </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("sliderPrincipal");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].className = "sliderPrincipal";
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      x[slideIndex-1].className += " animacionSlider";
+    }
+  </script>
+</body>
+</html>

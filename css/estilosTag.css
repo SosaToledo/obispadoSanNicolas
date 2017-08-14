@@ -1,0 +1,47 @@
+
+*{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.botonSliderIzquirda{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.botonSliderDerecha{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+img {
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+header{
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  align-items: flex-end;
+}
+nav{
+  width: auto;
+  background-color: rgba(128,128,128,0.5);
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex:1 1;
+}
+nav a{
+  width: 150px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

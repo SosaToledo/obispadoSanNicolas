@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+  nav{
+    flex-direction: column;
+  }
+  nav   a{
+    width: 100%;
+  }
+  .noticiasPrincipales{
+    flex-direction: column;
+  }
+}
