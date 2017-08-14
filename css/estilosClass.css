@@ -6,7 +6,21 @@
     height: 350px;
 }
 .animacionSlider{
+}
+.botonSliderIzquirda{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}
+.botonSliderDerecha{
+    position: absolute;
+    top: 40%;
+    right: 0%;
+  }
 
+/*OBISPO ACTUAL*/
+.obispoActual{
+  height: 650px;
 }
 /*SECCION NOTICIAS*/
 .noticias{

@@ -4,16 +4,6 @@
   text-align: center;
   color: white;
 }
-.botonSliderIzquirda{
-  position: absolute;
-  top: 50%;
-  left: 0%;
-}
-.botonSliderDerecha{
-  position: absolute;
-  top: 50%;
-  right: 0%;
-}
 img {
 }
 body{
@@ -30,15 +20,17 @@ header{
 }
 nav{
   width: auto;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgb(255,255,255);
+
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex:1 1;
 }
 nav a{
-  width: 150px;
+  color: black;
+  font-size: 1.5em;
 }
 footer{
   display: flex;
