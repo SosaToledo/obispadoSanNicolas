@@ -10,7 +10,7 @@
     <script src="js/logica.js"></script>
   </head>
   <body id="main" onscroll="obispoDetect()">
-    <header style="background: url('img/portada.jpg') no-repeat center top; background-size: cover;">
+    <header style="background: url('img/portada.jpg') no-repeat center center; background-size:cover;">
       <nav>
         <a href="#">Inicio</a>
         <a href="#">Obispo</a>
@@ -20,6 +20,7 @@
         <a href="#">Curia</a>
         <a href="#">Colegios Religioso</a>
         <a href="#">Noticias</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         <img src="" alt="Facebook">
       </nav>
     </header>
@@ -48,6 +49,33 @@
 
         <div class="botonSliderIzquirda" style="cursor:pointer" onclick="plusDivs(-1)">&#10094;&#10094;</div>
         <div class="botonSliderDerecha" style="cursor:pointer" onclick="plusDivs(1)">&#10095;&#10095;</div>
+
+        <div class="circulos" style="text-align:center">
+          <div class="cirDiv">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+      </section>
+      <section id="" class="">
+        <div class="">
+          <img src="" alt="">
+          -------------------
+        </div>
+        <div class="">
+          <img src="" alt="">
+          -------------------
+        </div>
+        <div class="">
+          <img src="" alt="">
+          -------------------
+        </div>
+        <div class="">
+          <img src="" alt="">
+          -------------------
+        </div>
       </section>
       <section id="obispoActual" class="obispoActual">
         Obispo Actual

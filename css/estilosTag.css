@@ -12,25 +12,32 @@ body{
   background-color: rgba(0, 0, 0, 0.8);
 }
 header{
-  width: 100%;
   height: 200px;
 
   display: flex;
   align-items: flex-end;
 }
 nav{
-  width: auto;
-  background-color: rgb(255,255,255);
-
+  background-color: rgba(255,255,255,0.5);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   flex:1 1;
 }
 nav a{
+  /*border: 1px solid grey;*/
+  /*border-left: 1px solid grey;
+  border-right: 1px solid grey;*/
   color: black;
-  font-size: 1.5em;
+  padding: 2px 25px;
+  font-size: 1.3em;
+}
+/*nav a:hover{
+  background-color: grey;
+}*/
+nav .icon{
+  display: none;
 }
 footer{
   display: flex;

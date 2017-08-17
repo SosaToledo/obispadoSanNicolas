@@ -9,14 +9,42 @@
 }
 .botonSliderIzquirda{
     position: absolute;
-    top: 40%;
+    top: 300px;
     left: 0%;
 }
 .botonSliderDerecha{
     position: absolute;
-    top: 40%;
+    top: 300px;
     right: 0%;
-  }
+}
+.circulos{
+  background: rgba(0,0,0,1);
+  background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+  width: 100%;
+}
+.ciculos .cirDiv{
+  position: absolute;
+  left: 20%;
+}
+.dot {
+  cursor:pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 /*OBISPO ACTUAL*/
 .obispoActual{
