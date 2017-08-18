@@ -1,18 +1,16 @@
-function obispoDetect(){
+function detect(){
   var elm = document.getElementById("obispoActual").offsetTop;
   var pantalla = document.getElementById("main").scrollTop;
-
-  if(elm-200 < pantalla){
-
+  var ancho = screen.width;
+  // if(elm-200 < pantalla){
+  // }
+  var nav = document.getElementById("barra").style;
+  if ((pantalla>200 && ancho>500) || (pantalla>500 && ancho < 500)){
+    nav.position = "fixed";
+    nav.top = "0";
+  }else{
+    nav.position = "";
+    nav.top = "";
   }
 
-}
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
 }

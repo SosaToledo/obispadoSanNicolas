@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/estiloMedia.css">
     <script src="js/logica.js"></script>
   </head>
-  <body id="main" onscroll="obispoDetect()">
+  <body id="main" onscroll="detect()">
     <header style="background: url('img/portada.jpg') no-repeat center center; background-size:cover;">
-      <nav>
+      <p>Obispado de San Nicolas de los Arroyos</p>
+      <nav id="barra">
         <a href="#">Inicio</a>
         <a href="#">Obispo</a>
         <a href="#">Catedral</a>
@@ -21,7 +22,7 @@
         <a href="#">Colegios Religioso</a>
         <a href="#">Noticias</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        <img src="" alt="Facebook">
+        <img style="width:32px; height: 32px; margin:3px;"src="img/iconos/facebook.jpg" alt="Facebook">
       </nav>
     </header>
     <div class="contendorData">
@@ -59,22 +60,25 @@
           </div>
         </div>
       </section>
-      <section id="" class="">
-        <div class="">
-          <img src="" alt="">
-          -------------------
+      <section id="" class="nuestraDiocesis">
+        <div class="" style="left:10%;height:25px;;background:url(img/iconos/separador.png) no-repeat;width:100%; position:relative;">
+          <p style="text-align:left">Nuestra diócesis</p>
         </div>
-        <div class="">
-          <img src="" alt="">
-          -------------------
+        <div class="diocesisIconos">
+          <img src="img/iconos/geoposicion.png" alt="">
+          <p>Historia</p>
         </div>
-        <div class="">
-          <img src="" alt="">
-          -------------------
+        <div class="diocesisIconos">
+          <img src="img/iconos/geoposicion.png" alt="">
+          <p>Mapa</p>
         </div>
-        <div class="">
-          <img src="" alt="">
-          -------------------
+        <div class="diocesisIconos">
+          <img src="img/iconos/curia.png" alt="">
+          <p>Curia</p>
+        </div>
+        <div class="diocesisIconos">
+          <img src="img/iconos/AGENDA.png" alt="">
+          <p>Calendario <br> Diocesano</p>
         </div>
       </section>
       <section id="obispoActual" class="obispoActual">
@@ -116,13 +120,17 @@
         </article>
       <footer id="ubicacion">
         <h1>Obispado de San Nicolas</h1>
-        <iframe style="float: right; margin-bottom: 15px; margin-right:15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
       </footer>
     </div>
 
   <script>
     var slideIndex = 1;
     showDivs(slideIndex);
+
+    function currentSlide(n){
+      showDivs(slideIndex = n);
+    }
 
     function plusDivs(n) {
       showDivs(slideIndex += n);

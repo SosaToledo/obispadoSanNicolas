@@ -1,5 +1,6 @@
 
 *{
+  margin:0;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -15,13 +16,21 @@ header{
   height: 200px;
 
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+header p{
+  width: 100%;
+  font-size: 3em;
 }
 nav{
-  background-color: rgba(255,255,255,0.5);
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(255,255,255,1);
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex:1 1;
 }
@@ -36,11 +45,12 @@ nav a{
 /*nav a:hover{
   background-color: grey;
 }*/
-nav .icon{
-  display: none;
-}
 footer{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+footer iframe{
+  float: right; 
+  margin:0 15px 15px 0;
 }
