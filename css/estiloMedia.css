@@ -27,10 +27,10 @@
   .noticiasPrincipales{
     flex-direction: column;
   }
-  .diocesisIconos{
-    width: 100%;
+  .diocesisIconos{    width: 50%;
     margin: 10px auto;
   }
+
   #ubicacion{
     width: auto;
     height: 400px;

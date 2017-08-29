@@ -6,34 +6,52 @@
         navigation: false
       });
     });
-  </script>
+</script>
+
 <!--  -->
+<?php
+$args = array(
+    'posts_per_page' => 4,
+    'meta_key' => 'post_views',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC'
+);
+
+?>
 
 <div class="contendorData">
   <div class="tope_slider"></div>
   <div class="no-slide">
     <section id="slideshow" >
-      <div class="slide">
-        <img src="http://lorempixel.com/1920/450" class="thumb" >
-        <h1 class="tituloSlide">Hola mundo, bienvenido</h1>
-      </div>
-      <div class="slide">
-        <img src="http://lorempixel.com/1920/450" class="thumb" >
-        <h1 class="tituloSlide">Proximamente, mas contenido</h1>
-      </div><div class="slide">
-        <img src="http://lorempixel.com/1920/450" class="thumb" >
-        <h1 class="tituloSlide">Gracias por visitar</h1>
-      </div><div class="slide">
-        <img src="http://lorempixel.com/1920/450" class="thumb" >
-        <h1 class="tituloSlide">Pagina en desarrollo</h1>
-      </div>
-    </section>
+      <div class="slides">
+        <?php
+        $popular_post = new WP_Query($args);
+        while ($popular_post->have_posts()): $popular_post->the_post();
+        if(has_post_thumbnail()){the_post_thumbnail('slidePortada'); }?>
+        <h1 class="tituloSlide"><?php the_title();?></h1><?php break;
+      endwhile;
+      ?>
+    </div>
+    <div class="slides">
+      <img src="http://lorempixel.com/1920/450" class="thumb" >
+      <h1 class="tituloSlide">Proximamente, mas contenido</h1>
+    </div><div class="slides">
+      <?php
+      while (have_posts()): the_post();
+      if(has_post_thumbnail()){the_post_thumbnail('slidePortada'); }?>
+      <!-- <h1 class="tituloSlide"><?php the_title();?></h1> -->
+      <?php break;
+    endwhile;
+    ?>
+  </div><div class="slides">
+    <img src="http://lorempixel.com/1920/450" class="thumb" >
+    <h1 class="tituloSlide">Pagina en desarrollo</h1>
   </div>
+</section>
+</div>
 
   <section id="" class="nuestraDiocesis">
-    <div class="" style="left:10%;height:25px;;background:url(<?php bloginfo('template_url') ?>/img/iconos/separador.png) no-repeat;width:100%; position:relative;">
-      <p style="text-align:left">Nuestra diócesis</p>
-    </div>
+
     <div class="diocesisIconos">
       <img src="<?php bloginfo('template_url') ?>/img/iconos/geoposicion.png" alt="">
       <p>Historia</p>
@@ -62,10 +80,6 @@
         <div class="info">
           <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
           <p>Escudo</p>
-        </div>
-        <div class="info">
-          <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCRITOS.png" alt=""></a>
-          <p>Escritos</p>
         </div>
         <div class="info">
           <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/BIOGRAFIA.png" alt=""></a>
@@ -137,7 +151,7 @@
       </div>
     </article>
     <article class="noticiasSlider">
-      <h1>Proyectos</h1>
+      Proyectos
     </article>
   <footer id="ubicacion">
     <h1>Obispado de San Nicolas de los Arroyos</h1>
@@ -154,5 +168,7 @@
 
 <script src="<?php bloginfo('template_url') ?>/js/logica.js"></script>
 </body>
+
+
 
 <?php get_footer(); ?>

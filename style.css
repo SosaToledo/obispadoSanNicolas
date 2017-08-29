@@ -43,11 +43,14 @@ license: MIT
 
 /*SLIDER*/
 
-
+.no-slider{
+  z-index:0 !important;
+}
 #main .contendorData .no-slide #slideshow {
   height: 490px;
 }
 #main .contendorData .no-slide #slideshow .slidesjs-container {
+  z-index: inherit !important;
   height: 450px !important;
 }
 #main .contendorData .no-slide #slideshow .slidesjs-pagination{
@@ -93,7 +96,7 @@ license: MIT
   display: block;
 }
 
-.slide{
+.slides{
   position: relative;
 }
 .tituloSlide{
@@ -197,7 +200,7 @@ margin: 0.5em 0;
 .obispoImg>img{
   width: 250px;
   height: 250px;
-  border: 2px solid rgb(191, 144, 0);
+  border: 3px solid #a29f76;
   border-radius: 50%;
 }
 .obispoInfoIzq, .obispoInfoDer{
@@ -237,6 +240,7 @@ margin: 0.5em 0;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .noticiasProyectos{
@@ -245,12 +249,12 @@ margin: 0.5em 0;
     padding: 10px;
 }
 .noticiasMultimedia{
-  width: 80%;
+  width: auto;
   border:5px solid #808183;
-  margin: auto;
+  margin: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   justify-content: space-around;
 }
 .noticiasDiv{
@@ -306,7 +310,7 @@ header p{
 }
 
 nav{
-  z-index: 2;
+  z-index: 15 !important;
   width: 100%;
   background-color: rgba(255,255,255,1);
 
@@ -324,7 +328,6 @@ nav a{
   padding: 2px 25px;
   font-size: 1.3em;
   font-family: verdana,sans-serif;
-  font-weight: bold;
 }
 
 /*nav a:hover{

@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <a href="#">Crecensia</a>
+          <a href="#">Crescensia</a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
