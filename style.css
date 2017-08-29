@@ -7,6 +7,11 @@ description: Tema desarrollado para el obispado de san nicolas
 version: 1.0
 license: MIT
 */
+@font-face{
+   font-family:'SCRIPTBL';
+   src:url(font/SCRIPTBL.TTF);
+   font-style:bold;
+}
 
 /*HEADER*/
 .icon{
@@ -37,31 +42,73 @@ license: MIT
 }
 
 /*SLIDER*/
-.slider{
-position: relative;
+
+
+#main .contendorData .no-slide #slideshow {
+  height: 490px;
 }
-.sliderPrincipal{
-    width: 100%;
-    height: 350px;
+#main .contendorData .no-slide #slideshow .slidesjs-container {
+  height: 450px !important;
 }
-.animacionSlider{
+#main .contendorData .no-slide #slideshow .slidesjs-pagination{
+  background: rgba(105,108,112,0);
+  background: -moz-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), color-stop(100%, rgba(187,188,190,1)));
+  background: -webkit-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -o-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -ms-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: linear-gradient(to right, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696c70', endColorstr='#bbbcbe', GradientType=1 );
+
+  width: 100%;
+  height: 3em;
+  margin: 0.5em 0;
 }
-.botonSliderIzquirda, .botonSliderDerecha{
-  background-color: rgba(200 , 200, 200, 0.5);
-  padding: 15px 5px;
+#main .contendorData .no-slide #slideshow ul {
+  list-style: none;
+
+}
+#main .contendorData .no-slide #slideshow ul li {
+  display: inline-block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0.25em 5px;
+
+}
+#main .contendorData .no-slide #slideshow ul li .active{
+  background-color: #acb7dc;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#main .contendorData .no-slide #slideshow ul li a{
+  width: 20px;
+  height: 20px;
+  font-size: 0pt;
+  display: block;
+}
+
+.slide{
+  position: relative;
+}
+.tituloSlide{
   position: absolute;
-  top: 50%;
+  display: block;
+  bottom:0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  color: black;
+  padding-bottom: 100px;
+  font-size: 4em;
+  font-family: verdana,sans-serif;
 }
-.botonSliderIzquirda{
-  border-top-right-radius:  10px;
-  border-bottom-right-radius: 10px;
-  left: 0%;
-}
-.botonSliderDerecha{
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  right: 0%;
-}
+
 .tope_slider{
   background: rgba(187,188,190,1);
 background: -moz-linear-gradient(left, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
@@ -112,6 +159,10 @@ margin: 0.5em 0;
   display: flex;
   flex-wrap: wrap;
 }
+.nuestraDiocesis div p{
+  font-family: SCRIPTBL,sans-serif;
+  color: #a29f76;
+}
 .diocesisIconos{
   margin: 40px auto;
   display: flex;
@@ -133,6 +184,10 @@ margin: 0.5em 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+#obispo div div p{
+  font-family: SCRIPTBL,sans-serif;
+  color: #adafb1;
 }
 .obispoImg{
   display: flex;
@@ -202,9 +257,15 @@ margin: 0.5em 0;
   box-sizing: border-box;
   padding: 10px;
   margin: 10px;
-
+  font-size: 2em;
+  font-family: SCRIPTBL,sans-serif;
+  color: #a29f76;
   display: flex;
   flex-direction: column;
+}
+.noticiasMultimedia .noticiasDiv{
+  font-family: verdana,sans-serif;
+  color: white;
 }
 
 /*Estilos TAG*/
@@ -236,11 +297,14 @@ header{
 }
 header p{
   width: 100%;
-  font-size: 3em;
+  font-size: 4em;
+  font-family: SCRIPTBL;
+  color: black;
   text-align: right;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
 }
+
 nav{
   z-index: 2;
   width: 100%;
@@ -259,6 +323,8 @@ nav a{
   color: black;
   padding: 2px 25px;
   font-size: 1.3em;
+  font-family: verdana,sans-serif;
+  font-weight: bold;
 }
 
 /*nav a:hover{
@@ -278,9 +344,12 @@ footer h1{
   display:block;
   font-size: 3.5em;
   margin: 5px 0;
+  font-family: SCRIPTBL,sans-serif;
 }
 footer p {
   font-size: 2em;
+  font-weight: lighter;
+  font-family: verdana,sans-serif;
   width: 50%;
 }
 footer iframe{

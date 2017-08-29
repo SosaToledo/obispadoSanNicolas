@@ -1,41 +1,35 @@
 <?php get_header(); ?>
-  <!--  -->
+<script>
+    $(function(){
+      $("#slideshow").slidesjs({
+        height: 450,
+        navigation: false
+      });
+    });
+  </script>
+<!--  -->
+
 <div class="contendorData">
-  <section id="sliderPrincipal" class="slider">
-    <div class="tope_slider"></div>
-    <div class="sliderPrincipal" style="display:block; background:url(<?php bloginfo('template_url') ?>/img/iglesias-en-venecia.jpg) center no-repeat;">
-      <div class="picText">
-        <h1>Imagen Uno</h1>
+  <div class="tope_slider"></div>
+  <div class="no-slide">
+    <section id="slideshow" >
+      <div class="slide">
+        <img src="http://lorempixel.com/1920/450" class="thumb" >
+        <h1 class="tituloSlide">Hola mundo, bienvenido</h1>
       </div>
-    </div>
-    <div class="sliderPrincipal" style="display:block; background:url(img/portada.jpg) center no-repeat;">
-      <div class="picText">
-        <h1>Imagen Dos</h1>
+      <div class="slide">
+        <img src="http://lorempixel.com/1920/450" class="thumb" >
+        <h1 class="tituloSlide">Proximamente, mas contenido</h1>
+      </div><div class="slide">
+        <img src="http://lorempixel.com/1920/450" class="thumb" >
+        <h1 class="tituloSlide">Gracias por visitar</h1>
+      </div><div class="slide">
+        <img src="http://lorempixel.com/1920/450" class="thumb" >
+        <h1 class="tituloSlide">Pagina en desarrollo</h1>
       </div>
-    </div>
-    <div class="sliderPrincipal" style="display:block; background:url(img/iglesias-en-venecia.jpg) center no-repeat;">
-      <div class="picText">
-        <h1>Imagen Tres</h1>
-      </div>
-    </div>
-    <div class="sliderPrincipal" style="display:block; background:url(img/iglesias-en-venecia.jpg) center no-repeat;">
-      <div class="picText">
-        <h1>Imagen Cuatro</h1>
-      </div>
-    </div>
+    </section>
+  </div>
 
-    <div class="botonSliderIzquirda" style="cursor:pointer" onclick="plusDivs(-1)">&#10094;&#10094;</div>
-    <div class="botonSliderDerecha" style="cursor:pointer" onclick="plusDivs(1)">&#10095;&#10095;</div>
-
-    <div class="circulos" style="text-align:center">
-      <div class="cirDiv">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-  </section>
   <section id="" class="nuestraDiocesis">
     <div class="" style="left:10%;height:25px;;background:url(<?php bloginfo('template_url') ?>/img/iconos/separador.png) no-repeat;width:100%; position:relative;">
       <p style="text-align:left">Nuestra diócesis</p>
@@ -146,7 +140,7 @@
       <h1>Proyectos</h1>
     </article>
   <footer id="ubicacion">
-    <h1>Obispado de San Nicolas</h1>
+    <h1>Obispado de San Nicolas de los Arroyos</h1>
     <p>Bartolomé Mitre 84 <br>
     San Nicolas, Buenos Aires <br>
     Tel y fax: (0336) 4422364 / 4429529</p>
@@ -158,31 +152,6 @@
   <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function currentSlide(n){
-  showDivs(slideIndex = n);
-}
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("sliderPrincipal");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].className = "sliderPrincipal";
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-  x[slideIndex-1].className += " animacionSlider";
-}
-</script>
 <script src="<?php bloginfo('template_url') ?>/js/logica.js"></script>
 </body>
 
