@@ -27,19 +27,31 @@ $args = array(
         <?php
         $popular_post = new WP_Query($args);
         while ($popular_post->have_posts()): $popular_post->the_post();
-        if(has_post_thumbnail()){the_post_thumbnail('slidePortada'); }?>
-        <h1 class="tituloSlide"><?php the_title();?></h1><?php break;
+        if(has_post_thumbnail()){
+          ?><a href="<?php the_permalink();?>">
+          <?php  the_post_thumbnail('slidePortada'); ?>
+          </a>
+          <?php
+        }?>
+        <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
+        <?php break;
       endwhile;
       ?>
     </div>
     <div class="slides">
       <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/cross_450.jpg" class="thumb" >
       <h1 class="tituloSlide">Proximamente, mas contenido</h1>
-    </div><div class="slides">
+    </div>
+    <div class="slides">
       <?php
       while (have_posts()): the_post();
-      if(has_post_thumbnail()){the_post_thumbnail('slidePortada'); }?>
-      <!-- <h1 class="tituloSlide"><?php the_title();?></h1> -->
+      if(has_post_thumbnail()){
+        ?><a href="<?php the_permalink();?>">
+        <?php  the_post_thumbnail('slidePortada'); ?>
+        </a>
+        <?php
+      }?>
+      <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
       <?php break;
     endwhile;
     ?>
@@ -150,9 +162,61 @@ $args = array(
         Videos
       </div>
     </article>
-    <article class="noticiasSlider">
-      Proyectos
-    </article>
+      <h1 class="noticiasDiv">Proyectos</h1>
+      <div class="owl-carousel">
+        <?php
+          query_posts('cat=23'); // Para excluír se usa el símbolo menos
+
+            if ( have_posts() ) {
+            	while ( have_posts() ) {
+            		the_post();
+            		//
+            		// Post Content here
+                ?>
+                <div class="slideProyecto">
+                <?php
+                if(has_post_thumbnail()){
+                  ?><a href="<?php the_permalink();?>">
+                  <?php  the_post_thumbnail('slideProyecto'); ?>
+                  </a>
+                  <?php
+                }
+                ?><a href="<?php the_permalink();?>"><h1 class="slideProyectoTitulo"><?php the_title() ?></h1></a>
+                </div>
+                <?php
+            		//
+            	} // end while
+            } // end if
+        ?>
+
+      </div>
+
+      <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            770:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false,
+                loop:true
+            }
+        }
+
+      })
+      </script>
   <footer id="ubicacion">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>

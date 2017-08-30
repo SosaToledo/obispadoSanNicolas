@@ -100,6 +100,13 @@ license: MIT
 .slides{
   position: relative;
 }
+.slides a img{
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  max-height: 450px;
+  background-position: center center;
+}
 .tituloSlide{
   position: absolute;
   display: block;
@@ -155,9 +162,7 @@ margin: 0.5em 0;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
-  background-color: #717171;
-}
+
 /*NUESTRAS DIOCESIS*/
 .nuestraDiocesis{
   display: flex;
@@ -249,10 +254,41 @@ margin: 0.5em 0;
     margin: 10px;
     padding: 10px;
 }
+.contenedorProyectos{
+  position: relative;
+}
+.owl-carousel{
+  width: 90%;
+  box-sizing: border-box;
+  margin: 15px auto;
+  border: 5px solid #808183;
+  padding: 15px 30px;
+}
+.owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  position: relative;
+}
+.slideProyectoTitulo{
+  position: absolute;
+  display: block;
+  bottom:0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding-bottom: 50px;
+  font-size: 1.5em;
+  font-family: verdana,sans-serif;
+}
+.itemproyectos{
+  margin: 3px;
+}
+
+
+
 .noticiasMultimedia{
-  width: auto;
+  width: 90%;
+  box-sizing: border-box;
   border:5px solid #808183;
-  margin: 10px;
+  margin: 10px auto;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
@@ -343,4 +379,24 @@ footer iframe{
   width: 50%;
   float: right;
   margin-bottom: 15px;
+}
+
+
+/*Codigo de single.php*/
+.contenedorSingle{
+  width: 100%;
+}
+.contenedorSingle img{
+  width: 100%;
+  border-bottom: 5px solid #a29f76;
+}
+.contenedorSingle .tituloSingle{
+  font-family: SCRIPTBL,sans-serif;
+  color: #a29f76;
+  font-size: 3em;
+}
+.contenedorSingle p{
+  font-family: verdana,sans-serif;
+  font-size: 1em;
+
 }
