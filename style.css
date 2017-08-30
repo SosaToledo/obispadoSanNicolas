@@ -29,13 +29,14 @@ license: MIT
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 15 !important;
 }
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    z-index: inherit !important;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -330,30 +331,13 @@ nav a{
   font-family: verdana,sans-serif;
 }
 
-/*nav a:hover{
-  background-color: grey;
-}*/
 footer{
-  background-color: #808183;
-  margin:0 0 10px 100px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-}
-footer h1{
-  width: 100%;
-  display:block;
-  font-size: 3.5em;
-  margin: 5px 0;
-  font-family: SCRIPTBL,sans-serif;
-}
-footer p {
-  font-size: 2em;
-  font-weight: lighter;
-  font-family: verdana,sans-serif;
-  width: 50%;
 }
 footer iframe{
   width: 50%;

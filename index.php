@@ -33,7 +33,7 @@ $args = array(
       ?>
     </div>
     <div class="slides">
-      <img src="http://lorempixel.com/1920/450" class="thumb" >
+      <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/cross_450.jpg" class="thumb" >
       <h1 class="tituloSlide">Proximamente, mas contenido</h1>
     </div><div class="slides">
       <?php
@@ -44,7 +44,7 @@ $args = array(
     endwhile;
     ?>
   </div><div class="slides">
-    <img src="http://lorempixel.com/1920/450" class="thumb" >
+    <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/St-Giles-Church-007-e1475334065286-1920x450.jpg" class="thumb" >
     <h1 class="tituloSlide">Pagina en desarrollo</h1>
   </div>
 </section>
@@ -119,15 +119,15 @@ $args = array(
     </div>
     <article class="noticiasPrincipales">
       <div class="noticiasDiv">
-        <img src="<?php bloginfo('template_url') ?>/img/igleNoticias.jpg" alt="" style="border-radius: 50%;">
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
         Peregrinaciones
       </div>
       <div class="noticiasDiv">
-        <img src="<?php bloginfo('template_url') ?>/img/igleNoticias.jpg" alt="" style="border-radius: 50%;">
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/nombramiento.jpg" alt="" style="border-radius: 50%;"></a>
         Nombramientos
       </div>
       <div class="noticiasDiv">
-        <img src="<?php bloginfo('template_url') ?>/img/igleNoticias.jpg" alt="" style="border-radius: 50%;">
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/retiros.jpg" alt="" style="border-radius: 50%;"></a>
         Retiros
       </div>
     </article>
@@ -142,11 +142,11 @@ $args = array(
         Fotos
       </div>
       <div class="noticiasDiv">
-        <img src="<?php bloginfo('template_url') ?>/img/audioIcono.jpg" alt="">
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/audioIcono.jpg" alt=""></a>
         Audios
       </div>
       <div class="noticiasDiv">
-        <img src="<?php bloginfo('template_url') ?>/img/videoIcono.jpg" alt="">
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/videoIcono.jpg" alt=""></a>
         Videos
       </div>
     </article>
@@ -154,10 +154,6 @@ $args = array(
       Proyectos
     </article>
   <footer id="ubicacion">
-    <h1>Obispado de San Nicolas de los Arroyos</h1>
-    <p>Bartolomé Mitre 84 <br>
-    San Nicolas, Buenos Aires <br>
-    Tel y fax: (0336) 4422364 / 4429529</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>
 </div>

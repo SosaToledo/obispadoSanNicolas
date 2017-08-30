@@ -4,6 +4,7 @@
   }
   .obispoImg{
     order:1;
+    width: 100%;
   }
   .obispoInfoIzq, .obispoInfoDer{
     order:2;
@@ -24,17 +25,18 @@
   nav img{
     display: none;
   }
-  .noticiasPrincipales{
-    flex-direction: column;
+  .noticiasMultimedia > .noticiasDiv > a > img{
+    width: 100%;
   }
+
   .diocesisIconos{    width: 50%;
     margin: 10px auto;
   }
-
   #ubicacion{
-    width: auto;
+    width: 100%;
     height: 400px;
     padding: 0;
+    margin: 0;
   }
   #ubicacion iframe{
     height: 400px;
