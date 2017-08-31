@@ -257,14 +257,14 @@ margin: 0.5em 0;
 .contenedorProyectos{
   position: relative;
 }
-.owl-carousel{
+.carouselProyectos{
   width: 90%;
   box-sizing: border-box;
   margin: 15px auto;
   border: 5px solid #808183;
   padding: 15px 30px;
 }
-.owl-carousel .owl-stage-outer .owl-stage .owl-item {
+.carouselProyectos .owl-stage-outer .owl-stage .owl-item {
   position: relative;
 }
 .slideProyectoTitulo{
@@ -282,7 +282,66 @@ margin: 0.5em 0;
   margin: 3px;
 }
 
+.carouselPortadas{
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+.carouselPortadas .owl-nav{
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  top: 50%;
+}
+.carouselPortadas .owl-nav .owl-prev,.owl-next{
+  display: inline-block;
+  position: absolute;
+  font-size: 50pt;
+  font-family: verdana,sans-serif;
+}
+.carouselPortadas .owl-nav .owl-prev{
+  left: 0px;
+}
+.carouselPortadas .owl-nav .owl-next{
+  right: 0px;
+}
+.carouselPortadas .owl-dots {
+  background: rgba(105,108,112,0);
+  background: -moz-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), color-stop(100%, rgba(187,188,190,1)));
+  background: -webkit-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -o-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -ms-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: linear-gradient(to right, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696c70', endColorstr='#bbbcbe', GradientType=1 );
+  text-align: left;
+  width: 100%;
+  height: 2em;
+  margin: 0.5em 0;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+.carouselPortadas .owl-dots .owl-dot{
+  cursor:pointer;
+  height: 20px;
+  width: 20px;
+  margin: 6px 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 
+}
+.carouselPortadas .owl-dots .owl-dot.active{
+  background-color: #acb7dc;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.carouselPortadas .owl-stage-outer .owl-stage .owl-item img{
+  height: 450px;
+}
 
 .noticiasMultimedia{
   width: 90%;
@@ -303,6 +362,7 @@ margin: 0.5em 0;
   color: #a29f76;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .noticiasMultimedia .noticiasDiv{
   font-family: verdana,sans-serif;
@@ -310,7 +370,11 @@ margin: 0.5em 0;
 }
 
 /*Estilos TAG*/
+.separador{
+  text-align: center;
+}
 .separadorInvertido{
+  text-align: center;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
@@ -321,7 +385,6 @@ margin: 0.5em 0;
 *{
   margin:0;
   text-decoration: none;
-  text-align: center;
   color: white;
 }
 img {
@@ -398,5 +461,68 @@ footer iframe{
 .contenedorSingle p{
   font-family: verdana,sans-serif;
   font-size: 1em;
+}
+.center{text-align: center;}
+img.center, img[align="center"] {
+  display: block; margin-left: auto; margin-right: auto;
+}
 
+/*----------Estos estilos pertenecen al categoy.php--------------------*/
+.tituloCategoria{
+  width: 90%;
+  font-family: verdana,sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin: 20px auto;
+  text-align: center;
+  border-bottom: 3px solid #a29f76;
+}
+.entradaCat{
+  margin: 15px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted #a29f76;
+}
+.entradaCat img{
+  width: 35%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+}
+.entradaCat .columnaEntrada{
+  width: 60%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.entradaCat .columnaEntrada .tituloEntradaCat{
+  width: 100%;
+  text-align: center;
+  font-family: verdana,sans-serif;
+  font-size: 1.5em;
+}
+.entradaCat .columnaEntrada p{
+  width: 100%;
+  font-size: 1em;
+  text-align: left;
+  font-weight: lighter;
+  font-family: verdana,sans-serif;
+}
+.entradaCat .columnaEntrada a{
+  font-size: 1em;
+  width: 100%;
+  color: #a29f76;
+  font-family: verdana,sans-serif;
+  text-decoration: none;
+  text-align: right;
+}
+.noHayQueMostrar{
+  width: 90%;
+  font-size: 1em;
+  font-family: verdana,sans-serif;
+  text-align: left;
+  margin: auto;
 }

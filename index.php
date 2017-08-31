@@ -1,12 +1,4 @@
 <?php get_header(); ?>
-<script>
-    $(function(){
-      $("#slideshow").slidesjs({
-        height: 450,
-        navigation: false
-      });
-    });
-</script>
 
 <!--  -->
 <?php
@@ -21,9 +13,9 @@ $args = array(
 
 <div class="contendorData">
   <div class="tope_slider"></div>
-  <div class="no-slide">
-    <section id="slideshow" >
-      <div class="slides">
+
+  <div class="owl-carousel carouselPortadas">
+    <div class="slides">
         <?php
         $popular_post = new WP_Query($args);
         while ($popular_post->have_posts()): $popular_post->the_post();
@@ -35,9 +27,9 @@ $args = array(
         }?>
         <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
         <?php break;
-      endwhile;
-      ?>
-    </div>
+        endwhile;
+        ?>
+      </div>
     <div class="slides">
       <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/cross_450.jpg" class="thumb" >
       <h1 class="tituloSlide">Proximamente, mas contenido</h1>
@@ -50,18 +42,39 @@ $args = array(
         <?php  the_post_thumbnail('slidePortada'); ?>
         </a>
         <?php
-      }?>
-      <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
-      <?php break;
-    endwhile;
-    ?>
-  </div><div class="slides">
-    <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/St-Giles-Church-007-e1475334065286-1920x450.jpg" class="thumb" >
-    <h1 class="tituloSlide">Pagina en desarrollo</h1>
-  </div>
-</section>
-</div>
+        }?>
+        <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
+        <?php break;
+      endwhile;
+      ?>
+    </div>
+    <div class="slides">
+      <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/St-Giles-Church-007-e1475334065286-1920x450.jpg" class="thumb" >
+      <h1 class="tituloSlide">Pagina en desarrollo</h1>
+    </div>
 
+  </div>
+  <script>
+  $('.carouselPortadas').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:3000,
+    dots:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
+      }
+    }
+  })
+  </script>
   <section id="" class="nuestraDiocesis">
 
     <div class="diocesisIconos">
@@ -148,22 +161,22 @@ $args = array(
     </div>
     <article class="noticiasMultimedia">
       <div class="noticiasDiv">
-        <a href="#">
+        <a href="<?php bloginfo('url') ?>/category/fotos">
           <img src="<?php bloginfo('template_url') ?>/img/camaraIcono.jpg" alt="">
         </a>
         Fotos
       </div>
       <div class="noticiasDiv">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/audioIcono.jpg" alt=""></a>
+        <a href="<?php bloginfo('url') ?>/category/audios"><img src="<?php bloginfo('template_url') ?>/img/audioIcono.jpg" alt=""></a>
         Audios
       </div>
       <div class="noticiasDiv">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/videoIcono.jpg" alt=""></a>
+        <a href="<?php bloginfo('url') ?>/category/videos"><img src="<?php bloginfo('template_url') ?>/img/videoIcono.jpg" alt=""></a>
         Videos
       </div>
     </article>
       <h1 class="noticiasDiv">Proyectos</h1>
-      <div class="owl-carousel">
+      <div class="owl-carousel carouselProyectos">
         <?php
           query_posts('cat=23'); // Para excluír se usa el símbolo menos
 
@@ -192,7 +205,7 @@ $args = array(
       </div>
 
       <script>
-      $('.owl-carousel').owlCarousel({
+      $('.carouselProyectos').owlCarousel({
         loop:true,
         margin:10,
         autoplay:true,
