@@ -3,12 +3,11 @@
 <!--  -->
 <?php
 $args = array(
-    'posts_per_page' => 4,
-    'meta_key' => 'post_views',
-    'orderby' => 'meta_value_num',
-    'order' => 'DESC'
+  'posts_per_page' => 4,
+  'meta_key' => 'post_views',
+  'orderby' => 'meta_value_num',
+  'order' => 'DESC'
 );
-
 ?>
 
 <div class="contendorData">
@@ -231,7 +230,8 @@ $args = array(
       })
       </script>
   <footer id="ubicacion">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26667.7039472087!2d-60.23595152441922!3d-33.332852032696024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62183e69c44221af!2sIglesia+Adventista+San+Nicol%C3%A1s+Centro!5e0!3m2!1ses-419!2sar!4v1501950679251" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- 900 200 -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426653.284241069!2d-60.365595057580826!3d-33.33897230762917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3e80cf417e596b2!2sCATEDRAL+DE+SAN+NICOLAS+DE+LOS+ARROYOS!5e0!3m2!1ses-419!2sar!4v1504145841198" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>
 </div>
 
