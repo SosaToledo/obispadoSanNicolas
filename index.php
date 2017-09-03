@@ -25,6 +25,7 @@ $args = array(
           <?php
         }?>
         <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
+        <a href="<?php the_permalink();?>"><h1 class="tituloTipoSlide">Lo mas leido</h1></a>
         <?php break;
         endwhile;
         ?>
@@ -43,6 +44,7 @@ $args = array(
         <?php
         }?>
         <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
+        <a href="<?php the_permalink();?>"><h1 class="tituloTipoSlide">Lo ultimo</h1></a>
         <?php break;
       endwhile;
       ?>
@@ -56,7 +58,9 @@ $args = array(
   <script>
   $('.carouselPortadas').owlCarousel({
     loop:true,
+    items:1,
     margin:10,
+    center:true,
     autoplay:true,
     autoplayHoverPause:true,
     autoplayTimeout:3000,
@@ -66,10 +70,10 @@ $args = array(
         items:1
       },
       600:{
-        items:1
+        items:2
       },
       1000:{
-        items:1
+        items:2
       }
     }
   })

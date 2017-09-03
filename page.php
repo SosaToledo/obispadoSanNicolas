@@ -2,32 +2,41 @@
 /**
  * The template for displaying all pages
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
  * @since 1.0
  * @version 1.0
  */
+get_header();?>
 
-get_header(); ?>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_uri') ;?>">
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php
+	query_posts('cat=23'); // Para excluír se usa el símbolo menos
 
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+				the_post();?>
+				<div class="contenedorObispos">
+					<h2 class="tituloPageObispos"><?php the_title() ?></h2>
+					<div class="plegable">
+						<?php the_content(); ?>
+					</div>
+				</div>
+				<?php
+			} // end while
+		} // end if
+?>
 
-      <?php
-        echo do_shortcode("[slide-anything id='63']");
-      ?>
+<script type="text/javascript">
+	$(window).ready(function(){
+	$('h2').click(function(){
+		if($(this).next().hasClass('desplegado')){
+			 $(this).next().removeClass('desplegado');
+		}else{
+			 $(this).next().addClass('desplegado');
+		}
+	})
+	})
+</script>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
-
-<?php get_footer();
+<?php get_footer();?>
