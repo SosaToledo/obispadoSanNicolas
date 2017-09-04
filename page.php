@@ -9,9 +9,9 @@
  * @version 1.0
  */
 get_header();?>
-
+<audio controls="" preload="none" src="http://stream.codigosur.org:8000/kasandrxs.mp3"></audio>
 <?php
-	query_posts('cat=23'); // Para excluír se usa el símbolo menos
+	query_posts('cat=5'); // Para excluír se usa el símbolo menos
 
 		if ( have_posts() ) {
 			while ( have_posts() ) {

@@ -1,5 +1,14 @@
-<?php get_header(); ?>
 
+<?php get_header(); ?>
+<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
+  <p>Obispado de San Nicolas de los Arroyos</p>
+  <div class="busquedaBarra">
+    <form class="formularioBusqueda" action="index.html" method="post">
+      <input type="text" name="busqueda" value="">
+      <button type="button" name="Buscar" style="opacity:1 !important;">Buscar</button>
+    </form>
+  </div>
+</header>
 <!--  -->
 <?php
 $args = array(
@@ -8,6 +17,7 @@ $args = array(
   'orderby' => 'meta_value_num',
   'order' => 'DESC'
 );
+include "menu.php";
 ?>
 
 <div class="contendorData">
@@ -31,7 +41,7 @@ $args = array(
         ?>
       </div>
     <div class="slides">
-      <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/cross_450.jpg" class="thumb" >
+      <img src="http://lorempixel.com/720/480" class="thumb" >
       <h1 class="tituloSlide">Proximamente, mas contenido</h1>
     </div>
     <div class="slides">
@@ -50,7 +60,7 @@ $args = array(
       ?>
     </div>
     <div class="slides">
-      <img src="http://obispadodesannicolas.com/wp-content/uploads/2017/08/St-Giles-Church-007-e1475334065286-1920x450.jpg" class="thumb" >
+      <img src="http://lorempixel.com/720/480" class="thumb" >
       <h1 class="tituloSlide">Pagina en desarrollo</h1>
     </div>
 
@@ -60,6 +70,7 @@ $args = array(
     loop:true,
     items:1,
     margin:10,
+    autoWidth:true,
     center:true,
     autoplay:true,
     autoplayHoverPause:true,
@@ -125,7 +136,7 @@ $args = array(
       <div class="obispoInfoDer">
         <div class="info">
           <img src="<?php bloginfo('template_url') ?>/img/iconos/ULTIMOSESCRITOS.png" alt="">
-          <p>Ultimos escritos</p>
+          <p>Ultimos<br>escritos</p>
         </div>
         <div class="info">
           <img src="<?php bloginfo('template_url') ?>/img/iconos/VIDEOS.png" alt="">
@@ -162,22 +173,6 @@ $args = array(
     <div class="separador" style="width:100%;">
       <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
     </div>
-    <article class="noticiasMultimedia">
-      <div class="noticiasDiv">
-        <a href="<?php bloginfo('url') ?>/category/fotos">
-          <img src="<?php bloginfo('template_url') ?>/img/camaraIcono.jpg" alt="">
-        </a>
-        Fotos
-      </div>
-      <div class="noticiasDiv">
-        <a href="<?php bloginfo('url') ?>/category/audios"><img src="<?php bloginfo('template_url') ?>/img/audioIcono.jpg" alt=""></a>
-        Audios
-      </div>
-      <div class="noticiasDiv">
-        <a href="<?php bloginfo('url') ?>/category/videos"><img src="<?php bloginfo('template_url') ?>/img/videoIcono.jpg" alt=""></a>
-        Videos
-      </div>
-    </article>
       <h1 class="noticiasDiv">Proyectos</h1>
       <div class="owl-carousel carouselProyectos">
         <?php

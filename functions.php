@@ -1,6 +1,6 @@
 <?php
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'slidePortada', 1024,600, false);
+add_image_size( 'slidePortada', 720,480, true);
 add_image_size('slideProyecto',465,225, true);
 
 // Función para contar visualizaciones de un post.
