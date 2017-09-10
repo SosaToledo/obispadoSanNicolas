@@ -571,39 +571,86 @@ img.center, img[align="center"] {
   margin: auto;
 }
 
+
 /*-----------Declaraciones del page.php-----------------------*/
 .contenedorObispos{
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 3px dashed #000000;
+  width: 60%;
+  height: 160px;
+  margin: 5px auto;
+}
+.contenedorObispos img{
+  float: left;
+  margin-right: 20px;
+}
+.contenedorObispos h2{
   margin: 10px;
-  padding: 14px;
 }
 .contenedorObispos p{
   font-size: 1.4em;
+  display: inline-block;
 }
-.contenedorObispos h2{
-  cursor: pointer;
-  font-family: SCRIPTBL,sans-serif;
-  color: rgb(231, 82, 43);
-  text-decoration: underline;
+.contenedorObispos a{
+  /*float: right;*/
+  background-color: rgb(184, 147, 53);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+
+/*Correspondientes al obispoActual.php*/
+.imgLupa{
+  position: fixed;
+  height: 50px;
+  background-color: rgba(222, 222, 222,0.3);
+  top: 150px;
+  border-radius: 0 15px 15px 0;
+}
+.contenedorTituloObispo, .contenedorBiografia, .contenedorEscudo{
+  width: 90%;
+  margin: auto;
+}
+.contenedorBiografia{
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.contenedorBiografia img{
   margin: 10px;
 }
-.plegable{
-   max-height:0;
-   overflow:hidden;
-   -webkit-transition: max-height 500ms ease-out;
-   -moz-transition: max-height 500ms ease-out;
-   -o-transition: max-height 500ms ease-out;
-   transition: max-height 500ms ease-out;
+.contenedorBiografia p{
+  font-size: 1.7em;
 }
-.plegable.desplegado{
-   max-height:9999px;
-   -webkit-transition: max-height 500ms ease-out;
-   -moz-transition: max-height 500ms ease-out;
-   -o-transition: max-height 500ms ease-out;
-   transition: max-height 500ms ease-out;
+.contenedorBiografia h3{
+  text-align: center;
+  font-size: 2em;
+}
+.contenedorEscudo{
+  margin-top: 10px;
+}
+.contenedorEscudo h1{
+  text-align: left;
+  font-size: 2em;
+}
+.contenedorEscudo p{
+  font-size: 1.7em;
+}
+/*pagina de vicario*/
+.contenedorVicario{
+  width: 60%;
+  height: 160px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+.contenedorVicario img{
+  float: left;
+  margin-right: 20px;
+}
+.plegable{
+  overflow: hidden;
+  max-height: 0;
+}
+.desplegado{
+  max-height: 700px;
 }
 
 
