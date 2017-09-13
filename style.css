@@ -573,10 +573,28 @@ footer iframe{
 
 
 /*-----------Declaraciones del page.php-----------------------*/
+.tituloConBarra{
+  width: 75%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 35px;
+}
+.tituloConBarra h1{
+  font-size: 3em;
+  color: #a8a578;
+  font-family: SCRIPTBL,sans-serif;
+}
+.tituloConBarra .barraTitulos{
+  position: absolute;
+  top: 1em;
+  width: 30em;
+}
 .contenedorObispos{
-  width: 60%;
+  width: 100%;
   height: 160px;
   margin: 5px auto;
+  box-sizing: border-box;
+  padding-left: 15%;
 }
 .contenedorObispos img{
   float: left;
@@ -584,12 +602,17 @@ footer iframe{
 }
 .contenedorObispos h2{
   margin: 10px;
+  padding-top: 25px;
+  font-family: verdana,sans-serif;
+  font-weight: bold;
 }
 .contenedorObispos p{
   font-size: 1.4em;
+  font-family: verdana;
+  color: #fdf8d4;
   display: inline-block;
 }
-.contenedorObispos a{
+.contenedorObispos a:last-child{
   /*float: right;*/
   background-color: rgb(184, 147, 53);
   border-radius: 15px;
@@ -606,34 +629,53 @@ footer iframe{
   top: 150px;
   border-radius: 0 15px 15px 0;
 }
-.contenedorTituloObispo, .contenedorBiografia, .contenedorEscudo{
+.contenedorTituloObispo{
   width: 90%;
   margin: auto;
 }
-.contenedorBiografia{
-  box-sizing: border-box;
-  margin-top: 10px;
+.contenedorObispoActual{
+  width: 90%;
+  margin: auto;
 }
-.contenedorBiografia img{
-  margin: 10px;
+.contenedorObispoActual p{
+  font-size: 1.4em;
+  font-family: verdana,sans-serif;
 }
-.contenedorBiografia p{
-  font-size: 1.7em;
+.contenedorObispoActual img.alignleft{
+  margin: 0px;
+  margin-right: 10px;
 }
-.contenedorBiografia h3{
-  text-align: center;
-  font-size: 2em;
+.contenedorObispoActual h1{
+  margin-bottom: 16px;
 }
-.contenedorEscudo{
-  margin-top: 10px;
+.contenedorObispoActual span{
+  padding: 0 100px;
 }
-.contenedorEscudo h1{
-  text-align: left;
-  font-size: 2em;
+.contenedorObispoActual span,.contenedorObispoActual h1:last-of-type{
+  font-family: SCRIPTBL,sans-serif;
+  font-size:35pt;
+  color: #a8a578;
+  padding-bottom: 13px;
+  background: url(img/barraObisposLisa.png) center bottom no-repeat;
 }
-.contenedorEscudo p{
-  font-size: 1.7em;
+.contenedorTituloObispo{
+  position: relative;
 }
+.contenedorTituloObispo h1{
+  font-size: 3.5em;
+  color: #a8a578;
+  font-family: SCRIPTBL,sans-serif;
+  margin-bottom: 17px;
+}
+.contenedorTituloObispo h1:last-child{
+  font-family: verdana,sans-serif;font-size: 1.8em;
+}
+.contenedorTituloObispo .barraTitulos{
+  position: absolute;
+  width: 30em;
+  top: 1.3em;
+}
+
 /*pagina de vicario*/
 .contenedorVicario{
   width: 60%;
