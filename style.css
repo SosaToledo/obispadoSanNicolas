@@ -491,26 +491,26 @@ footer iframe{
 
 /*Codigo de single.php*/
 .contenedorSingle{
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
-.contenedorSingle img{
-  width: 100%;
-  border-bottom: 5px solid #a29f76;
-}
-.contenedorSingle .tituloSingle{
+.tituloSingle{
+  margin: 14px;
+  text-align: center;
+  font-size: 2.5em;
   font-family: SCRIPTBL,sans-serif;
-  color: #a29f76;
-  font-size: 3em;
 }
 .contenedorSingle p{
+  font-size: 1.2em;
   font-family: verdana,sans-serif;
-  font-size: 1em;
 }
-.center{text-align: center;}
-img.center, img[align="center"] {
-  display: block; margin-left: auto; margin-right: auto;
+.contenedorSingle img.alignleft{
+  margin: 0px;
+  margin-right: 10px;
 }
-
+.contenedorSingle h1{
+  font-family: SCRIPTBL,sans-serif;
+}
 /*----------Estos estilos pertenecen al categoy.php--------------------*/
 .tituloCategoria{
   width: 90%;
@@ -653,6 +653,88 @@ img.center, img[align="center"] {
   max-height: 700px;
 }
 
+/*Clases pertenecientes a la pagina de catedral*/
+.contenedorCatedral{
+  width: 90%;
+  margin: auto;
+}
+.contenedorCatedral .tituloCatedral{
+  text-align: center;
+  font-size: 3em;
+  margin: 10px 0 ;
+  font-family: SCRIPTBL,sans-serif;
+}
+.contenedorCatedral .fotoCatedral{
+  float: left;
+  margin: 6px;
+}
+.contenedorCatedral p{
+  font-size: 1.3em;
+  font-family: verdana,sans-serif;
+}
+.carouselCatedral{
+  margin: 60px 0;
+  box-sizing: border-box;
+  border-top: 2px solid rgb(100, 122, 145);
+  border-bottom: 2px solid rgb(100, 122, 145);
+  padding: 10px 0;
+}
+
+/*Pertenece a la pagina del santuario*/
+.contenedorSantuario{
+  width: 90%;
+  margin: auto;
+}
+.contenedorSantuario .portadaSantuario{
+  width: 100%;
+}
+.contenedorSantuario .tituloSantuario{
+  text-align: center;
+  font-size: 3em;
+  margin: 10px 0 ;
+  font-family: SCRIPTBL,sans-serif;
+}
+.contenedorSantuario p{
+  font-size: 1.3em;
+  font-family: verdana,sans-serif;
+}
+.carouselSantuario{
+  margin: 60px 0;
+  box-sizing: border-box;
+  border-top: 2px solid rgb(100, 122, 145);
+  border-bottom: 2px solid rgb(100, 122, 145);
+  padding: 10px 0;
+}
+
+/* Pertenece a Crescencia */
+.contenedorCrescencia{
+  width: 90%;
+  margin: auto;
+}
+.contenedorCrescencia .tituloCrescencia{
+  text-align: center;
+  font-size: 3em;
+  margin: 10px 0 ;
+  font-family: SCRIPTBL,sans-serif;
+}
+.contenedorCrescencia p:nth-of-type(1){
+  padding-bottom: 20px;
+}
+.contenedorCrescencia p{
+  font-size: 1.3em;
+  font-family: verdana,sans-serif;
+}
+.contenedorCrescencia .fotoCrescencia{
+  float:left;
+  margin-right: 10px;
+  }
+.carouselCrescencia{
+  margin: 30px 0;
+  box-sizing: border-box;
+  border-top: 2px solid rgb(100, 122, 145);
+  border-bottom: 2px solid rgb(100, 122, 145);
+  padding: 10px 0;
+}
 
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
