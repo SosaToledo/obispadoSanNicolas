@@ -116,15 +116,15 @@ include "menu.php";
   <section id="obispoActual" class="obispoActual">
     <article id="obispo">
       <div class="obispoInfoIzq">
-        <div class="info">
+        <div id="IA" class="info">
           <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
           <p>Escudo</p>
         </div>
-        <div class="info">
+        <div id="IC" class="info">
           <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/BIOGRAFIA.png" alt=""></a>
           <p>Biografia</p>
         </div>
-        <div class="info">
+        <div id="IB" class="info">
           <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/FOTOGRAFIAS.png" alt=""></a>
           <p>Fotografia</p>
         </div>
@@ -134,15 +134,15 @@ include "menu.php";
         <p></p>
       </div>
       <div class="obispoInfoDer">
-        <div class="info">
+        <div id="DA" class="info">
           <img src="<?php bloginfo('template_url') ?>/img/iconos/ULTIMOSESCRITOS.png" alt="">
           <p>Ultimos<br>escritos</p>
         </div>
-        <div class="info">
+        <div id="DC" class="info">
           <img src="<?php bloginfo('template_url') ?>/img/iconos/VIDEOS.png" alt="">
           <p>Videos</p>
         </div>
-        <div class="info">
+        <div id="DB" class="info">
           <img src="<?php bloginfo('template_url') ?>/img/iconos/HOMILIAS.png" alt="">
           <p>Homilias</p>
         </div>

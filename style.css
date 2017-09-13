@@ -238,6 +238,7 @@ margin: 0.5em 0;
   height: 250px;
   border: 3px solid #a29f76;
   border-radius: 50%;
+  z-index: 2;
 }
 .obispoInfoIzq, .obispoInfoDer{
   display: absolute;
@@ -259,21 +260,60 @@ margin: 0.5em 0;
 .info p{
   text-align: center;
 }
-.animacion{
+/*ANIMACIONES*/
+.animacionIA{
   visibility: visible;
-  animation-name: aparecerArriba;
+  animation-name: aparecerIA;
   animation-duration: 3s;
 }
-@keyframes aparecerArriba {
-  from {
-    opacity: 0;
-    left: 100;
-  }
-  to{
-    left: 100;
-    opacity: 1;
-    visibility: visible;
-  }
+@keyframes aparecerIA {
+  from {left: 120px;top:50px;opacity: 0;}
+  to{left:0;top:0;opacity: 1;}
+}
+.animacionIC{
+  visibility: visible;
+  animation-name: aparecerIC;
+  animation-duration: 3s;
+}
+@keyframes aparecerIC {
+  from {left: 120px;;opacity: 0;}
+  to{left:-30px;;opacity: 1;}
+}
+.animacionIB{
+  visibility: visible;
+  animation-name: aparecerIB;
+  animation-duration: 3s;
+}
+@keyframes aparecerIB {
+  from {left: 120px;top:-50px;opacity: 0;}
+  to{left:0;top:0;opacity: 1;}
+}
+.animacionDA{
+  visibility: visible;
+  animation-name: aparecerDA;
+  animation-duration: 3s;
+}
+@keyframes aparecerDA {
+  from {right:120px;top:50px;opacity: 0;}
+  to{right:0;top:0;opacity: 1;}
+}
+.animacionDC{
+  visibility: visible;
+  animation-name: aparecerDC;
+  animation-duration: 3s;
+}
+@keyframes aparecerDC {
+  from {left:-120px;;opacity: 0;}
+  to{left:30px;;opacity: 1;}
+}
+.animacionDB{
+  visibility: visible;
+  animation-name: aparecerDB;
+  animation-duration: 3s;
+}
+@keyframes aparecerDB {
+  from {right:120px;top:-50px;opacity: 0;}
+  to{right:0;top:0;opacity: 1;}
 }
 /*SECCION NOTICIAS*/
 .noticias{
