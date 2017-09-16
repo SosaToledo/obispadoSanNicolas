@@ -7,11 +7,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/owl.theme.default.min.css">
-
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="<?php bloginfo('template_url')?>/js/jquery.slides.min.js"></script>
-
-    <!-- <script src="<?php bloginfo('template_url')?>/js/jquery.min"></script> -->
+    <script src="<?php bloginfo('template_url')?>/js/jquery-3.2.1.min.js"></script>
     <script src="<?php bloginfo('template_url')?>/js/owl.carousel.js"></script>
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">

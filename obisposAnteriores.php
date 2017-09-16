@@ -22,7 +22,7 @@ include "menu.php";
 				<div class="contenedorObispos">
 					<a href="<?php the_permalink();?>">
 						<?php if(has_post_thumbnail()){
-		        the_post_thumbnail('imgObispo');
+		        the_post_thumbnail('thumbnail');
 					} else {
 						?><img src="<?php bloginfo('template_url');?>/img/avatarGenerico.png"/><?php
 					}?>

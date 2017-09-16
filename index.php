@@ -12,7 +12,10 @@
 <!--  -->
 <?php
 $args = array(
+  // id noticias en el hosting 9
+  // noticas en pc Frank 32
   'posts_per_page' => 4,
+  'cat' => '9',
   'meta_key' => 'post_views',
   'orderby' => 'meta_value_num',
   'order' => 'DESC'
@@ -36,16 +39,17 @@ include "menu.php";
         }?>
         <a href="<?php the_permalink();?>"><h1 class="tituloSlide"><?php the_title() ?></h1></a>
         <a href="<?php the_permalink();?>"><h1 class="tituloTipoSlide">Lo mas leido</h1></a>
-        <?php break;
+        <?php
+        wp_reset_postdata();
+        break;
         endwhile;
         ?>
       </div>
     <div class="slides">
-      <img src="http://lorempixel.com/720/480" class="thumb" >
-      <h1 class="tituloSlide">Proximamente, mas contenido</h1>
-    </div>
-    <div class="slides">
       <?php
+      // id noticias en el hosting 9
+      // noticas en pc Frank 32
+      query_posts('cat=9');
       while (have_posts()): the_post();
       if(has_post_thumbnail()){
         ?><a href="<?php the_permalink();?>">
@@ -59,40 +63,48 @@ include "menu.php";
       endwhile;
       ?>
     </div>
-    <div class="slides">
-      <img src="http://lorempixel.com/720/480" class="thumb" >
-      <h1 class="tituloSlide">Pagina en desarrollo</h1>
-    </div>
+    <?php
+      // id banner en el hosting 19
+      // banner en pc Frank 43
+      query_posts('cat=19');
+      while (have_posts()): the_post();
+      echo '<div class="slide";>';
+      if(has_post_thumbnail()){
+        the_post_thumbnail('slidePortada');}
+        //<h1 class="tituloSlide"><?php the_title(); ?/></h1>
+        echo '</div>';
+      endwhile;
+    ?>
 
   </div>
   <script>
-  $('.carouselPortadas').owlCarousel({
-    loop:true,
-    items:1,
-    margin:10,
-    autoWidth:true,
-    center:true,
-    autoplay:true,
-    autoplayHoverPause:true,
-    autoplayTimeout:3000,
-    dots:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:2
+    $('.carouselPortadas').owlCarousel({
+      loop:true,
+      items:4,
+      margin:10,
+      center:true,
+      autoplay:true,
+      autoplayHoverPause:true,
+      autoplayTimeout:3000,
+      dots:true,
+      responsive:{
+        0:{
+          items:1,
+          autoHeight:true
+        },
+        1000:{
+          items:2
+        }
       }
-    }
-  })
+    })
   </script>
+  <div class="tituloConBarra">
+    <h1>Nuestra Diocesis</h1>
+    <img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
+  </div>
   <section id="" class="nuestraDiocesis">
-
     <div class="diocesisIconos">
-      <img src="<?php bloginfo('template_url') ?>/img/iconos/geoposicion.png" alt="">
+      <img src="<?php bloginfo('template_url') ?>/img/iconos/historia.png" alt="">
       <p>Historia</p>
     </div>
     <div class="diocesisIconos">
@@ -114,6 +126,10 @@ include "menu.php";
   </div>
 
   <section id="obispoActual" class="obispoActual">
+    <div class="tituloConBarra">
+      <h1>Nuestro Obispo</h1>
+      <img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
+    </div>
     <article id="obispo">
       <div class="obispoInfoIzq">
         <div id="IA" class="info">
@@ -173,10 +189,12 @@ include "menu.php";
     <div class="separador" style="width:100%;">
       <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
     </div>
-      <h1 class="noticiasDiv">Proyectos</h1>
+      <h1 class="noticiasDiv">Actualidad</h1>
       <div class="owl-carousel carouselProyectos">
         <?php
-          query_posts('cat=23'); // Para excluír se usa el símbolo menos
+        // id noticias en el hosting 9
+        // noticas en pc Frank 32
+          query_posts('cat=9'); // Para excluír se usa el símbolo menos
 
             if ( have_posts() ) {
             	while ( have_posts() ) {
@@ -205,6 +223,7 @@ include "menu.php";
       <script>
       $('.carouselProyectos').owlCarousel({
         loop:true,
+        items:3,
         margin:10,
         autoplay:true,
         autoplayTimeout:3000,
@@ -230,7 +249,14 @@ include "menu.php";
       </script>
   <footer id="ubicacion">
     <!-- 900 200 -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426653.284241069!2d-60.365595057580826!3d-33.33897230762917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3e80cf417e596b2!2sCATEDRAL+DE+SAN+NICOLAS+DE+LOS+ARROYOS!5e0!3m2!1ses-419!2sar!4v1504145841198" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="contenedorFooter">
+      <h1>Contacto</h1>
+      <p class="detalleFooter">Obispado de San Nicolas de los Arroyos </p>
+      <p>Bartolomé Mitre 84 - San Nicolas </p>
+      <p>correoelectronico@gmail.com </p>
+      <p>Tel. y Fax: (0336) 4422364 / 4429529</p>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9014726782225!2d-58.48046568523238!3d-34.63193006649742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9911120caab%3A0x4c7c3f255d7eb187!2sObispado+de+San+Nicolas!5e0!3m2!1ses-419!2sar!4v1505546349242" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>
 </div>
 

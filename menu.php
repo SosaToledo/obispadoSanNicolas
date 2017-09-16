@@ -18,8 +18,8 @@
     <div class="dropdown">
       <a href="#">Obispo</a>
       <div class="dropdown-content">
-        <a href="#">Actual</a>
-        <a href="#">Anteriores</a>
+        <a href="http://obispadodesannicolas.com/obispo-actual/">Actual</a>
+        <a href="http://obispadodesannicolas.com/obispos-anteriores/">Anteriores</a>
       </div>
     </div>
     <div class="dropdown">

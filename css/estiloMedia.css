@@ -39,6 +39,11 @@
   nav img{
     display: none;
   }
+  .contendorData .carouselPortadas .owl-stage-outer .owl-stage .owl-item img{
+    height: auto;
+  }
+  .carouselPortadas .owl-stage-outer .owl-stage .owl-item
+
   .noticiasMultimedia > .noticiasDiv > a > img{
     width: 100%;
   }
@@ -48,18 +53,25 @@
   }
   #ubicacion{
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
     padding: 0;
     margin: 0;
+    margin-bottom: 15px;
   }
   #ubicacion iframe{
     height: 400px;
     width: 100%;
     margin: 0;
+    padding: 3%;
   }
   /*sobre el obispo actual*/
-  .barraTitulos{
-    display: none;
+  .tituloConBarra h1{
+    font-size: 2.2em;
+    margin-bottom: 18px;
+  }
+  .tituloConBarra .barraTitulos{
+    top: 0.5em;
+    width: 21em;
   }
   .contenedorTituloObispo h1:first-child{
     border-bottom: 2px #a8a578 solid;
@@ -79,7 +91,6 @@
   .tituloConBarra {
     width: 90%;
     margin-bottom: 7px;
-    border-bottom: 2px #a8a578 solid;
   }
   .contenedorObispos{
     height: auto;
@@ -105,5 +116,17 @@
     font-size: 1.3em;
     margin: 5px 0;
     font-family: verdana;
+  }
+  footer{
+    border-radius:0px;
+  }
+  footer .contenedorFooter{
+    width: 100%;
+  }
+  footer .contenedorFooter h1{
+    font-size: 2em;
+  }
+  footer .contenedorFooter p{
+    font-size: 1.2em;
   }
 }
