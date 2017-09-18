@@ -264,8 +264,6 @@ include "menu.php";
   <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
 </div>
 
-<script src="<?php bloginfo('template_url') ?>/js/logica.js"></script>
-</body>
 
 
 

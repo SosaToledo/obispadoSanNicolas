@@ -423,7 +423,7 @@ body{
   background-color: rgba(0, 0, 0, 0.8);
 }
 header{
-  height: 200px;
+  height: 360px;
   position: relative;
 }
 header p{
@@ -645,6 +645,7 @@ footer iframe{
   margin: auto;
 }
 .contenedorObispoActual{
+  overflow: auto;
   width: 90%;
   margin: auto;
 }
@@ -669,6 +670,87 @@ footer iframe{
   padding-bottom: 13px;
   background: url(img/barraObisposLisa.png) center bottom no-repeat;
 }
+.contenedorFotosObispoActual{
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.contenedorFotosObispoActual img{
+  margin: 0 25px;
+}
+.contenedorEscritosHomilias{
+  width: 90%;
+  margin:auto;
+  display: flex;
+}
+.contendorUltimosEscritos h1, .contenedorHomilias h1{
+  font-size: 2em;
+  font-family: verdana,sans-serif;
+}
+.contenedorEscritosHomilias .contendorUltimosEscritos{
+  width: 50%;
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding-left: 10%;
+}
+.contendorUltimosEscritos div{
+  margin: 10px 0;
+  overflow: visible;
+}
+.contendorUltimosEscritos div img{
+  margin-left: 10px;
+}
+.contendorUltimosEscritos div a{
+  font-size: 1.7em;
+  text-transform: capitalize;
+  font-family: verdana,sans-serif;
+}
+.contenedorEscritosHomilias .contenedorHomilias{
+  width: 50%;
+  margin:10px;
+}
+.contenedorHomilias div{
+  margin: 10px 0;
+}
+.contenedorHomilias div img{
+  margin-right: 10px;
+  float: left;
+}
+.homilias{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homilias p{
+  font-size: 1.7em;
+  font-family: verdana,sans-serif;
+  text-transform: capitalize;
+}
+.vermas{
+  display: block;
+  text-align: center;
+  font-family: verdana,sans-serif;
+  font-size: 1.5em;
+}
+.contenedorVideos{
+  margin: 20px 0;
+}
+.owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url(img/iconos/owl.video.play.png) no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform .1s ease;
+}
 .tituloConBarra h1:last-child{
   font-family: verdana,sans-serif;
   font-size: 1.8em;
@@ -678,6 +760,23 @@ footer iframe{
   position: absolute;
   width: 30em;
   top: 1.3em;
+}
+/*Pertenece al php de homilias*/
+
+.contenedorHomiliasCat{
+  width: 80%;
+  margin: auto;
+}
+.contenedorHomiliasCat h1{
+  font-size: 2.2em;
+  font-family: verdana,sans-serif;
+  margin: 15px 0;
+}
+.contenedorHomiliasCat div{
+  margin:15px 0;
+}
+.contenedorHomiliasCat div img{
+  float: left;
 }
 
 /*pagina de vicario*/
