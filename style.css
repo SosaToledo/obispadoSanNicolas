@@ -155,6 +155,8 @@ margin: 0.5em 0;
   text-align: center;
 }
 .diocesisIconos img{
+  height: 125;
+  width: 100;
   margin: 0 auto;
 }
 
@@ -184,8 +186,8 @@ margin: 0.5em 0;
   align-items: center;
 }
 .obispoImg>img{
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border: 3px solid #a29f76;
   border-radius: 50%;
   z-index: 2;
@@ -197,17 +199,21 @@ margin: 0.5em 0;
   /*justify-content: space-around;*/
 }
 .obispoInfoIzq .info:nth-child(2){
-  right: 30px;
+  right: 50px;
 }
 .obispoInfoDer .info:nth-child(2){
-  left: 30px;
+  left: 50px;
 }
 .info{
   position: relative;
   margin-top: 10px;
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .info p{
+  margin-top: 5px;
   text-align: center;
 }
 /*ANIMACIONES*/
@@ -215,8 +221,14 @@ margin: 0.5em 0;
   visibility: visible;
   animation-name: aparecerIA;
   animation-duration: 3s;
+  -moz-animation-name: aparecerIA;
+  -moz-animation-duration: 3s;
 }
 @keyframes aparecerIA {
+  from {left: 120px;top:50px;opacity: 0;}
+  to{left:0;top:0;opacity: 1;}
+}
+@-moz-keyframes aparecerIA {
   from {left: 120px;top:50px;opacity: 0;}
   to{left:0;top:0;opacity: 1;}
 }
@@ -227,7 +239,7 @@ margin: 0.5em 0;
 }
 @keyframes aparecerIC {
   from {left: 120px;;opacity: 0;}
-  to{left:-30px;;opacity: 1;}
+  to{left:-50px;;opacity: 1;}
 }
 .animacionIB{
   visibility: visible;
@@ -254,7 +266,7 @@ margin: 0.5em 0;
 }
 @keyframes aparecerDC {
   from {left:-120px;;opacity: 0;}
-  to{left:30px;;opacity: 1;}
+  to{left:50px;;opacity: 1;}
 }
 .animacionDB{
   visibility: visible;

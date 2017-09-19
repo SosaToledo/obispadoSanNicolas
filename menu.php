@@ -8,7 +8,6 @@
         <a href="#">Historia</a>
         <a href="#">Curia</a>
         <a href="#">Parroquia</a>
-        <a href="#">Vicaria</a>
         <a href="#">Colegio Religiosos</a>
         <a href="#">Vida Consagrada</a>
         <a href="#">Pastorales</a>

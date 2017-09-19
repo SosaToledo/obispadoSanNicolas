@@ -5,9 +5,19 @@
   #obispo{
     justify-content: space-around;
   }
+  .tituloConBarra>img{
+    display: none;
+  }
+  .tituloConBarra>h1{
+    text-align: center;
+  }
   .obispoImg{
     order:1;
     width: 100%;
+  }
+  .obispoImg>img{
+    height: 250px;
+    width: 250px;
   }
   .obispoInfoIzq, .obispoInfoDer{
     order:2;
@@ -17,6 +27,7 @@
   }
   .info{
     width: 100%;
+    visibility: visible;
     left: 0 !important;
     right: 0 !important;
   }
@@ -25,7 +36,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     flex-direction: column;
     padding: 0 5px;
-    width: 100%;
+    width: 40px;
     box-sizing: border-box;
   }
   nav   a{
