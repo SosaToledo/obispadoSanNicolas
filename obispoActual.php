@@ -6,17 +6,16 @@
 get_header();
 ?>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/1obispoactual.jpg') no-repeat center; background-size:cover;">
+	<p style="color:rgb(91, 61, 16); font-size:4.5em">Mons. Hugo Norberto Santiago</p>
 </header>
 <!--  -->
 <?php
 include "menu.php";
 ?>
-</header>
 	<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
 	<div class="tituloConBarra" style="margin-top:20px;">
 			<h1>Obispo Actual</h1>
 			<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
-			<h1>Mons. Hugo Norberto Santiago</h1>
 	</div>
 	<div class="contenedorObispoActual">
 	<?php
@@ -32,36 +31,46 @@ include "menu.php";
 	?>
 	</div>
 	<div class="contenedorFotosObispoActual">
-		<img src="http://lorempixel.com/288/512/" alt="">
-		<img src="http://lorempixel.com/288/512/" alt="">
-		<img src="http://lorempixel.com/288/512/" alt="">
+		<img src="<?php bloginfo(template_url);?>/img/imgObispo2.jpg" alt="">
+		<img src="<?php bloginfo(template_url);?>/img/imgObispo1.jpg" alt="">
+		<img src="<?php bloginfo(template_url);?>/img/imgObispo3.jpg" alt="">
 	</div>
+	<div class="separadorInvertido" style="width:100%;">
+    <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
+  </div>
 	<div class="contenedorEscritosHomilias">
 		<div class="contendorUltimosEscritos">
 			<h1>Ultimos escritos</h1>
 			<?php
-			// obispoActual id 41 -Frank
+			// ultimosEscritos id 41 -Frank
 			//id  -web
 			$contador=0;
 			query_posts('cat=41');
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					echo '<div><img src="';
+					echo '<div class="flexRow"><img src="';
 					bloginfo('template_url');
 					echo '/img/iconos/pdf-icon.png"';
 					echo "</img>";
 					?>
-					<a href="<?php the_permalink();?> ">
-						<?php the_title(); ?>
-					</a></div>
+					<div class="flexColumn">
+						<h1>
+							<a href="<?php the_permalink();?> ">
+								<?php the_title(); ?>
+							</a>
+						</h1>
+					</div>
+				</div>
 					<?php
 					$contador++;
 					if($contador==3){break;}
 				} // end while
 			} // end if
 			?>
-			<a class="vermas" href="http://localhost/wordpress/category/ultimos-escritos/">Ver todos</a>
+			<div style="text-align: center;">
+				<a class="vermas masInfo" href="http://localhost/wordpress/category/ultimos-escritos/">Ver todos</a>
+			</div>
 		</div>
 		<div class="contenedorHomilias">
 			<h1>Homilias</h1>
@@ -73,27 +82,30 @@ include "menu.php";
 						while ( have_posts() ) {
 							the_post();
 							?>
-							<div>
-								<img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt=""><div class="homilias">
-							<p><?php
-							the_title();?></p><?php
+							<div class="flexRow">
+								<img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt=""><div class="flexColumn">
+							<h1><?php
+							the_title();?></h1><?php
 							the_content();
 							?></div></div><?php
 							} // end while
 					} // end if
 			?>
-			<a class="vermas" href="http://localhost/wordpress/category/homilias/">Ver todos</a>
+			<div style="text-align: center;">
+				<a class="vermas masInfo" href="http://localhost/wordpress/category/homilias/">Ver todos</a>
+			</div>
 		</div>
 	</div>
-
+	<div class="separador" style="width:100%;">
+    <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
+  </div>
 	<div class="contenedorVideos">
 		<div class="owl-carousel owl-theme">
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=JBAJhrgu6b8&list=RDJBAJhrgu6b8"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=RM7lw0Ovzq0&list=RDMMRM7lw0Ovzq0"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=zqKZ_WIK5ms&index=4&list=RDMMRM7lw0Ovzq0"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=xiT3vZj5WTM&list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVMxiT3vZj5WTM"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=uPy5igZJnVw&index=5&list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVMxiT3vZj5WTM"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=FRUg3RcELYo&index=5&list=RDJBAJhrgu6b8"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=6lqtE8oH7u8"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=3uAipwc3w98"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=4txDzplzk3k"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=CdhrWjlR8Wk"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=h4g7SNeOvsc"></a></div>
 		</div>
 		<style media="screen">
 			.item-video{

@@ -11,7 +11,7 @@ function detect(){
   }
   var info = document.getElementsByClassName("info");
   var elm = document.getElementById("obispoActual").offsetTop;
-  if(elm-500 < pantalla){
+  if(elm-500 < pantalla && ancho>500){
       document.getElementById("IA").className = "info animacionIA";
       document.getElementById("IC").className = "info animacionIC";
       document.getElementById("IB").className = "info animacionIB";

@@ -13,25 +13,24 @@
 <?php
 include "menu.php";
 	?>
-	<div class="contenedorHomiliasCat">
-	<h1>Homilias</h1>
-	<p style="margin-bottom:10px;">Para descargar en Firefox, haga click derecho sobre el audio y luego seleccione "Guardar audio como..." </p>
+	<div class="contenedorUltEscritosCat">
+	<h1>Ultimos Escritos</h1>
 	<?php
 	// obispoActual id 30 -Frank
 	//id  -web
-	query_posts('cat=30');
+	query_posts('cat=41');
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				?>
-				<div style="width:60%;justify-content:center;margin:10px auto;" class="flexRow"><img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt=""><div class="flexColumn">
+				<div style="width:90%;justify-content:center;margin:10px auto;" class="flexColumn">
 				<?php
 				the_post();
-				echo "<p>";the_title();echo "</p>";
-				the_content();?>
-			</div></div>
-			<div class="catSeparador">
-
-			</div>
+				echo "<h1>";the_title();echo "</h1>";
+				the_excerpt();?>
+        <div>
+          <a style="float:right; margin-right:35px;" class="masInfo" href="<?php the_permalink();?>">+ Info</a>
+        </div>
+      </div>
 				<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
 				<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 				<?php } // end while

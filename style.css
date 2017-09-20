@@ -159,8 +159,12 @@ margin: 0.5em 0;
   width: 100;
   margin: 0 auto;
 }
+.diocesisIconos p{
+  font-size: 1.5em;
+}
 
 /*OBISPO ACTUAL*/
+
 .obispoActual{
   height: auto;
   margin-bottom: 15px;
@@ -177,6 +181,7 @@ margin: 0.5em 0;
   flex-wrap: wrap;
 }
 #obispo div div p{
+  font-size: 1.5em;
   font-family: SCRIPTBL,sans-serif;
   color: #adafb1;
 }
@@ -439,13 +444,14 @@ header{
   position: relative;
 }
 header p{
-  width: 100%;
   font-size: 4em;
-  font-family: SCRIPTBL;
-  color: black;
+  font-family: scriptbl;
+  text-shadow: 2px 2px 5px grey;
   text-align: right;
   position: absolute;
-  bottom: 25px;
+  bottom: 150px;
+  right: 7%;
+  text-decoration: underline;
 }
 
 nav{
@@ -635,8 +641,7 @@ footer iframe{
   color: #fdf8d4;
   display: inline-block;
 }
-.contenedorObispos a:last-child{
-  /*float: right;*/
+.masInfo{
   background-color: rgb(184, 147, 53);
   border-radius: 15px;
   padding: 5px;
@@ -696,56 +701,62 @@ footer iframe{
   margin:auto;
   display: flex;
 }
-.contendorUltimosEscritos h1, .contenedorHomilias h1{
+
+.contendorUltimosEscritos>h1, .contenedorHomilias > h1{
   font-size: 2em;
   font-family: verdana,sans-serif;
 }
-.contenedorEscritosHomilias .contendorUltimosEscritos{
+.contenedorEscritosHomilias .contendorUltimosEscritos,.contenedorEscritosHomilias .contenedorHomilias {
   width: 50%;
   margin: 10px auto;
   box-sizing: border-box;
   padding-left: 10%;
 }
-.contendorUltimosEscritos div{
-  margin: 10px 0;
-  overflow: visible;
-}
-.contendorUltimosEscritos div img{
-  margin-left: 10px;
-}
-.contendorUltimosEscritos div a{
-  font-size: 1.7em;
-  text-transform: capitalize;
-  font-family: verdana,sans-serif;
-}
-.contenedorEscritosHomilias .contenedorHomilias{
-  width: 50%;
-  margin:10px;
-}
-.contenedorHomilias div{
-  margin: 10px 0;
-}
-.contenedorHomilias div img{
-  margin-right: 10px;
-  float: left;
-}
-.homilias{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.homilias p{
-  font-size: 1.7em;
-  font-family: verdana,sans-serif;
-  text-transform: capitalize;
-}
 .vermas{
-  display: block;
+  display: inline-block;
   text-align: center;
   font-family: verdana,sans-serif;
   font-size: 1.5em;
 }
+
+.catSeparador{
+  margin: auto;
+  width: 180px;
+  border-style: solid;
+  border-width: 0px 28px 18px;
+  -moz-border-image: url(img/barraObisposLisa.png) 0 27 18;
+  -webkit-border-image: url(img/barraObisposLisa.png) 0 27 18;
+  -o-border-image: url(img/barraObisposLisa.png) 0 27 18;
+  border-image: url(img/barraObisposLisa.png) 0 27 18;
+}
+/*HOMILIASESCRITOS*/
+.flexRow{
+  display: flex;
+  margin: 10px 0;
+  /*justify-content: center;*/
+}
+.flexRow>h1{
+  font-family: scriptbl, sans-serif;
+  color: rgb(162, 159, 118);
+  margin: 15px 0px 0px;
+  border-bottom: 2px solid rgb(162, 159, 118);
+}
+.flexColumn{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexColumn p{
+  overflow: hidden;
+}
+.flexColumn h1{
+  font-weight: normal;
+}
+.contenedorUltEscritosCat .flexColumn h1{
+  padding-left: 15px;
+}
+
 .contenedorVideos{
   margin: 20px 0;
 }
@@ -775,21 +786,29 @@ footer iframe{
 }
 /*Pertenece al php de homilias*/
 
-.contenedorHomiliasCat{
+.contenedorHomiliasCat, .contenedorUltEscritosCat{
   width: 80%;
   margin: auto;
 }
-.contenedorHomiliasCat h1{
-  font-size: 2.2em;
-  font-family: verdana,sans-serif;
-  margin: 15px 0;
+.contenedorHomiliasCat h1:first-child, .contenedorUltEscritosCat h1:first-child {
+  font-size: 3em;
+  font-family: scriptbl,sans-serif;
+  margin: 15px 0 0 0;
+  color: #a29f76;
+  border-bottom: 2px solid #a29f76;
 }
+.contenedorHomiliasCat .catSeparador:last-child{
+  display: none;
+  margin: 20px;
+}
+
+/*
 .contenedorHomiliasCat div{
   margin:15px 0;
 }
 .contenedorHomiliasCat div img{
   float: left;
-}
+}*/
 
 /*pagina de vicario*/
 .contenedorVicario{

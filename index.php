@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
-  <p>Obispado de San Nicolas de los Arroyos</p>
+  <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   <div class="busquedaBarra">
     <form class="formularioBusqueda" action="index.html" method="post">
       <input type="text" name="busqueda" value="">
@@ -49,7 +49,7 @@ include "menu.php";
       <?php
       // id noticias en el hosting 9
       // noticas en pc Frank 32
-      query_posts('cat=9');
+      query_posts('cat=32');
       while (have_posts()): the_post();
       if(has_post_thumbnail()){
         ?><a href="<?php the_permalink();?>">
@@ -66,7 +66,7 @@ include "menu.php";
     <?php
       // id banner en el hosting 19
       // banner en pc Frank 43
-      query_posts('cat=19');
+      query_posts('cat=43');
       while (have_posts()): the_post();
       echo '<div class="slide";>';
       if(has_post_thumbnail()){
@@ -194,7 +194,7 @@ include "menu.php";
         <?php
         // id noticias en el hosting 9
         // noticas en pc Frank 32
-          query_posts('cat=9'); // Para excluír se usa el símbolo menos
+          query_posts('cat=32'); // Para excluír se usa el símbolo menos
 
             if ( have_posts() ) {
             	while ( have_posts() ) {

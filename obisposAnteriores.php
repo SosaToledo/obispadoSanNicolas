@@ -3,6 +3,12 @@
 * Template Name: Página de los obispos anteriores
 */
 get_header();
+?>
+<header style="background: url('<?php bloginfo("template_url") ?>/img/2obisposanteriores.jpg') no-repeat center; background-size:cover;">
+	<p>Obispos Anteriores</p>
+</header>
+<!--  -->
+<?php
 include "menu.php";
 ?>
 <img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
@@ -15,7 +21,7 @@ include "menu.php";
 	// Emeritos id 29           -Frank
 	// ObisposAnteriores id 6
 	// Emeritos id 7            -web
-	query_posts('cat=6,7');
+	query_posts('cat=34,29');
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				the_post();?>
@@ -29,7 +35,7 @@ include "menu.php";
 					</a>
 					<a href="<?php the_permalink();?>"><h2 class="tituloPageObispos"><?php the_title() ?></h2></a>
 					<p><?php the_excerpt();?></p>
-					<a href="<?php the_permalink();?>">+ Info</a>
+					<a class="masInfo" href="<?php the_permalink();?>">+ Info</a>
 				</div>
 				<?php
 			} // end while
