@@ -1,6 +1,6 @@
 <nav id="barra">
     <div class="dropdown">
-      <a href="http://obispadodesannicolas.com">Inicio</a>
+      <a href="<?php bloginfo(url); ?>">Inicio</a>
     </div>
     <div class="dropdown">
       <a href="#">Diocesis</a>
@@ -15,10 +15,10 @@
       </div>
     </div>
     <div class="dropdown">
-      <a href="#">Obispo</a>
+      <a href="<?php bloginfo(url); ?>/obispo-actual">Obispo</a>
       <div class="dropdown-content">
-        <a href="http://obispadodesannicolas.com/obispo-actual/">Actual</a>
-        <a href="http://obispadodesannicolas.com/obispos-anteriores/">Anteriores</a>
+        <a href="<?php bloginfo(url); ?>/obispo-actual/">Actual</a>
+        <a href="<?php bloginfo(url); ?>/obispos-anteriores/">Anteriores</a>
       </div>
     </div>
     <div class="dropdown">
@@ -31,7 +31,7 @@
       <a href="#">Santuario</a>
     </div>
     <div class="dropdown">
-      <a href="#">Actualidad</a>
+      <a href="<?php bloginfo(url); ?>/noticias">Actualidad</a>
       <div class="dropdown-content">
         <a href="#">Noticas</a>
         <a href="#">Audio</a>

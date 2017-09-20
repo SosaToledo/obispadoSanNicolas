@@ -12,10 +12,8 @@
 <!--  -->
 <?php
 $args = array(
-  // id noticias en el hosting 9
-  // noticas en pc Frank 32
   'posts_per_page' => 4,
-  'cat' => '9',
+  'category_name' => 'noticias',
   'meta_key' => 'post_views',
   'orderby' => 'meta_value_num',
   'order' => 'DESC'
@@ -47,9 +45,7 @@ include "menu.php";
       </div>
     <div class="slides">
       <?php
-      // id noticias en el hosting 9
-      // noticas en pc Frank 32
-      query_posts('cat=32');
+      query_posts('category_name=noticias');
       while (have_posts()): the_post();
       if(has_post_thumbnail()){
         ?><a href="<?php the_permalink();?>">
@@ -64,9 +60,7 @@ include "menu.php";
       ?>
     </div>
     <?php
-      // id banner en el hosting 19
-      // banner en pc Frank 43
-      query_posts('cat=43');
+      query_posts('category_name=banner');
       while (have_posts()): the_post();
       echo '<div class="slide";>';
       if(has_post_thumbnail()){
@@ -192,9 +186,8 @@ include "menu.php";
       <h1 class="noticiasDiv">Actualidad</h1>
       <div class="owl-carousel carouselProyectos">
         <?php
-        // id noticias en el hosting 9
-        // noticas en pc Frank 32
-          query_posts('cat=32'); // Para excluír se usa el símbolo menos
+
+          query_posts('category_name=noticias'); // Para excluír se usa el símbolo menos
 
             if ( have_posts() ) {
             	while ( have_posts() ) {

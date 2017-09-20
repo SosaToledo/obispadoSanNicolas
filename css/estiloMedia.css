@@ -53,12 +53,12 @@
   .contendorData .carouselPortadas .owl-stage-outer .owl-stage .owl-item img{
     height: auto;
   }
-  .carouselPortadas .owl-stage-outer .owl-stage .owl-item
-
+  .tituloSlide{
+    font-size: 1.5em;
+  }
   .noticiasMultimedia > .noticiasDiv > a > img{
     width: 100%;
   }
-
   .diocesisIconos{    width: 50%;
     margin: 10px auto;
   }

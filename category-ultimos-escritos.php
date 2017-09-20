@@ -16,9 +16,9 @@ include "menu.php";
 	<div class="contenedorUltEscritosCat">
 	<h1>Ultimos Escritos</h1>
 	<?php
-	// obispoActual id 30 -Frank
-	//id  -web
-	query_posts('cat=41');
+	// ultimos escritos id 41 -Frank
+	//id 13 -web
+	query_posts('cat=13');
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				?>

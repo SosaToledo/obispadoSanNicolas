@@ -19,9 +19,7 @@ include "menu.php";
 	</div>
 	<div class="contenedorObispoActual">
 	<?php
-		// obispoActual id 33 -Frank
-		//id 8 -web
-		query_posts('cat=33');
+		query_posts('category_name=obispo-actual');
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
@@ -42,10 +40,8 @@ include "menu.php";
 		<div class="contendorUltimosEscritos">
 			<h1>Ultimos escritos</h1>
 			<?php
-			// ultimosEscritos id 41 -Frank
-			//id  -web
 			$contador=0;
-			query_posts('cat=41');
+			query_posts('category_name=ultimos-escritos');
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
@@ -75,9 +71,7 @@ include "menu.php";
 		<div class="contenedorHomilias">
 			<h1>Homilias</h1>
 			<?php
-				// obispoActual id 30 -Frank
-				//id  -web
-				query_posts('cat=30');
+				query_posts('category_name=homilias	');
 					if ( have_posts() ) {
 						while ( have_posts() ) {
 							the_post();

@@ -17,11 +17,7 @@ include "menu.php";
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
 <?php
-	// ObisposAnteriores id 34
-	// Emeritos id 29           -Frank
-	// ObisposAnteriores id 6
-	// Emeritos id 7            -web
-	query_posts('cat=34,29');
+	query_posts('category_name=obispos-anteriores,emerito');
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				the_post();?>
