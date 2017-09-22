@@ -8,7 +8,9 @@ get_header();?>
 </header>
 <?php
 include "menu.php";
-	query_posts('category_name=noticias'); // Para excluír se usa el símbolo menos
+	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+	// $query = new WP_Query( array( 'paged' => $paged,'category_name'=> 'noticias','post_per_page'=>2 ) );
+	query_posts('category_name=noticias&post_per_page=2'); // Para excluír se usa el símbolo menos
 		$con=0;
 		?><div class="noticiasCompleto"><?php
 		if ( have_posts() ) {
@@ -16,24 +18,26 @@ include "menu.php";
 				the_post();?>
 				<div class="contenedorNoticias">
 					<?php if ($con == 0){?>
-						<h2 class="tituloNoticias"><?php the_title() ?></h2><?php
-						if(has_post_thumbnail()){the_post_thumbnail('slidePortada');}
+						<a href="<?php the_permalink();?>"><h2 class="tituloNoticias"><?php the_title() ?></h2></a>
+						<a class="imgNoticia1" href="<?php the_permalink();?>"><?php if(has_post_thumbnail()){the_post_thumbnail('slidePortada');} ?></a><?php
 					}else {
-						if(has_post_thumbnail()){the_post_thumbnail('thumbnail');}
-						?><h2 class="tituloNoticias"><?php the_title() ?></h2><?php
+						?><a class="imgNoticia2" href="<?php the_permalink();?>"><?php if(has_post_thumbnail()){the_post_thumbnail('medium');} ?></a>
+						<a href="<?php the_permalink();?>"><h2 class="tituloNoticias"><?php the_title() ?></h2></a><?php
 					};
 					$con++;
-					?>
-					<p><?php the_excerpt(); ?></p>
-					<a class="masInfo" href="<?php the_permalink(); ?>">Ver +</a>
+					?><div class="parteDerechaNoticias">
+							<p><?php the_excerpt(); ?></p>
+							<a class="masInfo" href="<?php the_permalink(); ?>">Ver +</a>
+						</div>
 					</div>
+
 					<?php
-			}?>
-			<?php
+			}
 		}else {
 			?><p>No hay datos que mostrar...</p><?php
-		}
-		?></div><?php
+		}?>
+
+		</div><?php
 
 
 ?>

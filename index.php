@@ -188,12 +188,14 @@ include "menu.php";
         <?php
 
           query_posts('category_name=noticias'); // Para excluír se usa el símbolo menos
-
+            $postNoti = 0;
             if ( have_posts() ) {
             	while ( have_posts() ) {
             		the_post();
-            		//
-            		// Post Content here
+            		if ($postNoti>6) {
+            		  break;
+            		}
+                $postNoti++;
                 ?>
                 <div class="slideProyecto">
                 <?php
@@ -249,7 +251,7 @@ include "menu.php";
       <p>correoelectronico@gmail.com </p>
       <p>Tel. y Fax: (0336) 4422364 / 4429529</p>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9014726782225!2d-58.48046568523238!3d-34.63193006649742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9911120caab%3A0x4c7c3f255d7eb187!2sObispado+de+San+Nicolas!5e0!3m2!1ses-419!2sar!4v1505546349242" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13334.551723278633!2d-60.216407!3d-33.32828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24b7cfb43c9fc66!2sObispado+de+San+Nicolas!5e0!3m2!1ses-419!2sar!4v1505959843793" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>
 </div>
 

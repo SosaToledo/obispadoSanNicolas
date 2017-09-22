@@ -4,12 +4,7 @@ add_image_size( 'slidePortada', 720,480, true);
 add_image_size('slideProyecto',465,225, true);
 add_image_size('imgObispo',150,150, true);
 
-function remove_empty_lines($content){
-  $content = str_replace("/&nbsp;/", "", $content);
-  printf($content);
-  return $content;
-}
-add_action('save_post','remove_empty_lines');
+
 
 // Función para contar visualizaciones de un post.
 function set_post_views() {

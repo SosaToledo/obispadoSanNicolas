@@ -42,6 +42,10 @@
       <a href="#">Contacto</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">
-    <img style="width:32px; height: 32px; margin:3px;"src="<?php bloginfo('template_url') ?>/img/iconos/facebook.png" alt="Facebook">
+    <a href="<?php bloginfo(url)?>/radio">
+      <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">
+    </a>
+    <a href="https://www.facebook.com/obispadosn/">
+      <img style="width:32px; height: 32px; margin:3px;"src="<?php bloginfo('template_url') ?>/img/iconos/facebook.png" alt="Facebook">
+    </a>
   </nav>

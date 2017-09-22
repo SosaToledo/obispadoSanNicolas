@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
   header{
-    height: 500px;
+    height: 300px;
   }
   #obispo{
     justify-content: space-around;
@@ -140,4 +140,11 @@
   footer .contenedorFooter p{
     font-size: 1.2em;
   }
+  .volumen, #dialRadio{
+    padding: 0!important;
+    border: 0!important;
+    width: 0!important;
+    display: none!important;
+  }
+
 }
