@@ -38,6 +38,10 @@ license: MIT
 .icon{
   display: none;
 }
+.abierto{
+  width: 240px;
+  height: 380px;
+}
 
 /*BARRA DE NAVEGACIÓN*/
 .dropdown {

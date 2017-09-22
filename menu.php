@@ -1,4 +1,6 @@
 <nav id="barra">
+  <p id="cerrarMenu" onclick="ocultarMenu()">&#x274C;</p>
+  <p class="iconMenu" onclick="desplegarMenu()">&#9776;</p>
     <div class="dropdown">
       <a href="<?php bloginfo(url); ?>">Inicio</a>
     </div>
@@ -41,7 +43,6 @@
     <div class="dropdown">
       <a href="#">Contacto</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     <a href="<?php bloginfo(url)?>/radio">
       <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">
     </a>

@@ -9,7 +9,6 @@ function detect(){
     nav.position = "";
     nav.top = "";
   }
-  var info = document.getElementsByClassName("info");
   var elm = document.getElementById("obispoActual").offsetTop;
   if(elm-500 < pantalla && ancho>500){
       document.getElementById("IA").className = "info animacionIA";
@@ -20,4 +19,27 @@ function detect(){
       document.getElementById("DB").className = "info animacionDB";
   }
 
+}
+function desplegarMenu() {
+  document.getElementById('barra').className = "abierto";
+  document.getElementById('cerrarMenu').style.visibility = "visible";
+  document.getElementsByClassName('iconMenu')[0].style.display = "none";
+  var elem = document.getElementsByClassName('dropdown');
+  var i = 0;
+  for (e of elem) {
+    e.style.visibility ="visible";
+  }
+}
+function ocultarMenu() {
+  document.getElementById('barra').className = "";
+  document.getElementById('cerrarMenu').style.visibility = "hidden";
+  document.getElementsByClassName('iconMenu')[0].style.display = "block";
+  var elem = document.getElementsByClassName('dropdown');
+  var i = 0;
+  for (e of elem) {
+    e.style.visibility ="hidden";
+  }
+}
+function desplegar(){
+  document.getElementById('lupa').className = "imgLupa animacionDesplegar";
 }
