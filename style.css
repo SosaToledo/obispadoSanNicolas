@@ -39,8 +39,8 @@ license: MIT
   display: none;
 }
 .abierto{
-  width: 240px;
-  height: 380px;
+  width: 200px;
+  height: auto;
 }
 
 /*BARRA DE NAVEGACIÓN*/
