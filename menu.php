@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <a href="">Obispo</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
+      <a href="#">Obispo</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/obispo-actual/">Actual</a>
         <a href="<?php bloginfo(url); ?>/obispos-anteriores/">Anteriores</a>

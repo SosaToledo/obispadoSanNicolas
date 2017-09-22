@@ -39,7 +39,7 @@ license: MIT
   display: none;
 }
 .abierto{
-  width: 200px;
+  width: 80%;
   height: auto;
 }
 
@@ -53,7 +53,7 @@ license: MIT
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px 10px rgba(0,0,0,0.2);
   z-index: 15 !important;
 }
 .dropdown-content a {
