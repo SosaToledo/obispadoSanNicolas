@@ -1,6 +1,6 @@
 <nav id="barra">
-  <p id="cerrarMenu" onclick="ocultarMenu()">&#x274C;</p>
-  <p class="iconMenu" onclick="desplegarMenu()">&#9776;</p>
+  <p class="iconMenu">&#9776;</p>
+  <p id="cerrarMenu">&#x274C;</p>
     <div class="dropdown">
       <a href="<?php bloginfo(url); ?>">Inicio</a>
     </div>

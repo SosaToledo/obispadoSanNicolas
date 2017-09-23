@@ -36,9 +36,9 @@
     margin: 0!important;
   }
   nav{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
     flex-direction: column;
     justify-content: flex-start;
     box-sizing: border-box;
@@ -57,7 +57,7 @@
   }
   .iconMenu{
     visibility: visible;
-    margin: 15px 10px;
+    margin: 20px 20px;
   }
   .iconoSpan{
     color: black;
@@ -66,7 +66,7 @@
     display: none;
     position: absolute;
     float: right;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 15 !important;
@@ -86,7 +86,9 @@
       float: left;
   }
 
-
+  .contenedorFotosObispoActual, .contenedorEscritosHomilias{
+    flex-direction: column;
+  }
 
 
   .contendorData .carouselPortadas .owl-stage-outer .owl-stage .owl-item img{
