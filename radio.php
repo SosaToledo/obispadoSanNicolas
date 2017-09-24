@@ -5,6 +5,14 @@
  */
 get_header();
 ?>
+<body id="main">
+<style media="screen">
+@media screen and (max-width:500px) {
+  header{
+    background-image: url('<?php bloginfo("template_url") ?>/img/celuradiost.jpg')!important;
+  }
+}
+</style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/radiost.jpg') no-repeat center; background-size:cover;">
 	<p style="font-family:verdana;">Radio del Obispado</p>
 </header>
@@ -15,7 +23,7 @@ get_header();
 	</div>
 	<div class="">
 		<audio style="position:absolute" preload="auto" id="reproductor">
-			<source src="http://dreamsiteradiocp2.com:8008/;stream.nsv&amp;type=mp3" type="audio/mpeg">
+			<source src="http://50.22.219.37:30067/stream" type="audio/mpeg">
 			<p>Tu navegador no soporta la radio online</p>
 		</audio>
 		<div style="display:flex; align-items:center;width:90%;margin:20px auto;">
@@ -63,6 +71,4 @@ get_header();
 		document.getElementById('reproductor').volume = vol;
 	}
 </script>
-
-<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
 <?php get_footer();?>

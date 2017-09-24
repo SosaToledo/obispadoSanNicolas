@@ -5,48 +5,56 @@
       <a href="<?php bloginfo(url); ?>">Inicio</a>
     </div>
     <div class="dropdown">
-      <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
+      <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
+<!-- </span> -->
       <div class="dropdown-content">
-        <a href="#">Historia</a>
-        <a href="#">Curia</a>
-        <a href="#">Parroquia</a>
-        <a href="#">Colegio Religiosos</a>
-        <a href="#">Vida Consagrada</a>
-        <a href="#">Pastorales</a>
-        <a href="#">Beata Crescencia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Historia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Beata Crescencia</a>
       </div>
     </div>
     <div class="dropdown">
-      <a href="#">Obispo</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
+      <a href="#">Obispo</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
+</span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/obispo-actual/">Actual</a>
         <a href="<?php bloginfo(url); ?>/obispos-anteriores/">Anteriores</a>
       </div>
     </div>
     <div class="dropdown">
-      <a href="#">Sacerdotes</a>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">Sacerdotes</a>
     </div>
     <div class="dropdown">
-      <a href="#">Catedral</a>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">Catedral</a>
     </div>
     <div class="dropdown">
-      <a href="#">Santuario</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
+      <a href="#">Santuario</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
+</span>
     </div>
     <div class="dropdown">
-      <a href="<?php bloginfo(url); ?>/noticias">Actualidad</a><span class="iconoSpan" onclick="desplegarSubMenu()">>></span>
+      <a href="#">Actualidad</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
+</span>
       <div class="dropdown-content">
-        <a href="#">Noticas</a>
-        <a href="#">Audio</a>
-        <a href="#">Video</a>
+        <a href="<?php bloginfo(url);?>/noticias">Noticas</a>
+        <!-- <a href="#">Audio</a>
+        <a href="#">Video</a> -->
       </div>
     </div>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <a href="#">Contacto</a>
+    </div> -->
+    <div class="dropdown">
+      <a href="<?php bloginfo(url)?>/radio"  target="_blank">
+        <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">
+      </a>
     </div>
-    <a href="<?php bloginfo(url)?>/radio">
-      <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">
-    </a>
-    <a href="https://www.facebook.com/obispadosn/">
-      <img style="width:32px; height: 32px; margin:3px;"src="<?php bloginfo('template_url') ?>/img/iconos/facebook.png" alt="Facebook">
-    </a>
+    <div class="dropdown">
+      <a href="https://www.facebook.com/obispadosn/">
+        <img style="width:32px; height: 32px; margin:3px;"src="<?php bloginfo('template_url') ?>/img/iconos/facebook.png" alt="Facebook">
+      </a>
+    </div>
   </nav>

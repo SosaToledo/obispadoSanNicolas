@@ -39,10 +39,12 @@ license: MIT
   display: none;
 }
 .abierto{
-  width: 80%;
+  width: 100%;
   height: auto;
 }
-
+#cerrarMenu{
+  visibility: hidden;
+}
 /*BARRA DE NAVEGACIÓN*/
 .dropdown {
     position: relative;
@@ -453,7 +455,7 @@ header p{
   text-shadow: 2px 2px 5px grey;
   text-align: right;
   position: absolute;
-  bottom: 150px;
+  bottom: 25px;
   right: 7%;
   text-decoration: underline;
 }
@@ -809,6 +811,25 @@ footer iframe{
 .noticiasCompleto{
   width: 80%;
   margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+.paginacion{
+  margin: 30px auto;
+  display: inline-block;
+  text-align: center;
+}
+.paginacion span,.paginacion a{
+  font-size: 1.3em;
+  color: white;
+  font-family: verdana,sans-serif;
+  text-align: center;
+  margin: 4px;
+  background-color: grey;
+  padding: 10px;
+}
+.paginacion span{
+  background: #a29f76;
 }
 .tituloNoticias{
   font-family: verdana,sans-serif;
@@ -822,39 +843,33 @@ footer iframe{
   color: black;
 }
 
-/*.noticiasCompleto .contenedorNoticias:first-of-type {
-  background-color:#fff;
-  margin: 50px 0;
-  padding-top: 10px;
-  min-height: 580px;
-  box-sizing: border-box;
-}*/
-.contenedorNoticias:first-of-type {
+.contenedorNoticias {
   display: flex;
   flex-wrap: wrap;
   background-color:#fff;
-  margin: 50px 0;
+  margin: 0 0 50px 0;
   box-sizing: border-box;
   justify-content: center;
 }
-.contenedorNoticias:first-of-type > a{
+.contenedorNoticias > a{
   width: 100%;
 }
-.contenedorNoticias:first-of-type .tituloNoticias{
+.contenedorNoticias .tituloNoticias{
   font-size: 2em;
 }
-.contenedorNoticias:first-of-type .imgNoticia1 {
+.contenedorNoticias .imgNoticia1 {
   width: 65%;
 }
-.contenedorNoticias:first-of-type .imgNoticia1 img{
+.contenedorNoticias .imgNoticia1 img{
   width: 100%;
   box-sizing: border-box;
   padding: 0 10px 10px 10px;
 }
-.contenedorNoticias:first-of-type .parteDerechaNoticias{
-  width: 35%;
+.contenedorNoticias .parteDerechaNoticias{
+  width: 30%;
+  padding-right: 5px;
 }
-.contenedorNoticias .parteDerechaNoticias .masInfo{
+.parteDerechaNoticias .masInfo{
   display: inline-block;
   padding: 5px 50px;
   font-family: verdana,sans-serif;
@@ -862,13 +877,13 @@ footer iframe{
   float: right;
   margin: 10px 15px 15px 0;
 }
-.contenedorNoticias{
+.contenedorNoticias2{
   background-color:#fff;
   display: inline-block;
   margin: 0;
   box-sizing: border-box;
 }
-.contenedorNoticias .imgNoticia2 img{
+.contenedorNoticias2 .imgNoticia2 img{
   float: left;
   margin: 15px;
 }
@@ -1004,12 +1019,12 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   outline: none;
 }
 .volumen{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,000000+100 */
-  background: rgb(181,189,200); /* Old browsers */
-  background: -moz-linear-gradient(left,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,828c95+36,96989a+100 */
+  background: rgb(51,51,51); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(51,51,51,1) 0%, rgba(130,140,149,1) 36%, rgba(150,152,154,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(130,140,149,1) 36%,rgba(150,152,154,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(130,140,149,1) 36%,rgba(150,152,154,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#96989a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 input[type=range] {

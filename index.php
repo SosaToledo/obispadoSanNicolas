@@ -1,13 +1,15 @@
 
 <?php get_header(); ?>
+<body id="main" onscroll="detect()">
+<style media="screen">
+@media screen and (max-width:500px) {
+  header{
+    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+  }
+}
+</style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
-  <div class="busquedaBarra">
-    <form class="formularioBusqueda" action="index.html" method="post">
-      <input type="text" name="busqueda" value="">
-      <button type="button" name="Buscar" style="opacity:1 !important;">Buscar</button>
-    </form>
-  </div>
 </header>
 <!--  -->
 <?php
@@ -98,20 +100,28 @@ include "menu.php";
   </div>
   <section id="" class="nuestraDiocesis">
     <div class="diocesisIconos">
-      <img src="<?php bloginfo('template_url') ?>/img/iconos/historia.png" alt="">
-      <p>Historia</p>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">
+        <img src="<?php bloginfo('template_url') ?>/img/iconos/historia.png" alt="">
+        <p>Historia</p>
+      </a>
     </div>
     <div class="diocesisIconos">
-      <img src="<?php bloginfo('template_url') ?>/img/iconos/geoposicion.png" alt="">
-      <p>Mapa</p>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">
+        <img src="<?php bloginfo('template_url') ?>/img/iconos/geoposicion.png" alt="">
+        <p>Mapa</p>
+      </a>
     </div>
     <div class="diocesisIconos">
-      <img src="<?php bloginfo('template_url') ?>/img/iconos/curia.png" alt="">
-      <p>Curia</p>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">
+        <img src="<?php bloginfo('template_url') ?>/img/iconos/curia.png" alt="">
+        <p>Curia</p>
+      </a>
     </div>
     <div class="diocesisIconos">
-      <img src="<?php bloginfo('template_url') ?>/img/iconos/AGENDA.png" alt="">
-      <p>Calendario <br> Diocesano</p>
+      <a href="<?php bloginfo(url); ?>/en-construccion/">
+        <img src="<?php bloginfo('template_url') ?>/img/iconos/AGENDA.png" alt="">
+        <p>Calendario <br> Diocesano</p>
+      </a>
     </div>
   </section>
 
@@ -127,15 +137,15 @@ include "menu.php";
     <article id="obispo">
       <div class="obispoInfoIzq">
         <div id="IA" class="info">
-          <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
+          <a href="<?php bloginfo(url)?>/obispo-actual#contenedorObispoActual"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
           <p>Escudo</p>
         </div>
         <div id="IC" class="info">
-          <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/BIOGRAFIA.png" alt=""></a>
+          <a href="<?php bloginfo(url)?>/obispo-actual#contenedorObispoActual"><img src="<?php bloginfo('template_url') ?>/img/iconos/BIOGRAFIA.png" alt=""></a>
           <p>Biografia</p>
         </div>
         <div id="IB" class="info">
-          <a href="#"><img src="<?php bloginfo('template_url') ?>/img/iconos/FOTOGRAFIAS.png" alt=""></a>
+          <a href="<?php bloginfo(url)?>/obispo-actual#fotosObispo"><img src="<?php bloginfo('template_url') ?>/img/iconos/FOTOGRAFIAS.png" alt=""></a>
           <p>Fotografia</p>
         </div>
       </div>
@@ -145,15 +155,15 @@ include "menu.php";
       </div>
       <div class="obispoInfoDer">
         <div id="DA" class="info">
-          <img src="<?php bloginfo('template_url') ?>/img/iconos/ULTIMOSESCRITOS.png" alt="">
+          <a href="<?php bloginfo(url)?>/category/ultimos-escritos"><img src="<?php bloginfo('template_url') ?>/img/iconos/ULTIMOSESCRITOS.png" alt=""></a>
           <p>Ultimos<br>escritos</p>
         </div>
         <div id="DC" class="info">
-          <img src="<?php bloginfo('template_url') ?>/img/iconos/VIDEOS.png" alt="">
+          <a href="<?php bloginfo(url)?>/obispo-actual#videosObispo"><img src="<?php bloginfo('template_url') ?>/img/iconos/VIDEOS.png" alt=""></a>
           <p>Videos</p>
         </div>
         <div id="DB" class="info">
-          <img src="<?php bloginfo('template_url') ?>/img/iconos/HOMILIAS.png" alt="">
+          <a href="<?php bloginfo(url)?>/category/homilias"><img src="<?php bloginfo('template_url') ?>/img/iconos/HOMILIAS.png" alt=""></a>
           <p>Homilias</p>
         </div>
       </div>
@@ -168,15 +178,15 @@ include "menu.php";
     </div>
     <article class="noticiasPrincipales">
       <div class="noticiasDiv">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
         Peregrinaciones
       </div>
       <div class="noticiasDiv">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/nombramiento.jpg" alt="" style="border-radius: 50%;"></a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/nombramiento.jpg" alt="" style="border-radius: 50%;"></a>
         Nombramientos
       </div>
       <div class="noticiasDiv">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/img/retiros.jpg" alt="" style="border-radius: 50%;"></a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/retiros.jpg" alt="" style="border-radius: 50%;"></a>
         Retiros
       </div>
     </article>
@@ -220,6 +230,7 @@ include "menu.php";
         loop:true,
         items:3,
         margin:10,
+        autoHeight:true,
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
@@ -258,8 +269,29 @@ include "menu.php";
 <div class="separador" style="width:100%;">
   <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
 </div>
+<script type="text/javascript">
 
+function detect(){
+  var ancho = screen.width;
+  var pantalla = document.getElementById("main").scrollTop;
+  var nav = document.getElementById("barra").style;
+  if ((pantalla>360 && ancho>500) || (ancho < 500)){
+    nav.position = "fixed";
+    nav.top = "0";
+  }else{
+    nav.position = "";
+    nav.top = "";
+  }
+  var elm = document.getElementById("obispoActual").offsetTop;
+  if(elm-500 < pantalla && ancho>500){
+      document.getElementById("IA").className = "info animacionIA";
+      document.getElementById("IC").className = "info animacionIC";
+      document.getElementById("IB").className = "info animacionIB";
+      document.getElementById("DA").className = "info animacionDA";
+      document.getElementById("DC").className = "info animacionDC";
+      document.getElementById("DB").className = "info animacionDB";
+  }
 
-
-
+}
+</script>
 <?php get_footer(); ?>

@@ -1,6 +1,7 @@
 
 <?php get_header();
 ?>
+<body id="main">
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   <div class="busquedaBarra">
@@ -18,7 +19,7 @@ include "menu.php";
 	<?php
 	// ultimos escritos id 41 -Frank
 	//id 13 -web
-	query_posts('cat=13');
+	query_posts('category_name=ultimos-escritos');
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				?>

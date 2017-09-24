@@ -4,6 +4,14 @@
 */
 get_header();
 ?>
+<body id="main">
+<style media="screen">
+@media screen and (max-width:500px) {
+  header{
+    background-image: url('<?php bloginfo("template_url") ?>/img/celu2obisposanteriores.jpg')!important;
+  }
+}
+</style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/2obisposanteriores.jpg') no-repeat center; background-size:cover;">
 	<p>Obispos Anteriores</p>
 </header>
@@ -11,7 +19,6 @@ get_header();
 <?php
 include "menu.php";
 ?>
-<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
 <div class="tituloConBarra">
 	<h1>Obispos Anteriores</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">

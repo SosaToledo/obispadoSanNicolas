@@ -1,6 +1,7 @@
 
 <?php get_header();
 ?>
+<body id="main">
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   <div class="busquedaBarra">

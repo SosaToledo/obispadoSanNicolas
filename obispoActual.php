@@ -5,19 +5,27 @@
  */
 get_header();
 ?>
+<body id="main">
+<style media="screen">
+@media screen and (max-width:500px) {
+  header{
+    background-image: url('<?php bloginfo("template_url") ?>/img/celu1obispoactual.jpg')!important;
+  }
+}
+</style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/1obispoactual.jpg') no-repeat center; background-size:cover;">
 	<p style="color:rgb(91, 61, 16); font-size:4.5em">Mons. Hugo Norberto Santiago</p>
 </header>
+
 <!--  -->
 <?php
 include "menu.php";
 ?>
-	<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
 	<div class="tituloConBarra" style="margin-top:20px;">
 			<h1>Obispo Actual</h1>
 			<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 	</div>
-	<div class="contenedorObispoActual">
+	<div id="contenedorObispoActual" class="contenedorObispoActual">
 	<?php
 		query_posts('category_name=obispo-actual');
 			if ( have_posts() ) {
@@ -28,7 +36,7 @@ include "menu.php";
 			} // end if
 	?>
 	</div>
-	<div class="contenedorFotosObispoActual">
+	<div id="fotosObispo" class="contenedorFotosObispoActual">
 		<img src="<?php bloginfo(template_url);?>/img/imgObispo2.jpg" alt="">
 		<img src="<?php bloginfo(template_url);?>/img/imgObispo1.jpg" alt="">
 		<img src="<?php bloginfo(template_url);?>/img/imgObispo3.jpg" alt="">
@@ -37,7 +45,7 @@ include "menu.php";
     <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
   </div>
 	<div class="contenedorEscritosHomilias">
-		<div class="contendorUltimosEscritos">
+		<div id="UEObispo" class="contendorUltimosEscritos">
 			<h1>Ultimos escritos</h1>
 			<?php
 			$contador=0;
@@ -68,7 +76,7 @@ include "menu.php";
 				<a class="vermas masInfo" href="http://localhost/wordpress/category/ultimos-escritos/">Ver todos</a>
 			</div>
 		</div>
-		<div class="contenedorHomilias">
+		<div id="HObispo" class="contenedorHomilias">
 			<h1>Homilias</h1>
 			<?php
 				query_posts('category_name=homilias	');
@@ -93,13 +101,13 @@ include "menu.php";
 	<div class="separador" style="width:100%;">
     <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
   </div>
-	<div class="contenedorVideos">
+	<div id="videosObispo" class="contenedorVideos">
 		<div class="owl-carousel owl-theme">
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=6lqtE8oH7u8"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=3uAipwc3w98"></a></div>
-	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=4txDzplzk3k"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=BAgyLCSk_3k"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=o-MqIua9KYk"></a></div>
 	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=CdhrWjlR8Wk"></a></div>
 	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=h4g7SNeOvsc"></a></div>
+	    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=k0i1ioAkcO8"></a></div>
 		</div>
 		<style media="screen">
 			.item-video{

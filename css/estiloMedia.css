@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
-  header{
-    height: 300px;
+  header p{
+    font-size: 2.6em !important;
   }
   #obispo{
     justify-content: space-around;
@@ -36,11 +36,14 @@
     margin: 0!important;
   }
   nav{
-    width: 60px;
+
+    width: 100%;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(162,159,118,0.95);
+    box-shadow: 0px 2px 3px black;
     flex-direction: column;
     justify-content: flex-start;
+    /*display: block;*/
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -48,32 +51,50 @@
   nav .dropdown, nav p{
     visibility: hidden;
     padding-bottom: 15px;
+    width: 100%;
   }
   nav p{
-    width: 0;
+    /*width: 0;*/
+  }
+  .dropdown:nth-last-child(2) a:after{
+    content: 'Radio';
+  }
+  .dropdown:nth-last-child(1) a:after{
+    content: 'Facebook';
   }
   .iconCerrar{
     display: none;
   }
+  #cerrarMenu{
+    visibility: visible;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+  }
   .iconMenu{
     visibility: visible;
+    font-size: 1.2em;
+    color: black;
     margin: 20px 20px;
   }
   .iconoSpan{
     color: black;
+    font-size: 2em;
+    font-weight: bold;
   }
   .dropdown-content {
     display: none;
     position: absolute;
     float: right;
-    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.3em;
+    background-color: rgba(75, 75, 75, 0.75);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 15 !important;
   }
   .dropdown-content a {
     width: 100%;
-      color: black;
+      color: white;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -187,5 +208,45 @@
     width: 0!important;
     display: none!important;
   }
-
+  .noticiasCompleto{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .imgNoticia2 img{
+    display: block;
+    float: none!important;
+    margin: auto!important;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .imgNoticia1,.contenedorNoticias .parteDerechaNoticias{
+    width: 100%!important;
+  }
+  #fotosObispo img:first-child{
+    display: none;
+  }
+  #fotosObispo img{
+    margin-bottom: 20px;
+  }
+  #UEObispo, #HObispo{
+    width: 100%!important;
+    padding-left: 0;
+  }
+  .flexRow img{
+    display: none;
+  }
+  .flexRow a::before{
+    content: '+'
+    /*border-bottom: 1px solid grey;*/
+  }
+  .contenedorEscritosHomilias div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorEscritosHomilias>div>h1:first-of-type{
+    text-align: center;
+  }
 }

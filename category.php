@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<body id="main">
 <h1 class="tituloCategoria">Estas en <?php  echo  get_query_var('category_name');?> </h1>
 <?php if ( have_posts() ) {
 	while ( have_posts() ) {

@@ -1,10 +1,45 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'slidePortada', 720,480, true);
-add_image_size('slideProyecto',465,225, true);
+add_image_size('slideProyecto',465,350, true);
 add_image_size('imgObispo',150,150, true);
 
+//
+function getPrevNext(){
+	$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
+	$pages = array();
+	foreach ($pagelist as $page) {
+	   $pages[] += $page->ID;
+	}
 
+	$current = array_search(get_the_ID(), $pages);
+	$prevID = $pages[$current-1];
+	$nextID = $pages[$current+1];
+
+	echo '<div class="navigation">';
+
+	if (!empty($prevID)) {
+		echo '<div class="alignleft">';
+		echo '<a href="';
+		echo get_permalink($prevID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($prevID);
+		echo'">Previous</a>';
+		echo "</div>";
+	}
+	if (!empty($nextID)) {
+		echo '<div class="alignright">';
+		echo '<a href="';
+		echo get_permalink($nextID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($nextID);
+		echo'">Next</a>';
+		echo "</div>";
+	}
+}
+//
 
 // Función para contar visualizaciones de un post.
 function set_post_views() {
