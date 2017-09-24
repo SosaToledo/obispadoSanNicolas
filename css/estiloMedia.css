@@ -107,8 +107,8 @@
       float: left;
   }
 
-  .contenedorFotosObispoActual, .contenedorEscritosHomilias{
-    flex-direction: column;
+  .contenedorFotosObispoActual{
+
   }
 
 
