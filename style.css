@@ -318,7 +318,7 @@ margin: 0.5em 0;
   box-sizing: border-box;
   margin: 15px auto;
   border: 5px solid #808183;
-  padding: 15px 30px;
+  padding: 5px;
 }
 .carouselProyectos .owl-stage-outer .owl-stage .owl-item {
   /*width: 70% !important;*/
@@ -848,6 +848,7 @@ footer iframe{
   font-family: verdana,sans-serif;
   font-size: 1.2em;
   color: black;
+  padding: 8px;
 }
 
 .contenedorNoticias {
@@ -888,6 +889,7 @@ footer iframe{
   background-color:#fff;
   display: inline-block;
   margin: 0;
+  width: 100%;
   box-sizing: border-box;
 }
 .contenedorNoticias2 .imgNoticia2 img{

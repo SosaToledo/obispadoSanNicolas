@@ -226,11 +226,16 @@
     float: none!important;
     margin: auto!important;
     width: 100%;
+    height: auto;
     padding: 5px;
     box-sizing: border-box;
   }
   .imgNoticia1,.contenedorNoticias .parteDerechaNoticias{
     width: 100%!important;
+  }
+  .imgNoticia1 img{
+    width: 100%;
+    height: auto;
   }
   #fotosObispo img:first-child{
     display: none;

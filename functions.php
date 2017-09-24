@@ -1,7 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'slidePortada', 720,480, true);
-add_image_size('slideProyecto',465,350, true);
+add_image_size('slideProyecto',360,240, true);
 add_image_size('imgObispo',150,150, true);
 
 //
