@@ -71,4 +71,14 @@ get_header();
 		document.getElementById('reproductor').volume = vol;
 	}
 </script>
+
+
+<div class="fb-comments" data-href="
+<?php $host= $_SERVER['HTTP_HOST'];
+$url= $_SERVER['REQUEST_URI'];
+echo 'http://' . $host . $url;
+?>
+" data-numposts="5" colorscheme="dark"></div>
+
+
 <?php get_footer();?>

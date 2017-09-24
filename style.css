@@ -12,6 +12,10 @@ license: MIT
    src:url(font/SCRIPTBL.TTF);
    font-style:bold;
 }
+p{
+  word-break: break-word !important;
+  word-wrap: break-word !important;
+}
 .busquedaBarra{
   position: absolute;
   width: 100%;
@@ -1126,4 +1130,15 @@ input[type=range]::-ms-fill-upper {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
+}
+.fb-comments{
+  width: 90% !important;
+  margin: auto!important;
+  display: block !important;
+}
+.fb-comments > span,.fb-comments > span > iframe{
+  width: 100% !important;
+}
+.img{
+  border-radius: 100% !important;
 }

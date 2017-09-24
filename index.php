@@ -269,6 +269,7 @@ include "menu.php";
 <div class="separador" style="width:100%;">
   <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
 </div>
+
 <script type="text/javascript">
 
 function detect(){
