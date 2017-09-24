@@ -762,7 +762,10 @@ footer iframe{
 .contenedorUltEscritosCat .flexColumn h1{
   padding-left: 15px;
 }
-
+.contenedorUltEscritosCat h1, .contenedorHomiliasCat h1{
+  font-family: verdana;
+  margin: 5px;
+}
 .contenedorVideos{
   margin: 20px 0;
 }
@@ -914,60 +917,15 @@ footer iframe{
    -o-transition: max-height 500ms ease-out;
    transition: max-height 500ms ease-out;
 }
-
-/*Clases pertenecientes a la pagina de catedral*/
-.contenedorCatedral{
-  width: 90%;
+/*Contenedores*/
+.contenedor{
+  width: 80%;
   margin: auto;
 }
-.contenedorCatedral .tituloCatedral{
-  text-align: center;
-  font-size: 3em;
-  margin: 10px 0 ;
-  font-family: SCRIPTBL,sans-serif;
-}
-.contenedorCatedral .fotoCatedral{
-  float: left;
-  margin: 6px;
-}
-.contenedorCatedral p{
-  font-size: 1.3em;
-  font-family: verdana,sans-serif;
-}
-.carouselCatedral{
-  margin: 60px 0;
-  box-sizing: border-box;
-  border-top: 2px solid rgb(100, 122, 145);
-  border-bottom: 2px solid rgb(100, 122, 145);
-  padding: 10px 0;
-}
-
-/*Pertenece a la pagina del santuario*/
-.contenedorSantuario{
-  width: 90%;
-  margin: auto;
-}
-.contenedorSantuario .portadaSantuario{
+.contenedor img{
   width: 100%;
+  height: auto;
 }
-.contenedorSantuario .tituloSantuario{
-  text-align: center;
-  font-size: 3em;
-  margin: 10px 0 ;
-  font-family: SCRIPTBL,sans-serif;
-}
-.contenedorSantuario p{
-  font-size: 1.3em;
-  font-family: verdana,sans-serif;
-}
-.carouselSantuario{
-  margin: 60px 0;
-  box-sizing: border-box;
-  border-top: 2px solid rgb(100, 122, 145);
-  border-bottom: 2px solid rgb(100, 122, 145);
-  padding: 10px 0;
-}
-
 /* Pertenece a Crescencia */
 .contenedorCrescencia{
   width: 90%;

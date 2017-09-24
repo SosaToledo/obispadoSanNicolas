@@ -73,7 +73,7 @@ include "menu.php";
 			} // end if
 			?>
 			<div style="text-align: center;">
-				<a class="vermas masInfo" href="http://localhost/wordpress/category/ultimos-escritos/">Ver todos</a>
+				<a class="vermas masInfo" href="<?php bloginfo(url);?>/category/ultimos-escritos/">Ver todos</a>
 			</div>
 		</div>
 		<div id="HObispo" class="contenedorHomilias">
@@ -94,7 +94,7 @@ include "menu.php";
 					} // end if
 			?>
 			<div style="text-align: center;">
-				<a class="vermas masInfo" href="http://localhost/wordpress/category/homilias/">Ver todos</a>
+				<a class="vermas masInfo" href="<?php bloginfo(url);?>/category/homilias/">Ver todos</a>
 			</div>
 		</div>
 	</div>

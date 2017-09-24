@@ -36,7 +36,7 @@ include "menu.php";
 				<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 				<?php } // end while
 		} else {
-			echo '<h1> No hay homilias que mostrar </h1>';// end if
+			echo '<h1> No hay escritos que mostrar </h1>';// end if
 		}
 ?></div><?php
 get_footer(); ?>

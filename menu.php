@@ -5,16 +5,15 @@
       <a href="<?php bloginfo(url); ?>">Inicio</a>
     </div>
     <div class="dropdown">
-      <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
-<!-- </span> -->
+      <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;</span>
       <div class="dropdown-content">
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Historia</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Beata Crescencia</a>
+        <a href="<?php bloginfo(url); ?>/historia/">Historia</a>
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a> -->
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a> -->
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a> -->
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a> -->
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a> -->
+        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Beata Crescencia</a> -->
       </div>
     </div>
     <div class="dropdown">
@@ -25,21 +24,24 @@
         <a href="<?php bloginfo(url); ?>/obispos-anteriores/">Anteriores</a>
       </div>
     </div>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <a href="<?php bloginfo(url); ?>/en-construccion/">Sacerdotes</a>
+    </div> -->
+    <div class="dropdown">
+      <a href="<?php bloginfo(url); ?>/catedral/">Catedral</a>
     </div>
     <div class="dropdown">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">Catedral</a>
-    </div>
-    <div class="dropdown">
-      <a href="#">Santuario</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
-</span>
+      <a href="#">Santuario</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;</span>
+      <div class="dropdown-content">
+        <a href="<?php bloginfo(url); ?>/santuario-de-san-nicolas">Maria del Rosario</a>
+        <a href="<?php bloginfo(url); ?>/santuario-la-emilia">La Emilia</a>
+      </div>
     </div>
     <div class="dropdown">
       <a href="#">Actualidad</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
 </span>
       <div class="dropdown-content">
-        <a href="<?php bloginfo(url);?>/noticias">Noticas</a>
+        <a href="<?php bloginfo(url);?>/noticias">Noticias</a>
         <!-- <a href="#">Audio</a>
         <a href="#">Video</a> -->
       </div>

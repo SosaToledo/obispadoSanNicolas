@@ -23,6 +23,8 @@ include "menu.php";
 	<h1>Santuario Maria del Rosario de San Nicola</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
+
+<div class="contenedor">
 <?php
 		if ( have_posts() ) {
 			while ( have_posts() ) {
@@ -31,5 +33,5 @@ include "menu.php";
 			} // end while
 		} // end if
 ?>
-
+</div>
 <?php get_footer();?>
