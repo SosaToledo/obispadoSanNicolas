@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Página de la Catedral
+* Template Name: Página de la Historia
 */
 get_header();
 ?>
@@ -13,14 +13,14 @@ get_header();
 }
 </style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
-	<p>Catedral</p>
+	<p>Historia</p>
 </header>
 <!--  -->
 <?php
 include "menu.php";
 ?>
 <div class="tituloConBarra">
-	<h1>Catedral</h1>
+	<h1>Historia</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
 <?php
