@@ -23,13 +23,15 @@ include "menu.php";
 	<h1>Jesus Misericordioso de La Emilia</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
-<?php
-		if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
-        the_content();
-			} // end while
-		} // end if
-?>
+<div class="contenedor">
+  <?php
+  		if ( have_posts() ) {
+  			while ( have_posts() ) {
+  				the_post();
+          the_content();
+  			} // end while
+  		} // end if
+  ?>
+</div>
 
 <?php get_footer();?>
