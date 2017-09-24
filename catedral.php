@@ -23,7 +23,7 @@ include "menu.php";
 	<h1>Catedral</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
-<div class="contenedor">
+<div class="contenedorSingle">
   <?php
   		if ( have_posts() ) {
   			while ( have_posts() ) {

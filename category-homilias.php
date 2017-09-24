@@ -4,12 +4,6 @@
 <body id="main">
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
-  <div class="busquedaBarra">
-    <form class="formularioBusqueda" action="index.html" method="post">
-      <input type="text" name="busqueda" value="">
-      <button type="button" name="Buscar" style="opacity:1 !important;">Buscar</button>
-    </form>
-  </div>
 </header>
 <?php
 include "menu.php";

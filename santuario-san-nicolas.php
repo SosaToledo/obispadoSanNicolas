@@ -24,7 +24,7 @@ include "menu.php";
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
 
-<div class="contenedor">
+<div class="contenedorSingle">
 <?php
 		if ( have_posts() ) {
 			while ( have_posts() ) {

@@ -5,7 +5,6 @@
 get_header();
 include "menu.php";?>
 <body id="main">
-<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
 <div class="contenedorCrescencia">
 	<h1 class="tituloCrescencia">Titulo Crescencia</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat felis et consectetur volutpat. Cras nisi mauris, ultrices a diam vitae, faucibus molestie risus. Sed convallis hendrerit finibus. Integer ac nunc id est consequat cursus sed nec lacus. Suspendisse rutrum commodo magna ornare lacinia. Sed posuere commodo magna a porta. Sed dignissim dignissim orci nec tincidunt. Vivamus ornare diam arcu, eu aliquam odio dictum sed. Nulla dapibus eros in odio varius, at accumsan neque rhoncus.</p>

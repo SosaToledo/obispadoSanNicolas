@@ -190,8 +190,13 @@
     margin: 5px 0;
     font-family: verdana;
   }
-  .contenedor{
+  .contenedorSingle{
     width: 95%;
+  }
+  .contenedorSingle img{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
   }
   footer{
     border-radius:0px;
