@@ -17,6 +17,9 @@ get_header();
 	<p style="font-family:verdana;">Radio del Obispado</p>
 </header>
 <?php include "menu.php";?>
+
+<?php get_search_form(); ?>
+
 <div class="radio">
 	<div style="border: 3px solid #818181;background-color:#4d4d4d;border-radius:50px;" >
 		<img style="margin:auto;display:block;" src="<?php bloginfo(template_url);?>/img/iconos/circuloRadio.png" alt="">
