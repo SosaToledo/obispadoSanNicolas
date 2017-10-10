@@ -222,7 +222,7 @@ margin: 0.5em 0;
 .info{
   position: relative;
   margin-top: 10px;
-  visibility: hidden;
+  /*visibility: hidden;*/
   display: flex;
   flex-direction: column;
   align-items: center;
