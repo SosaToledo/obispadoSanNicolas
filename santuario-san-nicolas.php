@@ -5,6 +5,7 @@
 get_header();
 ?>
 <body id="main">
+
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
@@ -19,11 +20,6 @@ get_header();
 <?php
 include "menu.php";
 ?>
-<div class="tituloConBarra">
-	<h1>Santuario Maria del Rosario de San Nicola</h1>
-	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
-</div>
-
 <div class="contenedorSingle">
 <?php
 		if ( have_posts() ) {

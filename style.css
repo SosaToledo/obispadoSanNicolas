@@ -16,12 +16,36 @@ p{
   word-break: break-word !important;
   word-wrap: break-word !important;
 }
+/*BUSQUEDA EN LUPA*/
+.lupaBusqueda{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 50px;
+  z-index: 15;
+}
+.lupaBusqueda input{
+  width: 100;
+  color: black;
+}
+.lupaBusqueda img{
+  width: 65px;
+  height: 35px
+}
+.desplegarlupa{
+  width: 350px!important;
+}
+
+
+/*BARRA DE BUSQUEDA HEADER*/
 .busquedaBarra{
   position: absolute;
   width: 100%;
   background-color:rgba(83, 83, 83,0.3) ;
   padding: 5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .formularioBusqueda{
   position: relative;
@@ -59,7 +83,8 @@ p{
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px 10px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 8px 16px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px 10px rgba(0,0,0,0.2);
   z-index: 15 !important;
 }
 .dropdown-content a {
@@ -107,11 +132,8 @@ p{
 }
 .tope_slider{
   background: rgba(187,188,190,1);
-background: -moz-linear-gradient(left, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(187,188,190,1)), color-stop(88%, rgba(115,118,121,0)), color-stop(100%, rgba(105,108,112,0)));
-background: -webkit-linear-gradient(left, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
-background: -o-linear-gradient(left, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
-background: -ms-linear-gradient(left, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
+background: -webkit-gradient(linear, left top, right top, from(rgba(187,188,190,1)), color-stop(88%, rgba(115,118,121,0)), to(rgba(105,108,112,0)));
 background: linear-gradient(to right, rgba(187,188,190,1) 0%, rgba(115,118,121,0) 88%, rgba(105,108,112,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbcbe', endColorstr='#696c70', GradientType=1 );
 width: 100%;
@@ -120,11 +142,8 @@ margin: 0.5em 0;
 }
 .circulos{
   background: rgba(105,108,112,0);
-  background: -moz-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), color-stop(100%, rgba(187,188,190,1)));
-  background: -webkit-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
-  background: -o-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
-  background: -ms-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), to(rgba(187,188,190,1)));
   background: linear-gradient(to right, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696c70', endColorstr='#bbbcbe', GradientType=1 );
 
@@ -145,13 +164,17 @@ margin: 0.5em 0;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
 /*NUESTRAS DIOCESIS*/
 .nuestraDiocesis{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nuestraDiocesis div p{
@@ -160,8 +183,13 @@ margin: 0.5em 0;
 }
 .diocesisIconos{
   margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 .diocesisIconos img{
@@ -186,9 +214,16 @@ margin: 0.5em 0;
 }
 #obispo{
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #obispo div div p{
   font-size: 1.5em;
@@ -196,9 +231,15 @@ margin: 0.5em 0;
   color: #adafb1;
 }
 .obispoImg{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .obispoImg>img{
   width: 350px;
@@ -222,10 +263,15 @@ margin: 0.5em 0;
 .info{
   position: relative;
   margin-top: 10px;
-  /*visibility: hidden;*/
+  visibility: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .info p{
   margin-top: 5px;
@@ -234,23 +280,31 @@ margin: 0.5em 0;
 /*ANIMACIONES*/
 .animacionIA{
   visibility: visible;
-  animation-name: aparecerIA;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerIA;
+          animation-name: aparecerIA;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -moz-animation-name: aparecerIA;
   -moz-animation-duration: 3s;
+}
+@-webkit-keyframes aparecerIA {
+  from {left: 120px;top:50px;opacity: 0;}
+  to{left:0;top:0;opacity: 1;}
 }
 @keyframes aparecerIA {
   from {left: 120px;top:50px;opacity: 0;}
   to{left:0;top:0;opacity: 1;}
 }
-@-moz-keyframes aparecerIA {
-  from {left: 120px;top:50px;opacity: 0;}
-  to{left:0;top:0;opacity: 1;}
-}
 .animacionIC{
   visibility: visible;
-  animation-name: aparecerIC;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerIC;
+          animation-name: aparecerIC;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes aparecerIC {
+  from {left: 120px;;opacity: 0;}
+  to{left:-50px;;opacity: 1;}
 }
 @keyframes aparecerIC {
   from {left: 120px;;opacity: 0;}
@@ -258,8 +312,14 @@ margin: 0.5em 0;
 }
 .animacionIB{
   visibility: visible;
-  animation-name: aparecerIB;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerIB;
+          animation-name: aparecerIB;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes aparecerIB {
+  from {left: 120px;top:-50px;opacity: 0;}
+  to{left:0;top:0;opacity: 1;}
 }
 @keyframes aparecerIB {
   from {left: 120px;top:-50px;opacity: 0;}
@@ -267,8 +327,14 @@ margin: 0.5em 0;
 }
 .animacionDA{
   visibility: visible;
-  animation-name: aparecerDA;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerDA;
+          animation-name: aparecerDA;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes aparecerDA {
+  from {right:120px;top:50px;opacity: 0;}
+  to{right:0;top:0;opacity: 1;}
 }
 @keyframes aparecerDA {
   from {right:120px;top:50px;opacity: 0;}
@@ -276,8 +342,14 @@ margin: 0.5em 0;
 }
 .animacionDC{
   visibility: visible;
-  animation-name: aparecerDC;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerDC;
+          animation-name: aparecerDC;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes aparecerDC {
+  from {left:-120px;;opacity: 0;}
+  to{left:50px;;opacity: 1;}
 }
 @keyframes aparecerDC {
   from {left:-120px;;opacity: 0;}
@@ -285,8 +357,14 @@ margin: 0.5em 0;
 }
 .animacionDB{
   visibility: visible;
-  animation-name: aparecerDB;
-  animation-duration: 3s;
+  -webkit-animation-name: aparecerDB;
+          animation-name: aparecerDB;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes aparecerDB {
+  from {right:120px;top:-50px;opacity: 0;}
+  to{right:0;top:0;opacity: 1;}
 }
 @keyframes aparecerDB {
   from {right:120px;top:-50px;opacity: 0;}
@@ -300,10 +378,19 @@ margin: 0.5em 0;
   margin: 10px;
   padding: 10px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .noticiasProyectos{
     border:2px solid black;
@@ -315,7 +402,8 @@ margin: 0.5em 0;
 }
 .carouselProyectos{
   width: 90% !important;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 15px auto;
   border: 5px solid #808183;
   padding: 5px;
@@ -343,7 +431,8 @@ margin: 0.5em 0;
 .carouselPortadas{
   width: 100%;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 5px 0;
 }
 .carouselPortadas .owl-nav{
@@ -366,11 +455,8 @@ margin: 0.5em 0;
 }
 .carouselPortadas .owl-dots {
   background: rgba(105,108,112,0);
-  background: -moz-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), color-stop(100%, rgba(187,188,190,1)));
-  background: -webkit-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
-  background: -o-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
-  background: -ms-linear-gradient(left, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(105,108,112,0)), color-stop(12%, rgba(115,118,121,0)), to(rgba(187,188,190,1)));
   background: linear-gradient(to right, rgba(105,108,112,0) 0%, rgba(115,118,121,0) 12%, rgba(187,188,190,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696c70', endColorstr='#bbbcbe', GradientType=1 );
   text-align: left;
@@ -378,7 +464,8 @@ margin: 0.5em 0;
   height: 2em;
   margin: 0.5em 0;
   padding-left: 10%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .carouselPortadas .owl-dots .owl-dot{
   cursor:pointer;
@@ -388,35 +475,48 @@ margin: 0.5em 0;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 
 }
 .carouselPortadas .owl-dots .owl-dot.active{
   background-color: #acb7dc;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
 .noticiasMultimedia{
   width: 90%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border:5px solid #808183;
   margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .noticiasDiv{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
   margin: 10px;
   font-size: 2em;
   font-family: SCRIPTBL,sans-serif;
   color: #a29f76;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 .noticiasMultimedia .noticiasDiv{
@@ -430,12 +530,11 @@ margin: 0.5em 0;
 }
 .separadorInvertido{
   text-align: center;
-  -moz-transform: scaleY(-1);
-  -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
   -ms-filter: "FlipV";
-  filter: FlipV;
+  -webkit-filter: FlipV;
+          filter: FlipV;
 }
 *{
   margin:0;
@@ -469,11 +568,22 @@ nav{
   width: 100%;
   background-color: rgba(255,255,255,1);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex:1 1;
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex!important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex:1;
+      -ms-flex:1 1;
+          flex:1 1;
 }
 nav a{
   /*border: 1px solid grey;*/
@@ -491,17 +601,29 @@ footer{
   width: 95%;
   background:rgb(96,96,96);
   border-radius: 33px 0 0 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 footer .contenedorFooter{
   width: 50%;
   padding-left: 5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 footer h1{
   /*display: inline-block;*/
@@ -562,13 +684,17 @@ footer iframe{
 .entradaCat{
   margin: 15px auto;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 1px dotted #a29f76;
 }
 .entradaCat img{
   width: 35%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
   border: 2px solid white;
   margin-bottom: 15px;
@@ -576,9 +702,15 @@ footer iframe{
 .entradaCat .columnaEntrada{
   width: 60%;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .entradaCat .columnaEntrada .tituloEntradaCat{
   width: 100%;
@@ -630,7 +762,8 @@ footer iframe{
   width: 100%;
   height: 160px;
   margin: 5px auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 15%;
 }
 .contenedorObispos img{
@@ -660,13 +793,6 @@ footer iframe{
 
 
 /*Correspondientes al obispoActual.php*/
-.imgLupa{
-  position: fixed;
-  height: 50px;
-  background-color: rgba(222, 222, 222,0.3);
-  top: 150px;
-  border-radius: 0 15px 15px 0;
-}
 .contenedorTituloObispo{
   width: 90%;
   margin: auto;
@@ -700,8 +826,12 @@ footer iframe{
 .contenedorFotosObispoActual{
   width: 90%;
   margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contenedorFotosObispoActual img{
   margin: 0 25px;
@@ -709,6 +839,8 @@ footer iframe{
 .contenedorEscritosHomilias{
   width: 90%;
   margin:auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -719,7 +851,8 @@ footer iframe{
 .contenedorEscritosHomilias .contendorUltimosEscritos,.contenedorEscritosHomilias .contenedorHomilias {
   width: 50%;
   margin: 10px auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 10%;
 }
 .vermas{
@@ -734,13 +867,13 @@ footer iframe{
   width: 180px;
   border-style: solid;
   border-width: 0px 28px 18px;
-  -moz-border-image: url(img/barraObisposLisa.png) 0 27 18;
-  -webkit-border-image: url(img/barraObisposLisa.png) 0 27 18;
   -o-border-image: url(img/barraObisposLisa.png) 0 27 18;
   border-image: url(img/barraObisposLisa.png) 0 27 18;
 }
 /*HOMILIASESCRITOS*/
 .flexRow{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px 0;
   /*justify-content: center;*/
@@ -753,9 +886,16 @@ footer iframe{
 }
 .flexColumn{
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flexColumn p{
   overflow: hidden;
@@ -785,7 +925,10 @@ footer iframe{
     cursor: pointer;
     z-index: 1;
     -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .1s ease;
+    transition: -webkit-transform .1s ease;
     transition: transform .1s ease;
+    transition: transform .1s ease, -webkit-transform .1s ease;
 }
 .tituloConBarra h1:last-child{
   font-family: verdana,sans-serif;
@@ -819,7 +962,8 @@ footer iframe{
   width: 80%;
   margin: auto;
   margin-top: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .paginacion{
   margin: 30px auto;
@@ -852,12 +996,18 @@ footer iframe{
 }
 
 .contenedorNoticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color:#fff;
   margin: 0 0 50px 0;
-  box-sizing: border-box;
-  justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contenedorNoticias > a{
   width: 100%;
@@ -870,7 +1020,8 @@ footer iframe{
 }
 .contenedorNoticias .imgNoticia1 img{
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 10px 10px 10px;
 }
 .contenedorNoticias .parteDerechaNoticias{
@@ -890,7 +1041,8 @@ footer iframe{
   display: inline-block;
   margin: 0;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .contenedorNoticias2 .imgNoticia2 img{
   float: left;
@@ -902,7 +1054,8 @@ footer iframe{
   width: 60%;
   height: 160px;
   margin: 10px auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .contenedorVicario img{
   float: left;
@@ -912,15 +1065,11 @@ footer iframe{
    max-height:0;
    overflow:hidden;
    -webkit-transition: max-height 500ms ease-out;
-   -moz-transition: max-height 500ms ease-out;
-   -o-transition: max-height 500ms ease-out;
    transition: max-height 500ms ease-out;
 }
 .plegable.desplegado{
    max-height:9999px;
    -webkit-transition: max-height 500ms ease-out;
-   -moz-transition: max-height 500ms ease-out;
-   -o-transition: max-height 500ms ease-out;
    transition: max-height 500ms ease-out;
 }
 /*Contenedores*/
@@ -956,7 +1105,8 @@ footer iframe{
   }
 .carouselCrescencia{
   margin: 30px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-top: 2px solid rgb(100, 122, 145);
   border-bottom: 2px solid rgb(100, 122, 145);
   padding: 10px 0;
@@ -984,9 +1134,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 .volumen{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,828c95+36,96989a+100 */
-  background: rgb(51,51,51); /* Old browsers */
-  background: -moz-linear-gradient(45deg,  rgba(51,51,51,1) 0%, rgba(130,140,149,1) 36%, rgba(150,152,154,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(130,140,149,1) 36%,rgba(150,152,154,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: rgb(51,51,51); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(130,140,149,1) 36%,rgba(150,152,154,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#96989a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
@@ -1024,7 +1172,8 @@ input[type=range]::-webkit-slider-thumb {
   background: #ffffff;
   cursor: pointer;
   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
 
 /* All the same stuff for Firefox */
@@ -1057,7 +1206,8 @@ input[type=range]::-webkit-slider-thumb {
   background: #ffffff;
   cursor: pointer;
   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
 
 /* All the same stuff for Firefox */
@@ -1086,7 +1236,8 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #333333;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
@@ -1144,3 +1295,8 @@ input[type=range]:focus::-ms-fill-upper {
 .img{
   border-radius: 100% !important;
 }
+
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /*visibility: hidden;*/

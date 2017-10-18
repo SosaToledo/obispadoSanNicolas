@@ -9,8 +9,8 @@
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/historia/">Historia</a>
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a> -->
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a> -->
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a> -->
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a> -->
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a> -->
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Beata Crescencia</a> -->
@@ -24,9 +24,9 @@
         <a href="<?php bloginfo(url); ?>/obispos-anteriores/">Anteriores</a>
       </div>
     </div>
-    <!-- <div class="dropdown">
+    <div class="dropdown">
       <a href="<?php bloginfo(url); ?>/en-construccion/">Sacerdotes</a>
-    </div> -->
+    </div>
     <div class="dropdown">
       <a href="<?php bloginfo(url); ?>/catedral/">Catedral</a>
     </div>
@@ -42,13 +42,11 @@
 </span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url);?>/noticias">Noticias</a>
-        <!-- <a href="#">Audio</a>
-        <a href="#">Video</a> -->
       </div>
     </div>
-    <!-- <div class="dropdown">
+    <div class="dropdown">
       <a href="#">Contacto</a>
-    </div> -->
+    </div>
     <div class="dropdown">
       <a href="<?php bloginfo(url)?>/radio"  target="_blank">
         <img style="width:32px; height: 32px; margin:3px 14px 3px 3px;"src="<?php bloginfo('template_url') ?>/img/iconos/radio.png" alt="Radio">

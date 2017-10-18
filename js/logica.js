@@ -20,6 +20,12 @@ function ocultarMenu() {
     e.style.visibility ="hidden";
   }
 }
+
+document.getElementById('lupa').addEventListener("click", desplegar);
 function desplegar(){
-  document.getElementById('lupa').className = "imgLupa animacionDesplegar";
+  var lupa = document.getElementById('inputLupa');
+  if (lupa.value == '') {
+  }else {
+    alert('buscando... '+lupa.value);
+  }
 }

@@ -1,6 +1,10 @@
-
 <?php get_header(); ?>
 <body id="main" onscroll="detect()">
+  <!-- <?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
+  	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+  		<?php dynamic_sidebar( 'home_right_1' ); ?>
+  	</div>
+  <?php endif; ?> -->
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
@@ -259,7 +263,7 @@ include "menu.php";
       <h1>Contacto</h1>
       <p class="detalleFooter">Obispado de San Nicolas de los Arroyos </p>
       <p>Bartolomé Mitre 84 - San Nicolas </p>
-      <p>correoelectronico@gmail.com </p>
+      <p>prensaobispadosn@gmail.com </p>
       <p>Tel. y Fax: (0336) 4422364 / 4429529</p>
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13334.551723278633!2d-60.216407!3d-33.32828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24b7cfb43c9fc66!2sObispado+de+San+Nicolas!5e0!3m2!1ses-419!2sar!4v1505959843793" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
