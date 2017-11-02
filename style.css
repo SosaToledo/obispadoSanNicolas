@@ -1296,7 +1296,16 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 100% !important;
 }
 
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  /*visibility: hidden;*/
+/*Estilos pertenecientes a sacerdote.php*/
+.sacerdotes-ciudades{
+  margin: 30px auto;
+  width: 80%
+}
+.sacerdotes-ciudades h2{
+  font-family: SCRIPTBL,sans-serif;
+  color: #a29f76;
+  font-size: 2.2em; 
+}
+.sacerdotes-ciudades > div{
+  font-family: verdana,sans-serif;
+}

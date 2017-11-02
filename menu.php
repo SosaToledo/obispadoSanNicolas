@@ -9,7 +9,7 @@
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/historia/">Historia</a>
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a> -->
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquias</a>
         <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a> -->
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a> -->
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">Sacerdotes</a>
+      <a href="<?php bloginfo(url); ?>/sacerdotes/">Sacerdotes</a>
     </div>
     <div class="dropdown">
       <a href="<?php bloginfo(url); ?>/catedral/">Catedral</a>
