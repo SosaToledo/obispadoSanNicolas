@@ -4,7 +4,7 @@
  */
 get_header();
 include "menu.php";?>
-<img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png">
+<!-- <img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png"> -->
 <div class="contenedorSantuario">
 	<img class="portadaSantuario" src="http://lorempixel.com/1920/500" alt="lorempixel">
 	<h1 class="tituloSantuario">Titulo Catedral</h1>
