@@ -18,12 +18,17 @@ form input, form button{
 **/
 include 'menu.php';
 ?>
- <form action="correo.php" method="post">
-   <input type="text" name="nombre" value="" placeholder="Su nombre y apellido" required>
-   <input type="text" name="correo" value="" placeholder="Dirección de correo para contestar" ><br>
-   <textarea type="text" name="consulta" value="" rows="5" cols="50" placeholder="Diganos su consulta" required></textarea>
-   <input type="submit" value="Enviar">
- </form>
+
+<?php echo do_shortcode('[wpforms id="309" title="false" description="false"]	'); ?>
+
+<!--
+//  <form action="<?php bloginfo(url); ?>/wordpress/correo.php" method="post">
+//    <input type="text" name="nombre" value="" placeholder="Su nombre y apellido" required>
+//    <input type="text" name="correo" value="" placeholder="Dirección de correo para contestar" ><br>
+//    <textarea type="text" name="consulta" value="" rows="5" cols="50" placeholder="Diganos su consulta" required></textarea>
+//    <button type="submit" value="Enviar"> Enviar</button>
+//  </form> -->
+
 <?php
   get_footer();
 ?>

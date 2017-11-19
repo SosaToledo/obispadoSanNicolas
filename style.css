@@ -1304,8 +1304,29 @@ input[type=range]:focus::-ms-fill-upper {
 .sacerdotes-ciudades h2{
   font-family: SCRIPTBL,sans-serif;
   color: #a29f76;
-  font-size: 2.2em; 
+  font-size: 2.2em;
 }
 .sacerdotes-ciudades > div{
   font-family: verdana,sans-serif;
+}
+
+/*Estilos pertenecientes a la pagina de resultado */
+
+.resultados{
+  width: 80%;
+  margin: auto;
+}
+.tituloRe{
+  font-family: verdana,sans-serif;
+  font-size: 1.3em;
+  display: inline-block;
+}
+.resultadoBox:not(last-of-type){
+  border-bottom: 2px dotted #A29f76;
+}
+.linkBusqueda{
+  background-color: #a29f76;
+  display: inline-block;
+  padding: 3px 5px;
+  margin-left: 30px;
 }

@@ -18,7 +18,6 @@ get_header();
 </header>
 <?php include "menu.php";?>
 
-<?php get_search_form(); ?>
 
 <div class="radio">
 	<div style="border: 3px solid #818181;background-color:#4d4d4d;border-radius:50px;" >

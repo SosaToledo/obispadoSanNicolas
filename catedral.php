@@ -33,7 +33,7 @@ include "menu.php";
   		} // end if
   ?>
 </div>
-
+<?php get_search_form(); ?>
 
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];
@@ -41,5 +41,3 @@ $url= $_SERVER['REQUEST_URI'];
 echo 'http://' . $host . $url;
 ?>
 " data-numposts="5" colorscheme="dark"></div>
-
-<?php get_footer();?>

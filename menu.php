@@ -13,7 +13,7 @@
         <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a> -->
         <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a> -->
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Beata Crescencia</a> -->
+        <a href="<?php bloginfo(url); ?>/crescencia/">Beata Crescencia</a>
       </div>
     </div>
     <div class="dropdown">
@@ -38,14 +38,10 @@
       </div>
     </div>
     <div class="dropdown">
-      <a href="#">Actualidad</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;
-</span>
-      <div class="dropdown-content">
-        <a href="<?php bloginfo(url);?>/noticias">Noticias</a>
-      </div>
+    <a href="<?php bloginfo(url);?>/noticias">Noticias</a>
     </div>
     <div class="dropdown">
-      <a href="#">Contacto</a>
+      <a href="<?php bloginfo(url);?>/contacto">Contacto</a>
     </div>
     <div class="dropdown">
       <a href="<?php bloginfo(url)?>/radio"  target="_blank">
