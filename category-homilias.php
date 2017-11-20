@@ -7,6 +7,7 @@
 </header>
 <?php
 include "menu.php";
+include 'searchbar.php';
 	?>
 	<div class="contenedorHomiliasCat">
 	<h1>Homilias</h1>

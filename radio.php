@@ -16,8 +16,11 @@ get_header();
 <header style="background: url('<?php bloginfo("template_url") ?>/img/radiost.jpg') no-repeat center; background-size:cover;">
 	<p style="font-family:verdana;">Radio del Obispado</p>
 </header>
-<?php include "menu.php";?>
+<?php
+include "menu.php";
+include 'searchbar.php';
 
+?>
 
 <div class="radio">
 	<div style="border: 3px solid #818181;background-color:#4d4d4d;border-radius:50px;" >

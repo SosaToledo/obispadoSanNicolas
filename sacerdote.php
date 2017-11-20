@@ -48,6 +48,8 @@ div.panel {
 </header>
 <?php
 include "menu.php";
+include 'searchbar.php';
+
 ?>
 
 <! Este div es para distinguirlos entre el resto del css>

@@ -25,6 +25,8 @@ $args = array(
   'order' => 'DESC'
 );
 include "menu.php";
+include 'searchbar.php';
+
 ?>
 
 <div class="contendorData">

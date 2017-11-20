@@ -7,6 +7,7 @@
     <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   </header><?php
   include "menu.php";
+  include 'searchbar.php';
 
   while ( have_posts() ) : the_post();
   ?>

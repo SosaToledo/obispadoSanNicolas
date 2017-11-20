@@ -20,6 +20,7 @@ get_header();
 <!--  -->
 <?php
 include "menu.php";
+include 'searchbar.php';
 ?>
 	<div class="tituloConBarra" style="margin-top:20px;">
 			<h1>Obispo Actual</h1>

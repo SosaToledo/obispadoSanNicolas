@@ -3,7 +3,8 @@
  * Template Name: Pagina Crescencia
  */
 get_header();
-include "menu.php";?>
+include "menu.php";
+include 'searchbar.php';?>
 <body id="main">
 <div class="contenedorCrescencia">
 	<h1 class="tituloCrescencia">Titulo Crescencia</h1>

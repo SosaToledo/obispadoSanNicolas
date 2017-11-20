@@ -33,7 +33,6 @@ include "menu.php";
   		} // end if
   ?>
 </div>
-<?php get_search_form(); ?>
 
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];

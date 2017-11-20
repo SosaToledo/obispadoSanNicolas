@@ -7,6 +7,7 @@
 </header>
 <?php
 include "menu.php";
+include 'searchbar.php';
 	?>
 	<div class="contenedorUltEscritosCat">
 	<h1>Ultimos Escritos</h1>

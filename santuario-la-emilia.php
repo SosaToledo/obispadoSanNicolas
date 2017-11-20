@@ -18,6 +18,8 @@ get_header();
 <!--  -->
 <?php
 include "menu.php";
+include 'searchbar.php';
+
 ?>
 <div class="tituloConBarra">
 	<h1>Jesus Misericordioso de La Emilia</h1>

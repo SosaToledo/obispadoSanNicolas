@@ -19,6 +19,8 @@ get_header();
 <!--  -->
 <?php
 include "menu.php";
+include 'searchbar.php';
+
 ?>
 <div class="contenedorSingle">
 <?php

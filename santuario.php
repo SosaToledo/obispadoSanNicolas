@@ -3,7 +3,10 @@
  * Template Name: Pagina Santuario
  */
 get_header();
-include "menu.php";?>
+include "menu.php";
+include 'searchbar.php';
+?>
+
 <!-- <img class="imgLupa" src="<?php bloginfo('template_url')?>/img/iconos/lupa.png"> -->
 <div class="contenedorSantuario">
 	<img class="portadaSantuario" src="http://lorempixel.com/1920/500" alt="lorempixel">

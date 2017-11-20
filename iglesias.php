@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Pagina de Iglesias
- * 
+ *
  **/
 get_header();?>
 <body id="main">
@@ -49,6 +49,7 @@ div.panel {
 </header>
 <?php
 include "menu.php";
+include 'searchbar.php';
 ?>
 
 <! Este div es para distinguirlos entre el resto del css>

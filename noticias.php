@@ -16,6 +16,7 @@ get_header();?>
 </header>
 <?php
 include "menu.php";
+include 'searchbar.php';
 	$ourCurrentPage = get_query_var('paged');
 	$aboutPost = new WP_Query(array(
 		'category_name' => 'noticias',
