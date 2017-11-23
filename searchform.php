@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
 <style media="screen">
+
 	.barraBusqueda{
 		position: fixed;
 		top:5%;
 		width: 100%;
-		z-index: 100;
+		z-index: 14;
 	}
 	.search-field{
 		width: 100px;
@@ -28,10 +29,15 @@
 		cursor: pointer;
 		outline: none;
 	}
+	@media screen and (max-width:600px) {
+			.barraBusqueda{
+				top: 70px;
+			}
+	}
 </style>
 <div class="barraBusqueda">
-	<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-		<input type="search" class="search-field w3-input w3-animate-input" placeholder="Buscar..." value="<?php echo get_search_query() ?>" name="s" required />
+	<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<input type="search" class="search-field w3-input w3-animate-input" placeholder="Buscar..." value="<?php echo get_search_query() ?>" name="s" minlength=4 maxlength="45" autocomplete="off" required />
 		<button type="submit" class="search-submit">
 			<img class="lupaBuscar" src="<?php bloginfo(template_url);?>/img/iconos/lupa.png" ></img>
 		</button>

@@ -979,7 +979,7 @@ footer iframe{
   background-color: grey;
   padding: 10px;
 }
-.paginacion span{
+.paginacion .current{
   background: #a29f76;
 }
 .tituloNoticias{
