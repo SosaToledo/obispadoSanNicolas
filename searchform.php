@@ -31,7 +31,7 @@
 	}
 	@media screen and (max-width:600px) {
 			.barraBusqueda{
-				top: 70px;
+				top: 55px;
 			}
 	}
 </style>
