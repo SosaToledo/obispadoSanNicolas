@@ -5,7 +5,7 @@
     background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
   }
 }
-form input, form button{
+form input, form button, form textarea{
   color: black;
 }
 </style>
@@ -18,17 +18,13 @@ form input, form button{
 **/
 include 'menu.php';
 ?>
-
-<?php echo do_shortcode('[wpforms id="309" title="false" description="false"]	'); ?>
-
-<!--
-//  <form action="<?php bloginfo(url); ?>/wordpress/correo.php" method="post">
-//    <input type="text" name="nombre" value="" placeholder="Su nombre y apellido" required>
-//    <input type="text" name="correo" value="" placeholder="Dirección de correo para contestar" ><br>
-//    <textarea type="text" name="consulta" value="" rows="5" cols="50" placeholder="Diganos su consulta" required></textarea>
-//    <button type="submit" value="Enviar"> Enviar</button>
-//  </form> -->
-
+  <form class="" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
+  <input name="nombre" type="text" value="" /><br>
+  <input name="correo" type="text" value="" /><br>
+  <input name="asunto" type="text" value="" /><br>
+  <textarea cols="80" name="mensaje" rows="8"></textarea><br>
+  <button name="button" type="submit">Enviar</button>
+<!-- <input type="button" name="boton" value="Enviar"> --></form>
 <?php
   get_footer();
 ?>
