@@ -12,6 +12,7 @@ form input, form button, form textarea{
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
 </header>
+
 <?php
 /**
 * Template Name: Pagina de Contacto
@@ -19,13 +20,27 @@ form input, form button, form textarea{
 include 'menu.php';
 include 'searchbar.php';
 ?>
-  <form class="formularioContacto" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
-  <input class="formu" name="nombre" type="text" value="" placeholder="Nombre" required/><br>
-  <input class="formu" name="correo" type="email" value="" placeholder="Correo Electronico" required/><br>
-  <input class="formu" name="asunto" type="text" value="" placeholder="Asunto" required/><br>
-  <textarea class="cuerpo" cols="60" name="mensaje" rows="6" placeholder="Ingrese su mensaje aqui" required></textarea><br>
-  <button class="botonEnviarCorreo w3-hover-gray" name="button" type="submit">Enviar Correo</button>
-<!-- <input type="button" name="boton" value="Enviar"> --></form>
+  <div >
+    <form class="conteiner" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
+      <label for="">
+        <p>Nombre</p>
+        <input name="nombre" type="text" value="" required minlength="4" maxlength="30"/><br>
+      </label>
+      <label for="">
+        <p>Correo</p>
+        <input id="correo" name="correo" type="email" value="" required minlength="4" maxlength="30"/><br>
+      </label>
+      <label for="">
+        <p>Asunto</p>
+        <input name="asunto" type="text" value="" required minlength="4" maxlength="30"/><br>
+      </label>
+      <label for="">
+        <p>Mensaje</p>
+        <textarea cols="80" name="mensaje" rows="8" required></textarea><br>
+      </label>
+      <input id="submit" type="submit" name="Enviar" />
+    </form>
+  </div>
 <?php
   get_footer();
 ?>
