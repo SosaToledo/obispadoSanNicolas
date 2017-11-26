@@ -67,7 +67,6 @@ p{
   display: none;
 }
 .abierto{
-  width: 100%;
   height: auto;
 }
 #cerrarMenu{
@@ -161,6 +160,7 @@ margin: 0.5em 0;
   height: 20px;
   width: 20px;
   margin: 0 2px;
+  width: 100%;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -384,7 +384,6 @@ margin: 0.5em 0;
 
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
@@ -773,6 +772,7 @@ footer iframe{
   margin-right: 20px;
 }
 .contenedorObispos h2{
+  -webkit-box-direction: normal;
   margin: 10px;
   padding-top: 25px;
   font-family: verdana,sans-serif;
@@ -1329,4 +1329,24 @@ input[type=range]:focus::-ms-fill-upper {
   display: inline-block;
   padding: 3px 5px;
   margin-left: 30px;
+}
+
+/* Este css es de la pagina de contacto */
+
+.formularioContacto{
+  width: 80%;
+  margin: 20px auto;
+}
+.formularioContacto .formu, .formularioContacto .cuerpo {
+  width: 100%;
+  margin: 5px
+}
+.botonEnviarCorreo{
+  background-color: #a29f76;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  outline: none;
 }

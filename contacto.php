@@ -17,13 +17,14 @@ form input, form button, form textarea{
 * Template Name: Pagina de Contacto
 **/
 include 'menu.php';
+include 'searchbar.php';
 ?>
-  <form class="" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
-  <input name="nombre" type="text" value="" /><br>
-  <input name="correo" type="text" value="" /><br>
-  <input name="asunto" type="text" value="" /><br>
-  <textarea cols="80" name="mensaje" rows="8"></textarea><br>
-  <button name="button" type="submit">Enviar</button>
+  <form class="formularioContacto" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
+  <input class="formu" name="nombre" type="text" value="" placeholder="Nombre" required/><br>
+  <input class="formu" name="correo" type="email" value="" placeholder="Correo Electronico" required/><br>
+  <input class="formu" name="asunto" type="text" value="" placeholder="Asunto" required/><br>
+  <textarea class="cuerpo" cols="60" name="mensaje" rows="6" placeholder="Ingrese su mensaje aqui" required></textarea><br>
+  <button class="botonEnviarCorreo w3-hover-gray" name="button" type="submit">Enviar Correo</button>
 <!-- <input type="button" name="boton" value="Enviar"> --></form>
 <?php
   get_footer();

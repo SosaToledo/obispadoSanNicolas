@@ -32,5 +32,5 @@ $consulta = $_POST["mensaje"];
 
   mail($destinatario,$asunto,$cuerpo,$headers);
   header('Location: http://obispadodesannicolas.com/contacto/');
-
+  alert("Gracias, tu correo se envio.");
 ?>
