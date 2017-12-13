@@ -2,11 +2,21 @@
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
   }
 }
 form input, form button, form textarea{
   color: black;
+}
+.botoncito{
+  margin:auto;
+  display:block;
+  width:260px;
+}
+.titulo{
+  width:100%;
+  text-align:center;
+  font-family:verdana,sans-serif;
 }
 </style>
 <header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
@@ -20,25 +30,22 @@ form input, form button, form textarea{
 include 'menu.php';
 include 'searchbar.php';
 ?>
-  <div >
+  <h2 class="titulo">Envianos tu correo.</h2>
+  <div style="width:90%;margin:auto;margin-bottom:15px;" >
     <form class="conteiner" action="<?php bloginfo("template_url") ?>/correo.php" method="post">
       <label for="">
-        <p>Nombre</p>
-        <input name="nombre" type="text" value="" required minlength="4" maxlength="30"/><br>
+        <input placeholder="Nombre" class="w3-input" name="nombre" type="text" value="" required minlength="4" maxlength="30"/><br>
       </label>
       <label for="">
-        <p>Correo</p>
-        <input id="correo" name="correo" type="email" value="" required minlength="4" maxlength="30"/><br>
+        <input placeholder="Correo" class="w3-input" id="correo" name="correo" type="email" value="" required minlength="4" maxlength="30"/><br>
       </label>
       <label for="">
-        <p>Asunto</p>
-        <input name="asunto" type="text" value="" required minlength="4" maxlength="30"/><br>
+        <input placeholder="Asunto del correo" class="w3-input" name="asunto" type="text" value="" required minlength="4" maxlength="30"/><br>
       </label>
       <label for="">
-        <p>Mensaje</p>
-        <textarea cols="80" name="mensaje" rows="8" required></textarea><br>
+        <textarea placeholder="Dejanos tu mensaje, lo contestaremos a la brevedad posible" class="w3-input" cols="80" name="mensaje" rows="8" required></textarea><br>
       </label>
-      <input id="submit" type="submit" name="Enviar" />
+      <input class="w3-button botoncito" id="submit" type="submit" name="Enviar" value="Enviar correo" style="background-color:#a29f76" />
     </form>
   </div>
 <?php
