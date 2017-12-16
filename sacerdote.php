@@ -61,7 +61,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="">
+        <div class=""> <!-- Aca habia un w3-content-->
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel">
             <?php the_content(); ?>
@@ -84,7 +84,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -107,7 +107,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -130,7 +130,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -153,7 +153,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -176,7 +176,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -199,7 +199,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -222,7 +222,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -245,7 +245,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>
@@ -268,7 +268,7 @@ include 'searchbar.php';
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();?>
-        <div class="w3-content">
+        <div class="">
           <div class="accordion"><?php the_title(); ?></div>
           <div class="panel ">
             <?php the_content(); ?>

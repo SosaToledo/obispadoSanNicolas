@@ -62,25 +62,25 @@ echo '<div class="resultados">';
 			?><div class="resultadoBox">
         <?php $categoria = get_the_category()[0]->slug; ?>
 
-        <?php if ($categoria == 'noticias' || $categoria == 'historia' || $categoria == 'obispo-actual' || $categoria == 'obispos-anteriores' || $categoria == '' || $categoria == 'ultimos-escritos'  ):?>
-          <a href="<?php the_permalink();?>"><h2 class="tituloRe"><?php the_title() ?></h2></a>
+        <?php if ($categoria == 'noticias' || $categoria == 'historia' || $categoria == 'obispo-actual' || $categoria == 'obispos-anteriores' || $categoria == '' || $categoria == 'emerito' || $categoria == 'ultimos-escritos'  ):?>
+          <a href="<?php the_permalink();?>"><h2 class="tituloRe"><?php relevanssi_the_title() ?></h2></a>
           <?php
           the_excerpt(); ?>
           <div style="width:100%;">
             <a href="<?php the_permalink();?>"><h4 class="linkBusqueda"> + Info </h4></a>
           </div>
         <?php else: ?>
-          <h2 class="tituloRe"><?php the_title() ?></h2>
+          <h2 class="tituloRe"><?php relevanssi_the_title() ?></h2>
           <?php the_content(); ?>
         <?php endif; ?>
       </div>
 			<?php
     }// end while
-    ?>
 
-    <?php
-    the_posts_pagination(array('prev_text' => 'Anterior',
-    'next_text' => 'Siguiente') );
+    echo '<div class="paginacion" style="width:100%" >';    
+    echo paginate_links('post_per_page=10');
+    echo '</div>';
+    
 	}else {
 		?><h1>No se encontraron resultados :(</h1><?php
 	}

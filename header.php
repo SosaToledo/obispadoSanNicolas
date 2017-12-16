@@ -12,8 +12,10 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/estiloMedia.css">
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div id="fb-root"></div>
       <script>(function(d, s, id) {
@@ -24,5 +26,14 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
       </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107712661-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-107712661-1');
+      </script>
+  
   </head>
   <!--  -->
