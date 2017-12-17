@@ -263,7 +263,7 @@ margin: 0.5em 0;
 .info{
   position: relative;
   margin-top: 10px;
-  /*visibility: hidden;*/
+  visibility: hidden;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
