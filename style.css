@@ -879,7 +879,37 @@ footer iframe{
   -o-border-image: url(img/barraObisposLisa.png) 0 27 18;
   border-image: url(img/barraObisposLisa.png) 0 27 18;
 }
+.descargarPDF{
+  background-color: #212529;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  float: left;
+  margin-bottom: 10px;
+}
+.descargarPDF img{
+  width: 64px !important;
+  height: auto !important;
+}
 /*HOMILIASESCRITOS*/
+.cajin{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.cajin img{
+  width:64px;
+  height:64px;
+}
+.otraCaja{
+  width:100%;
+  overflow: hidden;
+}
+.otraCaja h1{
+  font-size: 26px;
+}
+
 .flexRow{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -959,7 +989,7 @@ footer iframe{
   font-size: 3em;
   font-family: scriptbl,sans-serif;
   margin: 15px 0 0 0;
-  color: #a29f76;
+  color: #ffffff;
   border-bottom: 2px solid #a29f76;
 }
 .contenedorHomiliasCat .catSeparador:last-child{

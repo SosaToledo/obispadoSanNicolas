@@ -22,7 +22,7 @@
     <?php the_content();
     if (in_category('ultimos-escritos') ) {
     ?>
-      <div class="">
+      <div class="descargarPDF">
         <a href="?article2pdf=1"><img src="<?php bloginfo(template_url);?>/img/iconos/pdf-icon.png" alt="">PDF version</a>
       </div>
     <?php

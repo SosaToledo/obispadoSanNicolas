@@ -15,24 +15,28 @@ include 'searchbar.php';
 	<?php
 	// obispoActual id 30 -Frank
 	//id  -web
-	query_posts('cat=30');
+	$paged= ( get_query_var ( 'paged')) ? get_query_var ('paged'):1;
+	$args=array('category_name' => 'homilias',
+				'paged' => $paged);
+	query_posts($args);
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				?>
-				<div style="width:60%;justify-content:center;margin:10px auto;" class="flexRow"><img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt=""><div class="flexColumn">
-				<?php
-				the_post();
-				echo "<p>";the_title();echo "</p>";
-				the_content();?>
-			</div></div>
-			<div class="catSeparador">
-
-			</div>
-				<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-				<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
-				<?php } // end while
+				<div style="width:60%;justify-content:center;margin:10px auto;" class="flexRow"><img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt="">
+					<div class="flexColumn">
+						<?php
+						the_post();
+						echo "<p>";the_title();echo "</p>";
+						the_content();?>
+					</div>
+				</div>
+				<div class="catSeparador"></div>
+			<?php } //<!--End While -->
+			echo '<div class="paginacion" style="width:100%" >';    
+			echo paginate_links('post_per_page=10');
+			echo '</div>';
 		} else {
 			echo '<h1> No hay homilias que mostrar </h1>';// end if
-		}
-?></div><?php
-get_footer(); ?>
+		}?>
+	</div>
+<?php get_footer(); ?>

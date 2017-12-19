@@ -49,27 +49,27 @@ include 'searchbar.php';
 		<div id="UEObispo" class="contendorUltimosEscritos">
 			<h1>Ultimos escritos</h1>
 			<?php
-			$contador=0;
-			query_posts('category_name=ultimos-escritos');
+			// $contador=0;
+			$args=array('category_name'=> 'ultimos-escritos',
+						'posts_per_page' => 3);
+			query_posts($args);
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					echo '<div class="flexRow"><img src="';
-					bloginfo('template_url');
-					echo '/img/iconos/pdf-icon.png"';
-					echo "</img>";
 					?>
-					<div class="flexColumn">
-						<h1>
-							<a href="<?php the_permalink();?> ">
-								<?php the_title(); ?>
-							</a>
-						</h1>
+					<div class="cajin">
+						<a href="<?php the_permalink(); ?>">
+						<img src="<?php bloginfo(template_url);?>/img/iconos/pdf-icon.png" alt="">
+						</a>
+						<div class="otraCaja">
+							<?php
+								echo "<h1>";
+								?><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<?php echo "</h1>";
+							?>
+						</div>
 					</div>
-				</div>
 					<?php
-					$contador++;
-					if($contador==3){break;}
 				} // end while
 			} // end if
 			?>
@@ -80,21 +80,29 @@ include 'searchbar.php';
 		<div id="HObispo" class="contenedorHomilias">
 			<h1>Homilias</h1>
 			<?php
-				query_posts('category_name=homilias	');
+				$args=array('category_name' => 'homilias',
+							'posts_per_page' => 3);
+				query_posts($args);
 					if ( have_posts() ) {
 						while ( have_posts() ) {
 							the_post();
 							?>
-							<div class="flexRow">
-								<img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt=""><div class="flexColumn">
-							<h1><?php
-							the_title();?></h1><?php
-							the_content();
-							?></div></div><?php
-							} // end while
+							<div class="cajin">
+								<img src="<?php bloginfo(template_url);?>/img/iconos/mp3-icon.png" alt="">
+								<div class="otraCaja">
+									<?php
+										echo "<h1>";
+										the_title();
+										echo "</h1>";
+										the_content();
+									?>
+								</div>
+							</div>
+
+							<?php } // end while
 					} // end if
 			?>
-			<div style="text-align: center;">
+			<div style="text-align: center; margin-top:15px;">
 				<a class="vermas masInfo" href="<?php bloginfo(url);?>/category/homilias/">Ver todos</a>
 			</div>
 		</div>

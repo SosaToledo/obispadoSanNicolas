@@ -110,10 +110,30 @@
       float: left;
   }
 
-  .contenedorFotosObispoActual{
-
+  /* Mas cosas del obispo actual */
+  .cajin .otraCaja h1{
+    text-align: center;
   }
-
+  .cajin .otraCaja audio:not(last-of-type){
+    margin-bottom:10px;
+  }
+  .descargarPDF{
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .contenedorUltEscritosCat, .contenedorHomiliasCat{
+    width: 95%;
+  }
+  .masInfo{
+    margin-top: 5px;
+    margin-right: 0 !important;
+    float: none !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
 
   .contendorData .carouselPortadas .owl-stage-outer .owl-stage .owl-item img{
     height: auto;
