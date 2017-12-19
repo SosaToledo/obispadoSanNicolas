@@ -201,6 +201,9 @@
     height: auto;
     margin: 10px 0;
   }
+  .contenedorSingle iframe{
+    width: 100%;
+  }
   footer{
     border-radius:0px;
   }
@@ -264,5 +267,24 @@
   }
   .contenedorEscritosHomilias>div>h1:first-of-type{
     text-align: center;
+  }
+  /* Search.php*/
+  .resultados{
+    width: 95%;
+  }
+  .resultados form input:first-of-type{
+    width: 70% !important;
+  }
+  .resultados form input:last-of-type{
+    width: 25% !important ;
+  }
+  .linkBusqueda{
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-numbers{
+    margin:15px 4px !important ;
   }
 }

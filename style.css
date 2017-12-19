@@ -670,6 +670,15 @@ footer iframe{
 .contenedorSingle h1{
   font-family: SCRIPTBL,sans-serif;
 }
+.contenedorSingle iframe{
+  display: block;
+  margin: auto;
+}
+.pieDeComentario{
+  text-align: center;
+  font-family: verdana,sans-serif;
+  text-decoration:underline;
+}
 /*----------Estos estilos pertenecen al categoy.php--------------------*/
 .tituloCategoria{
   width: 90%;
