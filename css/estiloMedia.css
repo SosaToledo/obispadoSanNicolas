@@ -163,6 +163,12 @@
   .contenedorObispoActual span{
     padding: 10px 50px;
   }
+  #fotosObispo img:nth-last-of-type(1){
+    display: none;
+  }
+  .contenedorEscritosHomilias{
+    flex-direction: column; 
+  }
   /*corresponde a obisposAnteriores*/
   .tituloConBarra {
     width: 90%;
