@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta property="fb:app_id" content="1933138306941841" />
+
     <title id= "titlesin">Obispado de San Nicolas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" type="image/png" href="<?php bloginfo(template_url);?>/img/iconos/circuloRadio.png">
