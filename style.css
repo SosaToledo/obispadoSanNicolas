@@ -1335,12 +1335,12 @@ input[type=range]:focus::-ms-fill-upper {
   width: 90% !important;
   margin: auto!important;
   display: block !important;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 20px !important;
 }
 .fb-comments > span,.fb-comments > span > iframe{
   width: 100% !important;
-}
-.img{
-  border-radius: 100% !important;
 }
 
 /*Estilos pertenecientes a sacerdote.php*/
