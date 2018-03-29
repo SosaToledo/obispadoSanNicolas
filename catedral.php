@@ -8,11 +8,11 @@ get_header();
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/catedralportada.jpg')!important;
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/catedralportada.jpg') no-repeat center; background-size:cover;">
 	<p>Catedral</p>
 </header>
 <!--  -->
