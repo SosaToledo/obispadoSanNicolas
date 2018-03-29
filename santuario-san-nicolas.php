@@ -9,11 +9,11 @@ get_header();
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/santuariomaria.jpg')!important;
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/santuariomaria.jpg') no-repeat center; background-size:cover;">
 	<p>Santuario Maria del Rosario de San Nicolas</p>
 </header>
 <!--  -->
@@ -22,7 +22,8 @@ include "menu.php";
 include 'searchbar.php';
 
 ?>
-<div class="contenedorSingle">
+
+<div class="contenedorSingle" style="margin-top:20px;">
 <?php
 		if ( have_posts() ) {
 			while ( have_posts() ) {
@@ -33,6 +34,7 @@ include 'searchbar.php';
 ?>
 </div>
 
+<h2 class="pieDeComentario"><i class="fa fa-comments"></i> Dejanos tu comentario </h2>
 
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];

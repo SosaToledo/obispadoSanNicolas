@@ -34,6 +34,8 @@ include "menu.php";
   ?>
 </div>
 
+<h2 class="pieDeComentario"><i class="fa fa-comments"></i> Dejanos tu comentario </h2>
+
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];
 $url= $_SERVER['REQUEST_URI'];

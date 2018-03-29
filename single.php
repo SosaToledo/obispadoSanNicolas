@@ -22,21 +22,28 @@
     <?php the_content();
     if (in_category('ultimos-escritos') ) {
     ?>
-      <div class="descargarPDF">
-        <a href="?article2pdf=1"><img src="<?php bloginfo(template_url);?>/img/iconos/pdf-icon.png" alt="">PDF version</a>
-      </div>
+      <?php echo do_shortcode('[dkpdf-button]'); ?>
+    
     <?php
     }else if (in_category('noticias') ){
     ?>
       <script type="text/javascript">
-
+          /*
           var x = document.getElementById("headersin");
           if (document.body.clientWidth<500){
               x.style.backgroundImage="url(../wp-content/themes/obispadosannicolas/img/celunoticias.jpg)";
             }else{
               x.style.backgroundImage="url(../wp-content/themes/obispadosannicolas/img/noticias.jpg)";
             }
-          
+          */
+          $(document).ready(function(){
+            if ($(document).width()<500){
+              $('#headersin').css('background-image','url(<?php bloginfo("template_url"); ?>/img/celunoticias.jpg)');
+            }else{
+              $('#headersin').css('background-image','url(<?php bloginfo("template_url"); ?>/img/noticias.jpg)');
+            }
+          });
+
           var y = document.getElementById("portadin");
           y.innerHTML="Noticias";
           y.style.fontFamily="verdana,sans-serif";
@@ -50,17 +57,17 @@
     }else if (in_category('obispos-anteriores') || in_category('emerito')){
       ?>
         <script type="text/javascript">
-
-            var x = document.getElementById("headersin");
-            if (document.body.clientWidth<500){
-              x.style.backgroundImage="url(../wp-content/themes/obispadosannicolas/img/celu2obisposAnteriores.jpg)";
+          $(document).ready(function(){
+            if ($(document).width()<500){
+              $('#headersin').css('background-image','url(<?php bloginfo("template_url"); ?>/img/celu2obisposanteriores.jpg)');
             }else{
-              x.style.backgroundImage="url(../wp-content/themes/obispadosannicolas/img/2obisposAnteriores.jpg)";
+              $('#headersin').css('background-image','url(<?php bloginfo("template_url"); ?>/img/2obisposanteriores.jpg)');
             }
-            
-            var y = document.getElementById("portadin");
-            y.innerHTML="Obispos Anteriores";
-            y.style.color="#fff";
+          });
+
+          var y = document.getElementById("portadin");
+          y.innerHTML="Obispos Anteriores";
+          y.style.color="#fff";
 
         </script>
       <?php
@@ -70,7 +77,10 @@
     <?php
   endwhile; // End of the loop.
   ?>
-  <h2 class="pieDeComentario">Dejanos tu comentario</h2>
+  
+    <h2 class="pieDeComentario"><i class="fa fa-comments"></i> Dejanos tu comentario </h2>
+    
+  
   <div class="fb-comments" data-href="
   <?php $host= $_SERVER['HTTP_HOST'];
   $url= $_SERVER['REQUEST_URI'];

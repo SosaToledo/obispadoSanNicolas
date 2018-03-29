@@ -8,11 +8,11 @@ get_header();
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/historia.jpg')!important;
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/historia.jpg') no-repeat center; background-size:cover;">
 	<p>Historia</p>
 </header>
 <!--  -->
@@ -35,6 +35,7 @@ include 'searchbar.php';
 ?>
 </div>
 
+<h2 class="pieDeComentario"><i class="fa fa-comments"></i> Dejanos tu comentario </h2>
 
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];

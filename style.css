@@ -249,7 +249,6 @@ margin: 0.5em 0;
   z-index: 2;
 }
 .obispoInfoIzq, .obispoInfoDer{
-  display: absolute;
 
   /*flex-direction: column;*/
   /*justify-content: space-around;*/
@@ -263,7 +262,7 @@ margin: 0.5em 0;
 .info{
   position: relative;
   margin-top: 10px;
-  visibility: hidden;
+  visibility: visible;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -389,7 +388,7 @@ margin: 0.5em 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: space-evenly;
 }
 .noticiasProyectos{
     border:2px solid black;
@@ -653,6 +652,12 @@ footer iframe{
   width: 90%;
   margin: auto;
 }
+.dkpdf-button-container{text-align:right !important;}
+
+.dkpdf-button-container > .dkpdf-button{ font-size: 28px !important;}
+
+.dkpdf-button-container > .dkpdf-button .fa.fa-file-pdf-o{ font-size:36px !important; color: #EC6868 !important;}
+
 .tituloSingle{
   margin: 14px;
   text-align: center;
@@ -677,7 +682,10 @@ footer iframe{
 .pieDeComentario{
   text-align: center;
   font-family: verdana,sans-serif;
-  text-decoration:underline;
+  color:#a29f76;
+}
+.pieDeComentario .fa.fa-comments{
+  color:white !important;
 }
 /*----------Estos estilos pertenecen al categoy.php--------------------*/
 .tituloCategoria{

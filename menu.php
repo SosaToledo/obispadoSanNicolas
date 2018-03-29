@@ -8,11 +8,11 @@
       <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;</span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/historia/">Historia</a>
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a> -->
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a>
         <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquias</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Colegio Religiosos</a>
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a> -->
-        <!-- <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a> -->
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Colegios Religiosos</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">Pastorales</a>
         <a href="<?php bloginfo(url); ?>/crescencia/">Beata Crescencia</a>
       </div>
     </div>
@@ -34,7 +34,7 @@
       <a href="#">Santuario</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;</span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/santuario-de-san-nicolas">Maria del Rosario</a>
-        <a href="<?php bloginfo(url); ?>/santuario-la-emilia">La Emilia</a>
+        <a href="<?php bloginfo(url); ?>/en-construccion">La Emilia</a>
       </div>
     </div>
     <div class="dropdown">

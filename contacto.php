@@ -2,7 +2,7 @@
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background: url('<?php bloginfo("template_url") ?>/img/contactos.jpg')!important;
   }
 }
 form input, form button, form textarea{
@@ -19,7 +19,7 @@ form input, form button, form textarea{
   font-family:verdana,sans-serif;
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/contactos.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
 </header>
 

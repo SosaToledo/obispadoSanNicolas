@@ -184,16 +184,14 @@ include 'searchbar.php';
     </div>
     <article class="noticiasPrincipales">
       <div class="noticiasDiv">
-        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
+        <a href="<?php bloginfo(url); ?>/en-construccion/">
+          <img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
         Peregrinaciones
       </div>
       <div class="noticiasDiv">
-        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/nombramiento.jpg" alt="" style="border-radius: 50%;"></a>
-        Nombramientos
-      </div>
-      <div class="noticiasDiv">
-        <a href="<?php bloginfo(url); ?>/en-construccion/"><img src="<?php bloginfo('template_url') ?>/img/retiros.jpg" alt="" style="border-radius: 50%;"></a>
-        Retiros
+        <a href="<?php bloginfo(url); ?>/en-construccion/">
+          <img src="<?php bloginfo('template_url') ?>/img/pastoralesCircle.jpg" alt="" style="border-radius: 50%;"></a>
+        Pastorales
       </div>
     </article>
     <div class="separador" style="width:100%;">
@@ -279,4 +277,4 @@ include 'searchbar.php';
 
 <?php get_footer(); ?>
 
-<body id="main" onscroll="detect()">
+<body id="main" onscroll="detect()">

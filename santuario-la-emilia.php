@@ -8,11 +8,11 @@ get_header();
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/santuarioDeLaEmilia.jpg')!important;
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/santuarioDeLaEmilia.jpg') no-repeat center; background-size:cover;">
 	<p>Jesus Misericordioso de La Emilia</p>
 </header>
 <!--  -->
@@ -22,7 +22,7 @@ include 'searchbar.php';
 
 ?>
 <div class="tituloConBarra">
-	<h1>Jesus Misericordioso de La Emilia</h1>
+	<h1>La Emilia</h1>
 	<img class="barraTitulos" src="<?php bloginfo('template_url'); ?>/img/barraObisposAnteriores.png" alt="">
 </div>
 <?php
@@ -34,6 +34,7 @@ include 'searchbar.php';
 		} // end if
 ?>
 
+<h2 class="pieDeComentario"><i class="fa fa-comments"></i> Dejanos tu comentario </h2>
 
 <div class="fb-comments" data-href="
 <?php $host= $_SERVER['HTTP_HOST'];

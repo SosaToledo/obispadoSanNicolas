@@ -7,7 +7,7 @@ get_header();?>
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/sacerdotes.jpg')!important;
   }
 }
 div.accordion{
@@ -38,12 +38,13 @@ div.accordion2{
 div.panel {
     padding: 0 18px;
     background-color: grey;
+    margin-bottom:10px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="background: url('<?php bloginfo("template_url") ?>/img/sacerdotes.jpg') no-repeat center; background-size:cover;">
 	<p style="color:white; font-size:4.5em; font-family:verdana;width:60%;text-decoration:none;border-bottom:8px solid white">Sacerdotes</p>
 </header>
 <?php
@@ -52,7 +53,7 @@ include 'searchbar.php';
 
 ?>
 
-<! Este div es para distinguirlos entre el resto del css>
+<!-- Este div es para distinguirlos entre el resto del css -->
 
 <div class="sacerdotes-ciudades">
   <h2>San Nicolas</h2>
