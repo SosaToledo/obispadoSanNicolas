@@ -2,7 +2,8 @@
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background: url('<?php bloginfo("template_url") ?>/img/contactos.jpg')!important;
+    background: url('<?php bloginfo("template_url") ?>/img/contactosCel.jpg') no-repeat center center !important;
+    background-size:cover !important;
   }
 }
 form input, form button, form textarea{

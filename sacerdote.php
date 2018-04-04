@@ -7,7 +7,7 @@ get_header();?>
 <style media="screen">
 @media screen and (max-width:500px) {
   header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/sacerdotes.jpg')!important;
+    background-image: url('<?php bloginfo("template_url") ?>/img/sacerdotesCelular.jpg')!important;
   }
 }
 div.accordion{

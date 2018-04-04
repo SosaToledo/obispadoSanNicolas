@@ -8,7 +8,7 @@ get_header();
 	<style media="screen">
 		@media screen and (max-width:500px) {
 			header{
-				background-image: url('<?php bloginfo("template_url") ?>/img/mariacrescencia.jpg')!important;
+				background-image: url('<?php bloginfo("template_url") ?>/img/crescenciaCel.jpg')!important;
 			}
 		}
 	</style>
