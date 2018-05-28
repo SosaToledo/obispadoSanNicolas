@@ -26,3 +26,5 @@
   <?php
 } // end if
 get_footer(); ?>
+<?php  include 'despedida.php';?>
+

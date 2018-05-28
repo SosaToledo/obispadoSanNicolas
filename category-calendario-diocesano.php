@@ -10,12 +10,11 @@ include "menu.php";
 include 'searchbar.php';
 	?>
 	<div class="contenedorUltEscritosCat">
-	<h1>Ultimos Escritos</h1>
+	<h1>Calendario Diosesano.</h1>
 	<?php
-	// ultimos escritos id 41 -Frank
-	//id 13 -web
+
 	$paged= ( get_query_var ( 'paged')) ? get_query_var ('paged'):1;
-	$args=array('category_name' => 'ultimos-escritos',
+	$args=array('category_name' => 'calendario-diocesano',
 				'paged' => $paged);
 	query_posts($args);
 		if ( have_posts() ) {
@@ -24,17 +23,14 @@ include 'searchbar.php';
 					<?php
 					the_post();
 					echo "<h1>";the_title();echo "</h1>";
-					the_excerpt();?>
-        	<div>
-          	<a style="float:right; margin-right:35px;" class="masInfo" href="<?php the_permalink();?>">+ Info</a>
-        	</div>
+					the_content();?>
       	</div>
 			<?php } //<!-- end while -->
 			echo '<div class="paginacion" style="width:100%" >';    
 			echo paginate_links('post_per_page=10');
 			echo '</div>';
 		} else {
-			echo '<h1> No hay escritos que mostrar </h1>';// end if
+			echo '<h1> No hay fechas cargadas. </h1>';// end if
 		}
 ?></div><?php
 get_footer(); ?>

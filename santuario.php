@@ -72,3 +72,4 @@ $('.carouselSantuario').owlCarousel({
   <div class="fb-comments" data-href="<?php esc_url(the_permalink()); ?>" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
 
 <?php get_footer();?>
+<?php  include 'despedida.php';?>

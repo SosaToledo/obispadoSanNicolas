@@ -1,25 +1,17 @@
-<?php
-/**
- * Template Name: Pagina de Noticias
- **/
-get_header();?>
+
+<?php get_header();
+?>
 <body id="main">
-<style media="screen">
-@media screen and (max-width:500px) {
-  header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celunoticias.jpg')!important;
-  }
-}
-</style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/noticias.jpg') no-repeat center; background-size:cover;">
-	<p style="color:white; font-size:4.5em; font-family:verdana;width:60%;text-decoration:none;border-bottom:8px solid white">Noticias</p>
+<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
+  <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
 </header>
 <?php
+
 include "menu.php";
 include 'searchbar.php';
 	$ourCurrentPage = get_query_var('paged');
 	$aboutPost = new WP_Query(array(
-		'category_name' => 'noticias',
+		'category_name' => 'peregrinaciones',
 		'post_per_page' => 7,
 		'paged' => $ourCurrentPage
 	));
@@ -51,13 +43,12 @@ include 'searchbar.php';
 		));
 		echo '</div>';
 	}else {
-		?><p>No hay datos que mostrar...</p><?php
+		?><p> No hay datos que mostrar...</p><?php
 	} //end if/else
 	?>
 	</div><?php
 
 
 ?>
-
-<?php get_footer();?>
+<?php get_footer(); ?>
 <?php  include 'despedida.php';?>

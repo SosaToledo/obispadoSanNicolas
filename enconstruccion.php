@@ -23,3 +23,4 @@ include "menu.php";
 ?>
 <h1 style="text-align:center; margin-top:100px;font-size:4.5em;font-family:SCRIPTBL;text-decoration:underline;">Sección en construccion</h1>
 <?php get_footer();?>
+

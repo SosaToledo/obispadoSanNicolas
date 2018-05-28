@@ -302,3 +302,4 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 <?php get_footer();?>
+<?php  include 'despedida.php';?>
