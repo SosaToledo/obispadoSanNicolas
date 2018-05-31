@@ -89,3 +89,4 @@ echo '<div class="resultados">';
 
 
 <?php get_footer();?>
+<?php  include 'despedida.php';?>

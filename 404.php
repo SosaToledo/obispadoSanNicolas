@@ -15,3 +15,5 @@ include "menu.php";
 </div>
 
 <?php get_footer(); ?>
+<?php  include 'despedida.php';?>
+

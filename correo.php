@@ -34,3 +34,4 @@ $consulta = $_POST["mensaje"];
   header('Location: http://obispadodesannicolas.com/contacto/');
   alert("Gracias, tu correo se envio.");
 ?>
+<?php  include 'despedida.php';?>

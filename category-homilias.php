@@ -40,3 +40,4 @@ include 'searchbar.php';
 		}?>
 	</div>
 <?php get_footer(); ?>
+<?php  include 'despedida.php';?>

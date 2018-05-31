@@ -8,7 +8,7 @@
       <a href="#">Diocesis</a><span class="iconoSpan" onclick="desplegarSubMenu()">&#187;</span>
       <div class="dropdown-content">
         <a href="<?php bloginfo(url); ?>/historia/">Historia</a>
-        <a href="<?php bloginfo(url); ?>/en-construccion/">Curia</a>
+        <a href="<?php bloginfo(url); ?>/curia/">Curia</a>
         <a href="<?php bloginfo(url); ?>/en-construccion/">Parroquias</a>
         <a href="<?php bloginfo(url); ?>/en-construccion/">Colegios Religiosos</a>
         <a href="<?php bloginfo(url); ?>/en-construccion/">Vida Consagrada</a>

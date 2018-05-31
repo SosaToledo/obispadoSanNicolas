@@ -52,3 +52,4 @@ include 'searchbar.php';
 <?php
   get_footer();
 ?>
+<?php  include 'despedida.php';?>

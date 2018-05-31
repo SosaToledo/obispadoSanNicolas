@@ -106,25 +106,31 @@ include 'searchbar.php';
   </div>
   <section id="" class="nuestraDiocesis">
     <div class="diocesisIconos">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">
+      <a href="<?php bloginfo(url); ?>/historia/">
         <img src="<?php bloginfo('template_url') ?>/img/iconos/historia.png" alt="">
         <p>Historia</p>
       </a>
     </div>
+<!--     
     <div class="diocesisIconos">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">
-        <img src="<?php bloginfo('template_url') ?>/img/iconos/geoposicion.png" alt="">
+      <a href="
+      <?php // bloginfo(url); ?>
+      /en-construccion/">
+        <img src="
+        <?php// bloginfo('template_url') ?>
+        /img/iconos/geoposicion.png" alt="">
         <p>Mapa</p>
       </a>
     </div>
+     -->
     <div class="diocesisIconos">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">
+      <a href="<?php bloginfo(url); ?>/curia/">
         <img src="<?php bloginfo('template_url') ?>/img/iconos/curia.png" alt="">
         <p>Curia</p>
       </a>
     </div>
     <div class="diocesisIconos">
-      <a href="<?php bloginfo(url); ?>/en-construccion/">
+      <a href="<?php bloginfo(url); ?>/category/calendario-diocesano/">
         <img src="<?php bloginfo('template_url') ?>/img/iconos/AGENDA.png" alt="">
         <p>Calendario <br> Diocesano</p>
       </a>
@@ -143,7 +149,7 @@ include 'searchbar.php';
     <article id="obispo">
       <div class="obispoInfoIzq">
         <div id="IA" class="info">
-          <a href="<?php bloginfo(url)?>/obispo-actual#contenedorObispoActual"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
+          <a href="<?php bloginfo(url)?>/obispo-actual#escudoobispo"><img src="<?php bloginfo('template_url') ?>/img/iconos/ESCUDO.png" alt=""></a>
           <p>Escudo</p>
         </div>
         <div id="IC" class="info">
@@ -184,7 +190,7 @@ include 'searchbar.php';
     </div>
     <article class="noticiasPrincipales">
       <div class="noticiasDiv">
-        <a href="<?php bloginfo(url); ?>/en-construccion/">
+        <a href="<?php bloginfo(url); ?>/category/peregrinaciones/">
           <img src="<?php bloginfo('template_url') ?>/img/peregrinaciones.jpg" alt="" style="border-radius: 50%;"></a>
         Peregrinaciones
       </div>
@@ -275,6 +281,7 @@ include 'searchbar.php';
 </div>
 
 
-<?php get_footer(); ?>
+<?php get_footer(); 
+include 'despedida.php';?>
 
 <body id="main" onscroll="detect()">
