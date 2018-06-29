@@ -13,7 +13,7 @@ get_header();
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center; background-size:cover;">
 	<p style="color:black">Obispado de San Nicolas</p>
 </header>
 
@@ -21,6 +21,9 @@ get_header();
 <?php
 include "menu.php";
 ?>
-<h1 style="text-align:center; margin-top:100px;font-size:4.5em;font-family:SCRIPTBL;text-decoration:underline;">Sección en construccion</h1>
+<div id="notfound" style="width:100%;text-align:center">
+  <img style="margin:15px;" src="<?php bloginfo(template_url);?>/img/iconos/circuloRadio.png" alt="">
+  <h3 style="font-family:verdana,sans-serif;">Este contenido todavía no esta disponible</h3>
+</div>
 <?php get_footer();?>
 

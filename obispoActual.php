@@ -13,7 +13,7 @@ get_header();
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/1obispoactual.jpg') no-repeat center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/1obispoactual.jpg') no-repeat center; background-size:cover;">
 	<p style="color:rgb(91, 61, 16); font-size:4.5em">Mons. Hugo Norberto Santiago</p>
 </header>
 

@@ -5,39 +5,39 @@
 get_header();?>
 <body id="main">
 <style media="screen">
-@media screen and (max-width:500px) {
-  header{
-    background-image: url('<?php bloginfo("template_url") ?>/img/celunoticias.jpg')!important;
+  @media screen and (max-width:500px) {
+    header{
+      background-image: url('<?php bloginfo("template_url") ?>/img/celunoticias.jpg')!important;
+    }
   }
-}
-  .pagination{
-    background-color: inherit;
-    margin: 20px 0;
-  }
-  .screen-reader-text{
-    display: none;
-  }
-  .nav-links{
-    width: 80%;
-    text-align: center;
-  }
-  .nav-links a, .current{
-    background-color: grey;
-    padding:10px;
-    margin: 5px;
-    display: inline-block;
-    font-size: 1.5em;
-    color: white;
-    font-family: verdana,sans-serif;
-  }
-  .nav-links a:hover{
-    background-color: rgb(103, 103, 103);
-  }
-  .current{
-    background-color: #a29f76
-  }
+    .pagination{
+      background-color: inherit;
+      margin: 20px 0;
+    }
+    .screen-reader-text{
+      display: none;
+    }
+    .nav-links{
+      width: 80%;
+      text-align: center;
+    }
+    .nav-links a, .current{
+      background-color: grey;
+      padding:10px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 1.5em;
+      color: white;
+      font-family: verdana,sans-serif;
+    }
+    .nav-links a:hover{
+      background-color: rgb(103, 103, 103);
+    }
+    .current{
+      background-color: #a29f76
+    }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/noticias.jpg') no-repeat center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/noticias.jpg') no-repeat center; background-size:cover;">
 	<p style="color:white; font-size:4.5em; font-family:verdana,sans-serif;width:60%;text-decoration:none;border-bottom:8px solid white">Busqueda</p>
 </header>
 <?php

@@ -11,7 +11,7 @@ get_header();?>
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/noticias.jpg') no-repeat center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/noticias.jpg') no-repeat center; background-size:cover;">
 	<p style="color:white; font-size:4.5em; font-family:verdana;width:60%;text-decoration:none;border-bottom:8px solid white">Noticias</p>
 </header>
 <?php

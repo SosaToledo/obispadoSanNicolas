@@ -12,7 +12,7 @@
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
   <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
 </header>
 <!--  -->
@@ -111,18 +111,7 @@ include 'searchbar.php';
         <p>Historia</p>
       </a>
     </div>
-<!--     
-    <div class="diocesisIconos">
-      <a href="
-      <?php // bloginfo(url); ?>
-      /en-construccion/">
-        <img src="
-        <?php// bloginfo('template_url') ?>
-        /img/iconos/geoposicion.png" alt="">
-        <p>Mapa</p>
-      </a>
-    </div>
-     -->
+
     <div class="diocesisIconos">
       <a href="<?php bloginfo(url); ?>/curia/">
         <img src="<?php bloginfo('template_url') ?>/img/iconos/curia.png" alt="">

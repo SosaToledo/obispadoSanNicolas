@@ -13,7 +13,7 @@ get_header();
   }
 }
 </style>
-<header style="background: url('<?php bloginfo("template_url") ?>/img/radiost.jpg') no-repeat center; background-size:cover;">
+<header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/radiost.jpg') no-repeat center; background-size:cover;">
 	<p style="font-family:verdana;">Radio del Obispado</p>
 </header>
 <?php

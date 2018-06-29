@@ -3,7 +3,7 @@
   ?>
   <body>
 
-  <header id="headersin" style="background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
+  <header id="headersin" style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
     <p id="portadin" style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   </header>
   <?php
