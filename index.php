@@ -1,5 +1,6 @@
-<!-- TODO: revisar error -->
-<?php get_header(); ?>
+<?php 
+  get_header(); 
+?>
 <body id="main" onscroll="detect()">
   <style media="screen">
   @media screen and (max-width:500px) {
@@ -7,10 +8,9 @@
       /* TODO: revisar error */
       background-image: url('<?php bloginfo("template_url") ?>/img/celuportada.jpg')!important;
     }
-  }
-  </style>
-  <!-- TODO: se debe cambiar el header -> head -->
-  <!-- TODO: revisar error -->
+  }   
+    </style>
+    <!-- TODO: se debe cambiar el header -> head -->
   <header style="border-bottom:2px solid #a29f76;background: url('<?php bloginfo("template_url") ?>/img/portada.jpg') no-repeat center center; background-size:cover;">
     <p style="color:black;">Obispado de San Nicolas de los Arroyos</p>
   </header>
@@ -269,10 +269,8 @@
   </div>
 
   <div class="separador" style="width:100%;">
-  <!-- TODO: revisar error -->
     <img src="<?php bloginfo('template_url') ?>/img/iconos/DIV3.png" alt="">
   </div>
 
-  <!-- TODO: revisar error -->
   <?php get_footer(); 
   include 'despedida.php';?>
